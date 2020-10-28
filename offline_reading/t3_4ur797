@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_4ur797">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/vcdupper">vcdupper</a>
+        <span class="score"> | 38 points</span>
+        <span class="timestamp"> | Jul 26 2016 21:55:43</span>
+    </p>
+    <strong>[SITE NEWS] Stop Posting Links From Other Sites!</strong>
+    <p><p>If you find something on another site that you want to post here, do not post that sites link:<br>
+1.Create a new mega drive at mega.nz, if you don't already have 1.<br>
+2.Import what you want to post here to your mega cloud drive.<br>
+3.Right click on what you want to post here &amp; click get link, then click get link with key.<br>
+4.Post your link.<br>
+If you post a stolen link after being told you will be banned, no exceptions.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/4ur797">permalink</a>
+    </p>
+</div>
+
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

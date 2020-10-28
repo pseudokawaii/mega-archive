@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_4i4gxq">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/waivek">waivek</a>
+        <span class="score"> | 16 points</span>
+        <span class="timestamp"> | May 06 2016 10:10:17</span>
+    </p>
+    <strong>[Request] [Meta] Can the mods implement an actual flair system?</strong>
+    <p><p>Examples</p>
+<p>Subreddit | Link To Subreddit | Link To Flair Search
+---|---|---
+Minecraft | <a href="https://www.reddit.com/r/minecraft/search?sort=new&amp;restrict_sr=on&amp;q=flair%3ABuilds"> Notice how well they integrate flairs into CSS </a> | <a href="https://www.reddit.com/r/minecraft/search?sort=new&amp;restrict_sr=on&amp;q=flair%3ABuilds"> Search By Builds </a>
+ListenToThis | <a href="https://www.reddit.com/r/listentothis/top/?sort=top&amp;t=all"> Linking to top  </a> | <a href="https://www.reddit.com/r/listentothis/search?sort=new&amp;restrict_sr=on&amp;q=flair%3AElectronic"> Clicking on a flair automatically categorizes </a></p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/4i4gxq">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_d2v4mpk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/D_Ashido">D_Ashido</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 06 2016 14:08:00</span>
+    </p>
+    <div class="collapsible">
+        <p>Would be a great addition</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4i4gxq/_/d2v4mpk">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_d2xgps3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Dianic">Dianic</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 08 2016 15:09:11</span>
+    </p>
+    <div class="collapsible">
+        <p>Flair for mooching participation?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4i4gxq/_/d2xgps3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

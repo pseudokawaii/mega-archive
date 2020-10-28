@@ -1,0 +1,1378 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7lowex">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 168 points</span>
+        <span class="timestamp"> | Dec 23 2017 14:35:38</span>
+    </p>
+    <strong>[META] BANDWIDTH LIMIT EXCEEDED FIX AUTOMATION SCRIPT USING VPN</strong>
+    <p><p>Hello Guys, I know a lot of you guys have been using a VPN to bypass Bandwidth Limit as is shown [here] (https://www.reddit.com/r/megalinks/comments/6oh6jm/meta_bandwidth_limit_exceeded_fix/)</p>
+<p>I find it really painful to disconnect and connect my VPN again and then restarting MegaSync again. I've designed a script which automatically reconnects VPN after a set interval. </p>
+<blockquote>
+<p>Prerequisites : 
+Create a VPN connection setting(refer your VPN manual) for e.g. <a href="https://imgur.com/a/9h9NJ">Check This</a>
+Make sure your sign-in info is saved in the VPN settings. for e.g. <a href="https://imgur.com/a/rbcIB">Check This</a></p>
+</blockquote>
+<p>Below is the script. Replace "PureVPN" with your connection name and 660 with the number of seconds after which you want to re-connect. For me it takes around 11-12 minutes to download 3 GB and hence I've set it to 660 seconds.</p>
+<pre><code>@echo off
+for /L %%n in (1,0,10) do (
+rasdial "PureVPN"
+timeout /t 660 /nobreak
+rasdial "PureVPN" /disconnect
+)
+</code></pre>
+<p>Save this as a .bat file and voila! Start your download, sit back and relax. This script will keep running in the background and keep reconnecting to your VPN. I've kept it to 660 seconds so that it reconnects before I consume 3 GB. That way I don't have to restart MegaSync. During the connection/reconnection phase, MegaSync waits and then starts downloading again. I've downloaded close to 500 GB using this method without any manual interaction! </p>
+<p>P.S : Let me know if you guys want a video to be made on this</p>
+<p>EDIT 1 : </p>
+<p>Prerequisites</p>
+<blockquote>
+<p>Make sure your sign-in info is saved in the VPN settings. for e.g. <a href="https://imgur.com/a/rbcIB">Check This</a></p>
+</blockquote></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7lowex">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_drnwrmg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/remikys">remikys</a>
+        <span class="score"> | 17 points</span>
+        <span class="timestamp"> | Dec 23 2017 16:11:01</span>
+    </p>
+    <div class="collapsible">
+        <p>plz make a video of this.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drnwrmg">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro913l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:40:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Okay. I'll try and make one. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro913l">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_drnwewh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Ajinkya28">Ajinkya28</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Dec 23 2017 16:02:34</span>
+    </p>
+    <div class="collapsible">
+        <p>Hello man. Actually lot of people are new to this script thing. We will be very thankful if you could guide us on this.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drnwewh">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro8zs5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:39:28</span>
+    </p>
+    <div class="collapsible">
+        <p>Sure. What do you need? Are you stuck somewhere?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8zs5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_drntsqu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/R3a1ityCheque">R3a1ityCheque</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Dec 23 2017 14:56:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Very nice. Thanks very much for this</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drntsqu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_drnu5u4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/j_aleka">j_aleka</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Dec 23 2017 15:06:08</span>
+    </p>
+    <div class="collapsible">
+        <p>thanks mate, do you anything for a MacBook?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drnu5u4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro9k6x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:51:47</span>
+    </p>
+    <div class="collapsible">
+        <p>So sorry. Haven't tried it yet but I'll definitely try to make one. Stay tuned. :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9k6x">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_drory1u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Adhesiveduck">Adhesiveduck</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:51:41</span>
+    </p>
+    <div class="collapsible">
+        <p>This would be really easy to replicate in bash. You could run it from the terminal.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drory1u">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro0nbj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mike072292">Mike072292</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 23 2017 17:37:24</span>
+    </p>
+    <div class="collapsible">
+        <p>Im using PIA anyone know how I can use this with his code?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro0nbj">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro17hs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 17:49:22</span>
+    </p>
+    <div class="collapsible">
+        <p>I would recommend going through PIA manual. All you have to do is go to Windows 10 Settings. Add a VPN and full out necessary details about VPN provider, e.g. Server, Protocol, DNS credentials etc</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro17hs">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro3gll">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mike072292">Mike072292</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 18:37:50</span>
+    </p>
+    <div class="collapsible">
+        <p>Ok then I just change the pure vpn to Pia? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro3gll">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro40z9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 18:50:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Yes sir! That's correct</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro40z9">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_droc62u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hotboilivejive">hotboilivejive</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 21:48:39</span>
+    </p>
+    <div class="collapsible">
+        <p>What if you're using Windows 7?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droc62u">permalink</a>
+        </p>
+        <div class="comment" id="t1_droqqgj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:22:18</span>
+    </p>
+    <div class="collapsible">
+        <p>Should work</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droqqgj">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro1165">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ihavenolifeee">ihavenolifeee</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 23 2017 17:45:36</span>
+    </p>
+    <div class="collapsible">
+        <p>I keep getting this error. 
+Remote Access error 703 - The connection needs information from you, but the application does not allow user interaction.</p>
+<p>Any way to resolve that?</p>
+<p>Edit - Redid GUI Settings on WindScribe and got it working. Followed the directions on their website.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro1165">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro12qt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 17:46:34</span>
+    </p>
+    <div class="collapsible">
+        <p>Which VPN are you using? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro12qt">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_drnwcwu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/michelangelo88">michelangelo88</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 16:01:15</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks.
+OT: Something is wrong with MegaSync since yesterday. Only saw the bandwidth limit exceed messaged thrice. Must've got 400gb of data in less than a day.
+Whenever I did see the message, I connected to VPN and disconnected from it after about 2-3gb with megasync still running, it resumed my downloads but at full speed</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drnwcwu">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro9oow">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:54:35</span>
+    </p>
+    <div class="collapsible">
+        <p>Dude. This happened to me a couple of days ago. This was because something was wrong with my ISP. My IP was changing quite frequently and my download quota was also not being counted. i downloaded 500 GB and my ISP was showing that I haven't downloaded anything. </p>
+<p>This is a rare thing though. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9oow">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_drnws8f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ruralcricket">ruralcricket</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 16:11:25</span>
+    </p>
+    <div class="collapsible">
+        <p>what provider are using? I'm using windscribe and they don't have a cmd line interface.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drnws8f">permalink</a>
+        </p>
+        <div class="comment" id="t1_drnwwjt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mysterymender">Mysterymender</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 16:14:07</span>
+    </p>
+    <div class="collapsible">
+        <p>You type the script in a blank notepad file and save it as a .bat</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drnwwjt">permalink</a>
+        </p>
+        <div class="comment" id="t1_drnxas1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ruralcricket">ruralcricket</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 23 2017 16:23:04</span>
+    </p>
+    <div class="collapsible">
+        <p>of course, but i don't use purevpn. i'm using windscribe which uses openvpn as the underlying tunnel software and sets up a network adapter not a ras connection.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drnxas1">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_drny20p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 16:40:19</span>
+    </p>
+    <div class="collapsible">
+        <p>https://windscribe.com/guides/windows . Go to the following section </p>
+<blockquote>
+<p>Manual Setup - GUI</p>
+</blockquote>
+<p>This will setup a new connection and rasdial will work</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drny20p">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro9u2m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ruralcricket">ruralcricket</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:58:00</span>
+    </p>
+    <div class="collapsible">
+        <p>Excellent. Thanks.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9u2m">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro0jpk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GeniusEvil">GeniusEvil</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 17:35:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Gotta check this later. Thanks.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro0jpk">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dro1tdx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mysterymender">Mysterymender</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 18:02:16</span>
+    </p>
+    <div class="collapsible">
+        <p>I wonder if the script could be modified that instead of a timeout a measure of downloaded data could be used to reset the VPN?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro1tdx">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro1w0x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 23 2017 18:03:52</span>
+    </p>
+    <div class="collapsible">
+        <p>I wanted to do that in the first place. That's how I started but couldn't get to doing that. Didn't find a way. Although I'm still on it. Next version of this script maybe🙂</p>
+<p>Thanks for the suggestion though. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro1w0x">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro8oqw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/doot_doot_doot_doo">doot_doot_doot_doo</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:32:45</span>
+    </p>
+    <div class="collapsible">
+        <p>i know this is aimed at the windows users, but this is dead simple in linux</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8oqw">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro8qub">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:34:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah. I know. That's why I posted only for windows. :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8qub">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro44gy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 18:52:17</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro44gy">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro48n6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 18:54:50</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm not sure how to do it. Would love to know how to do it. Could you please explain how to do that it in detail?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro48n6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dro5a36">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 19:17:28</span>
+    </p>
+    <div class="collapsible">
+        <p>For me it does. I'm using PureVPN. It gives me a new IP even though it connects to the same location</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro5a36">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dro8rdn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/doot_doot_doot_doo">doot_doot_doot_doo</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:34:21</span>
+    </p>
+    <div class="collapsible">
+        <p>you would need to have a script b e run thru their reconnection manager. otherwise the state (ie bandwidth limit exceeded) will not be reset and it wont realize it got a new IP.  I went that route initially but gave up after a bit a simply send it a proper kill signal (I'm on linux) to kill it and bring it back up once my vpn swaps IPs</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8rdn">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro9wbt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:59:22</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9wbt">permalink</a>
+        </p>
+        <div class="comment" id="t1_drocl04">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/doot_doot_doot_doo">doot_doot_doot_doo</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 21:57:46</span>
+    </p>
+    <div class="collapsible">
+        <p>I tried a few times using it, and it just never wanted to work.  much simpler for me to just look for my pids and send kill signals and have my own logic run things for me.  Not as elegant as an all in one within jd2, but whatever works, right?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drocl04">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro72i7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mysterymender">Mysterymender</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 19:57:09</span>
+    </p>
+    <div class="collapsible">
+        <p>Darn I get a remote access error 691.</p>
+<p>Manually clicking connect from within windows 10 and it connects but starting or restarting the VPN with script throws the error.</p>
+<p>Even changed the name of my VPN in the script.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro72i7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro75l7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 19:59:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Which VPN?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro75l7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro8pe3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mysterymender">Mysterymender</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:33:09</span>
+    </p>
+    <div class="collapsible">
+        <p>VPN Unlimited. Connecting and disconnecting works fine when using the internal windows VPN. Now it works sort of.</p>
+<p>Did add "login name" "Password"   behind "VPN Name" in the script and now it does connect but now it doesn't disconnect and reconnect. It just loops and says "You are already connected to VPN Name.</p>
+<p>@echo off
+for /L %%n  in (1,0,10)  do  (</p>
+<p>rasdial. "My VPN name"  "MY login"  "MY password"
+timeout  /t  660  /nobreak</p>
+<p>rasdial "My VPN name"  MY login"  "MY password" </p>
+<p>/disconnect</p>
+<p>)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8pe3">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro8ymx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:38:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Because the command for disconnection is wrong. You don't need to specify username and password while disconnecting. That's why disconnecting line doesn't execute</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8ymx">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro980d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mysterymender">Mysterymender</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:44:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Ahhh ok winner winner chicken dinner.</p>
+<p>Now the last line is</p>
+<p>rasdial /disconnect </p>
+<p>and it shows it disconnects on the windows VPN screen and then reconnects.</p>
+<p>Now I just need to fine tune the timeout length because I am on a 100Mb connection.</p>
+<p>Thanks for the script and advice.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro980d">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro9ag0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:45:55</span>
+    </p>
+    <div class="collapsible">
+        <p>You're welcome. Glad that it worked for you :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9ag0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro8p9d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Doip">Doip</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:33:04</span>
+    </p>
+    <div class="collapsible">
+        <p>11-12 for 3 gigs? Man I get 30 min for half a gig.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8p9d">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro8tj0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:35:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Shit! I thought I had a shitty connection. I've got a 40 Mbps connection. Using a VPN gives me an average of 4.5 MB/s download 🙂</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro8tj0">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro915j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Doip">Doip</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:40:17</span>
+    </p>
+    <div class="collapsible">
+        <p>430kbps through jDownloader. Wide open. Anything else on, 250ish.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro915j">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro9er6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Eucbevt">Eucbevt</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:48:31</span>
+    </p>
+    <div class="collapsible">
+        <p>MegaDownloader still works perfectly for me, am I the only one who doesn't need to use any of these fixes?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9er6">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro9hax">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:50:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Uh! I think so. It hasn't worked for me in months. MegaDownloader is deprecated as well as Mega put a server side restriction. </p>
+<p>When did you last use MegaDownloader? File size?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9hax">permalink</a>
+        </p>
+        <div class="comment" id="t1_drom7fy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Eucbevt">Eucbevt</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 01:37:57</span>
+    </p>
+    <div class="collapsible">
+        <p>I last used it last night, I downloaded a 12gb file immediately followed by a 3gb file. I had 0 problems while downloading.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drom7fy">permalink</a>
+        </p>
+        <div class="comment" id="t1_droqur5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:25:11</span>
+    </p>
+    <div class="collapsible">
+        <p>🤔 Good for you then. Doesn't work for most of us no more. A couple of days ago it happened with me also. MegaSync downloaded 60 GB without any hiccups (no VPN). But that was a one time thing. Not really sure why</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droqur5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_drpsz8i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ruralcricket">ruralcricket</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 24 2017 21:51:46</span>
+    </p>
+    <div class="collapsible">
+        <p>I use Jdownloader2 and have this working there.  I call this script</p>
+<p>reconnect.cmd</p>
+<pre><code>echo %date% %time% Reconnect called &gt;&gt;   p:\dl\reconnect_log.txt
+rasdial winscribe-central /disconnect
+timeout /t 2 /nobreak
+rasdial winscribe-central
+</code></pre>
+<p>And these settings in JD2 https://imgur.com/7NNEF1J</p>
+<ul>
+<li>Auto reconnect enabled [x]</li>
+<li>Do no start downloads if others wait for a Reconnect [x]</li>
+<li>Reconnects can interrupt resumable downloads [x]</li>
+</ul>
+<p>Reconnect method
+- External batch reconnect
+- Interpreter path_to_script\reconnect.cmd</p>
+<p>The echo is just for me to understand that it was working</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drpsz8i">permalink</a>
+        </p>
+        <div class="comment" id="t1_drpt6pe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 21:55:50</span>
+    </p>
+    <div class="collapsible">
+        <p>So when does JDownloader2 actually call this? When the quota is over? What invokes Auto reconnect? (Haven't used JDownloader a lot)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drpt6pe">permalink</a>
+        </p>
+        <div class="comment" id="t1_drptk1d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ruralcricket">ruralcricket</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 22:03:28</span>
+    </p>
+    <div class="collapsible">
+        <p>When it sees mega (other?) return a bandwidth exceeded.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drptk1d">permalink</a>
+        </p>
+        <div class="comment" id="t1_drptm8c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 22:04:42</span>
+    </p>
+    <div class="collapsible">
+        <p>Hmm. Nice. Sounds good. Thanks for the tip.🙏🏻  I'll try this first thing when I get a chance.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drptm8c">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dro4emf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Megabanette4">Megabanette4</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 18:58:30</span>
+    </p>
+    <div class="collapsible">
+        <p>Remote Access error 623 - The system could not find the phone book entry for this connection.</p>
+<p>For more help on this error:
+        Type 'hh netcfg.chm'
+        In help, click Troubleshooting, then Error Messages, then 623</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro4emf">permalink</a>
+        </p>
+        <div class="comment" id="t1_dro9jny">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mysterymender">Mysterymender</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:51:28</span>
+    </p>
+    <div class="collapsible">
+        <p>Added "my login name" and "my password" to the script helped me with that error.</p>
+<p>Look at my post and you will see what I mean.</p>
+<p>Also you don't need to add your login name and password info to the disconnect part of the script.
+All I needed for the disconnect section was
+radial "My VPN name" /disconnect.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9jny">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dro9pj6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Megaderp798">Megaderp798</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 23 2017 20:55:08</span>
+    </p>
+    <div class="collapsible">
+        <p>@echo off
+for /L %%n in (1,0,10) do (</p>
+<p>rasdial  "VPN Name" "LOGIN NAME" "PASSWORD"
+timeout /t 660 /nobreak</p>
+<p>rasdial "VPN Name" /disconnect
+)</p>
+<p>Here you go I am mysterymender and this is what I was talking about.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dro9pj6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_droinds">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jtrolfsen">jtrolfsen</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 00:15:27</span>
+    </p>
+    <div class="collapsible">
+        <p>lol. i tried using a vpn but got tired of downloading in like 200kb/s so i just paid the $60 to upgrade my account to the cheapest 1 year account. now i have 12tb quota per month, and can download at my full 11mb/s</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droinds">permalink</a>
+        </p>
+        <div class="comment" id="t1_droqy93">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:27:31</span>
+    </p>
+    <div class="collapsible">
+        <p>Woah! PureVPN is at $60 for a lifetime license. I have that VPN which I had bought for $90. Insane speeds. Maybe you should consider buying that</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droqy93">permalink</a>
+        </p>
+        <div class="comment" id="t1_droths5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jtrolfsen">jtrolfsen</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Dec 24 2017 04:30:08</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>$60 for a lifetime license</p>
+</blockquote>
+<p>Or i could not use a vpn and get even higher speeds. Plus after spending the $60 to upgrading my account to their pro lite service, i get a 12tb quota <em>per month</em> so i dont have to worry about bandwidth issues</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droths5">permalink</a>
+        </p>
+        <div class="comment" id="t1_drotlb6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 04:32:32</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah. That's true. Totally agreed. Whatever suits you. 🙂
+For me, I needed a VPN anyway. Bypassing bandwidth was just a by-product of that. 
+12 TB per month is seriously impressive. My monthly FUP is less than 1/12 th of that :p</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drotlb6">permalink</a>
+        </p>
+        <div class="comment" id="t1_drp4925">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/rock_rahul">rock_rahul</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 11:45:33</span>
+    </p>
+    <div class="collapsible">
+        <p>i think he meant MEGA's bandwidth. not his ISP's FUP. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drp4925">permalink</a>
+        </p>
+        <div class="comment" id="t1_drp4a3i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 11:47:04</span>
+    </p>
+    <div class="collapsible">
+        <p>I know. My point is that I won't be able to use 12 TB quota per month as my FUP is way below that</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drp4a3i">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_droqjok">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/briank6932">briank6932</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:17:45</span>
+    </p>
+    <div class="collapsible">
+        <p>Anyone know how to do this with Hotspot Shield?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droqjok">permalink</a>
+        </p>
+        <div class="comment" id="t1_droqysf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:27:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Should be similar. Try referring to hotspot shield manual</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/droqysf">permalink</a>
+        </p>
+        <div class="comment" id="t1_drorzyc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/briank6932">briank6932</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:53:00</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't believe a Hotspot Shield manual exists.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drorzyc">permalink</a>
+        </p>
+        <div class="comment" id="t1_dros0tp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shubhpittu">shubhpittu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 24 2017 03:53:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Oh. I'll try to figure out how to do it. Let me get back to you on that. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/dros0tp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_drxh5s7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ButtGardener">ButtGardener</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 29 2017 23:11:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Any idea how to get this to work with AirVPN?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drxh5s7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_drxjz5s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rainwak3r">Rainwak3r</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Dec 30 2017 00:10:17</span>
+    </p>
+    <div class="collapsible">
+        <p>it would be awesome if you could do a video guide for this</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7lowex/_/drxjz5s">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

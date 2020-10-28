@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_658668">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/Darkestro">Darkestro</a>
+        <span class="score"> | 21 points</span>
+        <span class="timestamp"> | Apr 13 2017 20:42:48</span>
+    </p>
+    <strong>[META] Way to fix MegaDownloader error: Unexpected Character encountered while parsing value</strong>
+    <p><p>If you are seeing this error: http://i.imgur.com/kMIsDZu.png<br>
+I've noticed that this occurs when there are characters in the file or folder names that are not allowed, like:  </p>
+<ul>
+<li>Tilde (~)</li>
+<li>Number sign (#)</li>
+<li>Percent (%)</li>
+<li>Ampersand (&amp;)</li>
+<li>Asterisk (*)</li>
+<li>Braces ({ })</li>
+<li>Backslash ()</li>
+<li>Colon (:)</li>
+<li>Angle brackets (&lt; &gt;)</li>
+<li>Question mark (?)</li>
+<li>Slash (/)</li>
+<li>Plus sign (+)</li>
+<li>Pipe (|)</li>
+<li>Quotation mark (")  </li>
+</ul>
+<p>A way to fix this is to take out any of these characters from the file or folder names before trying to download.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/658668">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dh8p54g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Animeoverhoes">Animeoverhoes</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 07 2017 12:38:14</span>
+    </p>
+    <div class="collapsible">
+        <p>Please help, how exactly do you take out these characters? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/658668/_/dh8p54g">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

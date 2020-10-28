@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_4tnr40">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/Doombuggyman">Doombuggyman</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Jul 19 2016 21:58:12</span>
+    </p>
+    <strong>[Request] TV: Tales From the Darkside (1983-1988) or Monsters (1988-1991)</strong>
+    <p><p>Any/all seasons, SD is ok. I just want to revisit these 80's series, thanks to Stranger Things on Netflix.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/4tnr40">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_d6psejw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Y0UR_Messiah">Y0UR_Messiah</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 20 2016 20:51:31</span>
+    </p>
+    <div class="collapsible">
+        <p>Here's season 1, when I get more time I'll upload the other 3 seasons.
+https://mega.nz/#!rI5RxYYJ</p>
+<p>KEY:  !TPbpS4LqMMr-fEh78lnruUyjNeealFWhBOs-MYvPfe4</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4tnr40/_/d6psejw">permalink</a>
+        </p>
+        <div class="comment" id="t1_d6ptrxa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Doombuggyman">Doombuggyman</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 20 2016 21:28:46</span>
+    </p>
+    <div class="collapsible">
+        <p>You. Are. AWESOME.</p>
+<p>THANK YOU!!!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4tnr40/_/d6ptrxa">permalink</a>
+        </p>
+        <div class="comment" id="t1_d6puht7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Y0UR_Messiah">Y0UR_Messiah</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 20 2016 21:48:10</span>
+    </p>
+    <div class="collapsible">
+        <p>No worries, I've been downloading from this thread for years and figured what the hell and uploaded something that wasn't on here.  Season 2 will be up later tonight.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4tnr40/_/d6puht7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

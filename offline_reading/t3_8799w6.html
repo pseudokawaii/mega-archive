@@ -1,0 +1,3409 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_8799w6">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | 417 points</span>
+        <span class="timestamp"> | Mar 26 2018 13:57:11</span>
+    </p>
+    <strong>[UPDATE] Subreddit status & Weekly discussion thread [26/03]</strong>
+    <p><p>Hey guys,</p>
+<p>First of all, I would like to offer you guys an explanation, and an apology.</p>
+<p>Although the restriction on submissions was a knee-jerk reaction, we <em>had</em> done some planning on this a few months ago, where our goal was to reduce/stop the reddit/MEGA DMCA takedowns. So when the news of reddit ban spree came out, it was my hasty discussion to fast track our initial efforts and get the work done as soon as possible. But it soon became clear that the subs that were banned had very little similarity to ours, and we realized we risked alienating the very community that we intend to keep intact.</p>
+<p>So, I would like to apologize. Not just to the posters/readers for the confusion caused over the past few days, but also my fellow mods, for giving them a very short notice before I went ahead and restricted the submissions. </p>
+<p>And to resolve the confusion, once and for all, here is a short summary of what we had planned/what we are working on right now:</p>
+<p><strong>TL;DR</strong>: 1. Install browser extension. 2. Run program from command line. 3. ??? 4. Profit</p>
+<p>A browser extension (Chrome/Firefox/Opera) to automate the encoding/decoding of content (title &amp; post) posted on this sub. The encoding/decoding part will be handled by a web server running locally. The encoding will be not a standard one like Base64, instead it will use a custom Vigenere cipher we've written.</p>
+<p>There's no action required by users viewing the content, since the browser extension automates the process upon page load. The users posting the content however, will be given an <a href="https://i.imgur.com/qafcquf.png">option to encode the title and text of their post</a> before their submit the post. </p>
+<p>The local web server will be a micro service written in C# (Mono).</p>
+<p>Currently, the work on the browser extension is about 80% done, with some minor changes pending. The local web server however, is currently supported only on Windows, and I am working on porting it to macOS and Linux.</p>
+<p>The main intention behind restricting the submissions was to ease the testing of this solution. But like I mentioned, this is having an adverse effect on the community which we'd like to fix. So <strong>we've removed the restrictions on submissions</strong> and will be testing this solution on a separate private subreddit.</p>
+<p>We will post on an update on our work very soon.</p>
+<p>For more information on how to contribute to the development work and to get involved in testing, please DM on the discord server. We have a separate channel dedicated to this.</p>
+<p>Thanks you guys for making this community the wonderful place that it is. Please feel free to post your opinions/suggestions in the comments.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/8799w6">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dwb3jbh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GoldFuzzy">GoldFuzzy</a>
+        <span class="score"> | 286 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:04:32</span>
+    </p>
+    <div class="collapsible">
+        <p>Take your time, the survival of this community is more important than a week or two of submissions</p>
+<p>&lt;3 mods</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3jbh">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwcf930">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GurbHedgeTheHedgeHog">GurbHedgeTheHedgeHog</a>
+        <span class="score"> | 60 points</span>
+        <span class="timestamp"> | Mar 27 2018 03:00:57</span>
+    </p>
+    <div class="collapsible">
+        <p>Pros:</p>
+<blockquote>
+<ul>
+<li>
+<p>Obfuscate reddit titties</p>
+</li>
+<li>
+<p>Stops bots (for a little while)</p>
+</li>
+</ul>
+</blockquote>
+<p>Cons:</p>
+<blockquote>
+<ul>
+<li>Risky web server running locally on your computer</li>
+<li>
+<p>Sipher can potentially be reverse engineered</p>
+</li>
+<li>
+<p>DMCA's become easier to report by a employee who downloads the extension themselves</p>
+</li>
+<li>
+<p>Can't search for titles easily anymore, major accessibility issue! </p>
+</li>
+<li>
+<p>*Bots come back with a vengeance. They create a bot that just runs your own decryption against the page, since you let the user download it</p>
+</li>
+</ul>
+</blockquote>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcf930">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwcjoct">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GodnBabyJesusHelpUs">GodnBabyJesusHelpUs</a>
+        <span class="score"> | 21 points</span>
+        <span class="timestamp"> | Mar 27 2018 04:33:54</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>reddit titties</p>
+</blockquote>
+<p>r/titties?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcjoct">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwmcybz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/SomeDuderr">SomeDuderr</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Apr 01 2018 09:35:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Yea, I'm not gonna bother with some unknown extension and running a (local) server that does who knows what.</p>
+<p>If this means the death of this sub, so be it.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwmcybz">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwck63n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/doctorwho6904">doctorwho6904</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 27 2018 04:46:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Well i agree. But now that Megalinks is up again. I can start posting again.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwck63n">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbcdcj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/siomi">siomi</a>
+        <span class="score"> | 250 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:28:46</span>
+    </p>
+    <div class="collapsible">
+        <p>What pipe are you smoking? A freaking browser extension? C freaking sharp? It should better be on Github or something but still I won't trust some shady extension. Give us your decoding algorithm or set up a tiny online service so we can decipher those strings - why would you ever mess with browsers? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbcdcj">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbt3ln">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/N-kay">N-kay</a>
+        <span class="score"> | 138 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:41:10</span>
+    </p>
+    <div class="collapsible">
+        <p>What even with this? Their so called <em>plan</em> is so flawed top to bottom, you really do have to wonder what they're smoking.</p>
+<p>At best it will instantly reduce this sub to a fraction of what it once was, and just slowly die off after that.</p>
+<p>Security through obscurity does no-one any good. Secret "custom cipher", requiring a browser extension <strong>plus</strong> a local running webserver? A greasemonkey script and base64 can accomplish the same thing!</p>
+<p>At the end of the day, content would not be plaintext, but anyone could decode it. One apporoach is massively overcomplicated and possibly dangerous to users, and the other one is simple.</p>
+<p>It's stupid either way, because /r/megalinks got big because it is so easy and accessible.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbt3ln">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbz6a9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Lurking_Grue">Lurking_Grue</a>
+        <span class="score"> | 37 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:17:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Nothing good ever comes from a "custom cipher"</p>
+<p>I do agree with the idea of encrypting everything but custom stuff never works well. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbz6a9">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwctyic">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/qefbuo">qefbuo</a>
+        <span class="score"> | 26 points</span>
+        <span class="timestamp"> | Mar 27 2018 10:32:35</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't understand why they're reinventing the wheel, there's already browser extensions to encrypt text posts, for example:</p>
+<p>https://addons.mozilla.org/en-US/firefox/addon/text-encryption-tool/</p>
+<p>https://chrome.google.com/webstore/detail/cryptable-encrypt-message/gefljgiodoecfjglogndmhelekdgncgn</p>
+<p>But that doesn't stop anti-piracy agents just getting the publicly available passphrase.</p>
+<p>You could at least thwart <em>automated</em> takedowns if you required submissions to use referal links with captchas.</p>
+<p>Or you could make the last few characters of a url a captcha example:</p>
+<p>https://mega.nz/#F!0bQHg + https://i.imgur.com/Ku7Jvs0.png</p>
+<p>Which would require human entry, though they may just task someone to it.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwctyic">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwdvffe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JustSpeedy">JustSpeedy</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 27 2018 21:16:41</span>
+    </p>
+    <div class="collapsible">
+        <p>i might have a better alternative. its on github
+https://github.com/JohnDeved/megacrypt.js
+the mods didnt seem to like it as much as their extension idea. but i think it would be a way better. </p>
+<p>the way it works is that the mega file id and decryption key get put into a url that is encrypted with a private server key. </p>
+<p>that way only the server (node.js) knows the real mega file id and decrypt key and the server will basicly create a proxy to mega.nz using it. also the bandwidth limit wont apply with it, so thats a nice side effect.</p>
+<p>https://i.gyazo.com/c30d89442418a9ec704defff7e04872d.png</p>
+<p>the user doesnt have to install anything and can still use jdownloader or other tools if he wants to.</p>
+<p>the only downside is that it would have to be hosted as a webservice. and that would cost the mod team money. mind you it could also be run localy, but that would make it possible to get the file id and key trough memory</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwdvffe">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwkpyk9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/brickfrog2">brickfrog2</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 31 2018 11:25:42</span>
+    </p>
+    <div class="collapsible">
+        <p>Yup I was thinking the same thing, this entire thing could be accomplished with a simple <a href="https://tampermonkey.net/">Tampermonkey</a> / greasemonkey userscript. Tons of people already run userscripts for various websites with it &amp; already have the extensions installed in their browsers.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwkpyk9">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcbsaq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Torschlusspaniker">Torschlusspaniker</a>
+        <span class="score"> | 34 points</span>
+        <span class="timestamp"> | Mar 27 2018 01:57:07</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for the effort mods but this seems like a very round about way of getting nothing done.</p>
+<p>if anyone can decipher the posts what have we accomplished?</p>
+<p>if anyone can decipher the links what have we accomplished?</p>
+<p>Adding gibberish to links can stop bots but you are not stopping or even really slowing down human agents.</p>
+<p>The problem is that there is no way to establish  trust with this sharing method.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcbsaq">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwczefs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EGDoto">EGDoto</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Mar 27 2018 13:01:22</span>
+    </p>
+    <div class="collapsible">
+        <p>Indeed, if they wanna go with tittles encryption ok, go with encryption but keep it base64 (or anything that already exists and does not require us running some program on our pc), no <strong>local host</strong> and custom extension, there are already existing extensions for base64, at least this way you won't lose half of community.</p>
+<p>Custom extension with some local host is just way to lose community, human agents will install same thing and decode whatever is poste. What makes this different from using base64 in tittles, other than many of us don't wanna run some custom program on our pc?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwczefs">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbeqt1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EGDoto">EGDoto</a>
+        <span class="score"> | 33 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:07:03</span>
+    </p>
+    <div class="collapsible">
+        <p>Yes, set up page where we can copy paste tittle to decode it, site like base64 but for your thing.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbeqt1">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwby3us">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/The-motto">The-motto</a>
+        <span class="score"> | 15 points</span>
+        <span class="timestamp"> | Mar 26 2018 21:59:52</span>
+    </p>
+    <div class="collapsible">
+        <p>How would the search function work?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwby3us">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcu95r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/That_Guuuuuuuy">That_Guuuuuuuy</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 27 2018 10:43:18</span>
+    </p>
+    <div class="collapsible">
+        <p>xtrill runs fine and it needs an extension now</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcu95r">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb6syx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/focus_rising">focus_rising</a>
+        <span class="score"> | 156 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:00:27</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm not really comfortable installing extensions - will the sub still be usable for those who do not install the extension, or is it an all-or-nothing thing?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb6syx">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb8dpb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ElectroXexual">ElectroXexual</a>
+        <span class="score"> | 65 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:25:57</span>
+    </p>
+    <div class="collapsible">
+        <p>I agree with this. If even title is encoded it will become very difficult to browse the sub. I not ok with browsing Reddit on a particular web browser or installing another app for one sub. If at least title is not encoded we can easily choose the content and then decode it from a web browser. And what about "Search" function if title gets encoded?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb8dpb">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbazr7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Riddle_Snowcraft">Riddle_Snowcraft</a>
+        <span class="score"> | -41 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:07:30</span>
+    </p>
+    <div class="collapsible">
+        <p>Well, if you both would rather lose access to all content than taking some time to install a small browser complement that ensures the content's very safety, that's on you.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbazr7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbfbht">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jook11">jook11</a>
+        <span class="score"> | 29 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:16:03</span>
+    </p>
+    <div class="collapsible">
+        <p>What about when browsing on mobile? I frequently save things to come back to on my computer. If the titles are encrypted, you can't see what's here from a mobile app anymore.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbfbht">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbjbzi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Riddle_Snowcraft">Riddle_Snowcraft</a>
+        <span class="score"> | -19 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:16:30</span>
+    </p>
+    <div class="collapsible">
+        <p>That's a pain, but considering the alternative is the content getting deleted faster, I think it's a reasonable price.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbjbzi">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbrgf5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jook11">jook11</a>
+        <span class="score"> | 21 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:16:51</span>
+    </p>
+    <div class="collapsible">
+        <p>Personally, if I have to use a separate app to browse a single subreddit, I'll probably just quit, or start torrenting more again, or something.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbrgf5">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwca3g7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Riddle_Snowcraft">Riddle_Snowcraft</a>
+        <span class="score"> | -9 points</span>
+        <span class="timestamp"> | Mar 27 2018 01:27:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Well, to each their own, I'm not saying it's wrong to dislike the idea. I'm just surprised so many people are downvoting me just because they are uncapable of caring about the permanence of the files. People can be pathetically selfish sometimes.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwca3g7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcimop">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/I_Cant_Ink_Straight">I_Cant_Ink_Straight</a>
+        <span class="score"> | 17 points</span>
+        <span class="timestamp"> | Mar 27 2018 04:09:38</span>
+    </p>
+    <div class="collapsible">
+        <p>You do realize that saying “a browser complement that ensures the content's very safety” is bullshit, right? Even with the extension the content <strong>is not safe</strong>. Why do you guys don't understand that? All it does is just bring another annoyance, base64 was already an annoyance that wasn't even working to “protect the content's safety”. If <strong>you</strong> get the link to the file, <strong>anyone</strong> can get the link to the files, and whoever wants to report it, just do it.</p>
+<p>But if you want your devices/computers to be mining monero or whatever other crypto they want, be part of a botnet, whatever they wanna do once you <strong>explicitely</strong> and with <strong>your consent</strong> gave them a backdoor on your machine, then by all mean, go ahead.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcimop">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbc4pv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | -12 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:25:05</span>
+    </p>
+    <div class="collapsible">
+        <p>ATM, the plan is to give the uploaders an option to encode their content using the extension. If they chose to do that, then yes, you will need the extension. The extension source code will be made public, if that helps.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbc4pv">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbchnh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/eigengrau82">eigengrau82</a>
+        <span class="score"> | 68 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:30:36</span>
+    </p>
+    <div class="collapsible">
+        <p>Have you considered implementing the cipher as a greasemonkey/tampermonkey extension instead? Folks might find that much more acceptable than running an extension and a native OS process.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbchnh">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbd1ge">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | -38 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:39:02</span>
+    </p>
+    <div class="collapsible">
+        <p>I would agree, but making the cipher public would defeat the purpose of this entire project. The source code of the native application will be made public as well. Everything, except the cipher.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbd1ge">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbiiv5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/_C0D32_">_C0D32_</a>
+        <span class="score"> | 91 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:04:22</span>
+    </p>
+    <div class="collapsible">
+        <p>Do you realize you just reinvented DRM, which we all here know doesn't work anyway because you can't give something to somebody without giving it to them?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbiiv5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbdpel">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/eigengrau82">eigengrau82</a>
+        <span class="score"> | 56 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:49:21</span>
+    </p>
+    <div class="collapsible">
+        <p>How would you keep the key secret when using an extension or a server? Wait, so would you require folks to run a binary blob (in which case it might also not be trivial to keep the key secret)? Since you said you’d open up the sources, I was expecting people could run their own builds at least.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbdpel">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbie8f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lebbe">lebbe</a>
+        <span class="score"> | 84 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:02:22</span>
+    </p>
+    <div class="collapsible">
+        <p>This sounds like a scam honestly. They want you to just "trust them" and run some secret code on your local computer. God knows what that secret code <strong>really</strong> does? It could be mining bitcoin or planting some incriminating content in your computer they then use to blackmail you with.</p>
+<p>What a trainwreck this sub has become.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbie8f">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbjo8n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/zhico">zhico</a>
+        <span class="score"> | 23 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:21:38</span>
+    </p>
+    <div class="collapsible">
+        <p>FBIlinks.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbjo8n">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbllvm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:50:23</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbllvm">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwblt9v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lebbe">lebbe</a>
+        <span class="score"> | 14 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:53:23</span>
+    </p>
+    <div class="collapsible">
+        <p>He said <em>"Everything, except the cipher."</em></p>
+<p>Which means they're asking you to install something non-public. Hence "secret"</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwblt9v">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbv0pu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AWWseGJYTE">AWWseGJYTE</a>
+        <span class="score"> | 35 points</span>
+        <span class="timestamp"> | Mar 26 2018 21:10:25</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>Everything, except the cipher.</p>
+</blockquote>
+<p>This defeats the whole purpose of making it open source. Security by obscurity isn't going to work in a case like this and just makes this whole thing look very fishy.</p>
+<p>I'm sure a lot of people here are using VPNs and other measures to protect their privacy. A lot of people are pirating because they disagree with intrusive DRM methods. And you want them to install some webserver on their machines that was coded by someone somewhere and that isn't even completely open source? Just to decode some stuff? I really don't think that this a a good idea and i would strongly advise everyone to not install an extension like this, as long as it's not completely open source, transparent and as unintrusive as possible.</p>
+<p>You should really rethink this. It doesn't make sense and looks suspicious as fuck to people who value their privacy and the integrity of their devices.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbv0pu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwf8i53">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hottycat">hottycat</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 28 2018 15:30:12</span>
+    </p>
+    <div class="collapsible">
+        <p><a href="https://en.wikipedia.org/wiki/Security_through_obscurity">So security through obscurity, got it.</a> Not like this is the first time someone had  the same idea when it comes to cryptography and is widely regarded <a href="https://en.wikipedia.org/wiki/Kerckhoffs%27_principle">as completely thrown out the window since 1883!</a>.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwf8i53">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbcgax">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/focus_rising">focus_rising</a>
+        <span class="score"> | 18 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:30:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for the reply, and yes, that definitely does help if the code will be public - that's where my discomfort was coming from.</p>
+<p>edit: the cipher will not be public... any good geek knows you don't roll your own crypto!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbcgax">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbnfeo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lebbe">lebbe</a>
+        <span class="score"> | 42 points</span>
+        <span class="timestamp"> | Mar 26 2018 19:17:25</span>
+    </p>
+    <div class="collapsible">
+        <p>Turns out the code won't be public after all: <a href="https://www.reddit.com/r/megalinks/comments/8799w6/update_subreddit_status_weekly_discussion_thread/dwbd1ge/"><em>"Everything, except the cipher."</em></a></p>
+<p>So they're asking you to install some secret code that in reality could be doing anything they want with your computer.</p>
+<p>This ploy has "scam" written all over it</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbnfeo">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbpg75">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cheekyfractal">cheekyfractal</a>
+        <span class="score"> | 33 points</span>
+        <span class="timestamp"> | Mar 26 2018 19:47:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah. One of the great things about this sub is how straight-forward and transparent it is. I don't have to worry about getting viruses by using it. </p>
+<p>But installing a partially closed source browser extension is starting to seem sketchy...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbpg75">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbqkm3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lebbe">lebbe</a>
+        <span class="score"> | 29 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:03:42</span>
+    </p>
+    <div class="collapsible">
+        <p>It's also completely unnecessary. If they truly wanted to use this secret cypher thing they cooked up they could easily set up a website to do just that. Just like the base64 decode website.</p>
+<p>But no, for some unknown reason they won't do that but instead want everyone to install some secret software on your computers.</p>
+<p>It makes absolutely no sense unless they want to do something sketchy with your computers.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbqkm3">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbrwee">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Caelondian_Brushers">Caelondian_Brushers</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:23:22</span>
+    </p>
+    <div class="collapsible">
+        <p>Completely sincere and honestly asking.</p>
+<p>Wouldn't whoever is watching just use base64 or equivalent to decode the website, then send notices to Reddit to give warnings or shut it down?</p>
+<p>I wouldn't say scam from the get-go.  More of just less transparency now just to protect it currently.</p>
+<p>Then again, whoever is watching could just install it as well.</p>
+<p>He did say that "but the vigenere cipher will unfortunately be closed source, <strong>for now</strong>."</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbrwee">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbs9kd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lebbe">lebbe</a>
+        <span class="score"> | 30 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:28:44</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>Wouldn't whoever is watching just use base64 or equivalent to decode the website, then send notices to Reddit to give warnings or shut it down?</p>
+</blockquote>
+<p>Which is absolutely no different from a browser extension: whoever watching just install the browser extension to decode the website, then send notices to Reddit to shut it down.</p>
+<p>Which is why I said this browser extension idea is completely unnecessary: it doesn't buy you anything. At all.</p>
+<p>The only thing the browser extension does is to give its creators unlimited access to your computer to do whatever they want. Hence it is very sketchy.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbs9kd">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbwdis">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AWWseGJYTE">AWWseGJYTE</a>
+        <span class="score"> | 22 points</span>
+        <span class="timestamp"> | Mar 26 2018 21:31:52</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>The only thing the browser extension does is to give its creators unlimited access to your computer to do whatever they want.</p>
+</blockquote>
+<p>It's also a possible attack vector for anyone else who is trying to get access to your machine. I'm certainly not going to run some webserver-thingy some random dude coded in C#, to solve a problem with this sketchy security by obscurity approach.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbwdis">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbsijt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Caelondian_Brushers">Caelondian_Brushers</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:32:24</span>
+    </p>
+    <div class="collapsible">
+        <p>Then the vigenere cipher might as well be open source as well.  At least there's an attempt to layer the process.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbsijt">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbssfk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lebbe">lebbe</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:36:31</span>
+    </p>
+    <div class="collapsible">
+        <p>Agreed. Which is why this whole secret browser extension thing doesn't pass the smell test. It's sketchy af.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbssfk">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc06mh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:34:43</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc06mh">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwcmcnr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BetrayerOfBetrayers">BetrayerOfBetrayers</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 27 2018 05:45:51</span>
+    </p>
+    <div class="collapsible">
+        <p>Especially since the first part of the link is always mega.co.nz. Talk about making known-plaintext attacks easy!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcmcnr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbyvlr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/PhiWeaver">PhiWeaver</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:12:41</span>
+    </p>
+    <div class="collapsible">
+        <p>Who are "they" exactly? 
+I think people are being a bit paranoid.  </p>
+<p>You can't expose the cypher, or links will be taken down.<br>
+But maybe it's better to run the whole process via command-line, rather than an extension.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbyvlr">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbzgz4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/I_Cant_Ink_Straight">I_Cant_Ink_Straight</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:22:36</span>
+    </p>
+    <div class="collapsible">
+        <p>All this extension/encrypting links business is flawed from the beginning in the first place, if <strong>you</strong> can get the link to download the file, I can guarantee you that the ones that wants to get it taken down will get the link to the file. All they have to do? Exactly what you did to get the link in the first place. All this base64 link "hiding" is a farce in the first place, it's not even doing anything, it's just giving you a sense of security, it really isn't.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbzgz4">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbzfe3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lebbe">lebbe</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:21:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Putting up a website to decode links isn't "exposing" the cypher any more than putting up a browser extension that anyone can download and install.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbzfe3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwf9xa0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Lunatic2014">Lunatic2014</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 28 2018 15:51:34</span>
+    </p>
+    <div class="collapsible">
+        <p>This is honestly a terrible idea that needs to be reevaluated. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwf9xa0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbmwkm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/I_Cant_Ink_Straight">I_Cant_Ink_Straight</a>
+        <span class="score"> | 98 points</span>
+        <span class="timestamp"> | Mar 26 2018 19:09:32</span>
+    </p>
+    <div class="collapsible">
+        <p>You do realize that this is not gonna work in the end, right? The people that file DMCA or Reddit claims can just install your little extension themselves. It does absolutely nothing. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbmwkm">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb3q6a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Umbresp">Umbresp</a>
+        <span class="score"> | 51 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:08:02</span>
+    </p>
+    <div class="collapsible">
+        <p>My life has meaning again.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3q6a">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbro4z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/plain_dust">plain_dust</a>
+        <span class="score"> | 46 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:19:59</span>
+    </p>
+    <div class="collapsible">
+        <p>What happen when the people that do the DMCA just install the extension? They will have instant access to all the links.</p>
+<p>Just make it base64 or make the encryption that can only be decoded with a website you have to visit.</p>
+<p>Don't make it easy for the link to be take down by a simply extension installation.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbro4z">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwc0bd3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/-TheBabadook">-TheBabadook</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:36:56</span>
+    </p>
+    <div class="collapsible">
+        <p>Couldn't you simply say "Don't make it easy for the link to be taken down simple by visiting a website".!?</p>
+<p>What's the difference between extension and visiting base64?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc0bd3">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwdqr6s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jomiran">jomiran</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 27 2018 20:07:02</span>
+    </p>
+    <div class="collapsible">
+        <p>You do understand that there is no need to visit websites, right?  Most text editors will encode/decode for you or have the option to install the extension to add that function.  You can also add the following to your bookmarks bar.</p>
+<pre><code>javascript:function c(){}c.prototype.get=function(){var a="";window.getSelection?a=window.getSelection().toString():document.selection&amp;&amp;"Control"!=document.selection.type&amp;&amp;(a=document.selection.createRange().text);return a};c.prototype.set=function(a){if(window.getSelection){var b=window.getSelection();b.rangeCount&amp;&amp;(b=b.getRangeAt(0),b.deleteContents(),b.insertNode(document.createTextNode(a)))}else document.selection&amp;&amp;document.selection.createRange&amp;&amp;(b=document.selection.createRange(),b.text=a)};try{var d=new c,e=atob(d.get());d.set(e)}catch(a){alert(a.message)};
+</code></pre>
+<p>Then you just highlight the encoded line and click on the bookmark.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwdqr6s">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwdr7ns">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/-TheBabadook">-TheBabadook</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 27 2018 20:13:49</span>
+    </p>
+    <div class="collapsible">
+        <p>I tried to do what you said and it didn't work :( (I'm fairly technologically illiterate.)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwdr7ns">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwej7pq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DvApps">DvApps</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 28 2018 04:19:48</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for that, it works great!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwej7pq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwce10n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dmjohn0x">dmjohn0x</a>
+        <span class="score"> | 28 points</span>
+        <span class="timestamp"> | Mar 27 2018 02:37:48</span>
+    </p>
+    <div class="collapsible">
+        <p>Im not letting you crypto mine off of me. Browser extention is stupid.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwce10n">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbybnr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jeb64w">jeb64w</a>
+        <span class="score"> | 26 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:03:22</span>
+    </p>
+    <div class="collapsible">
+        <p>this extension business is a cruel sick joke.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbybnr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbbjp6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/gitzip">gitzip</a>
+        <span class="score"> | 24 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:16:08</span>
+    </p>
+    <div class="collapsible">
+        <p>that freeze was rather pointless in every way. It wouldnt have prevented a takedown anyways.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbbjp6">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbcho0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | -3 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:30:36</span>
+    </p>
+    <div class="collapsible">
+        <p>We didn't expect it to, either. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbcho0">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbzy9u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/auximenes">auximenes</a>
+        <span class="score"> | 21 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:30:45</span>
+    </p>
+    <div class="collapsible">
+        <p>Then you admit you did it for no reason, and as such are unfit for moderation duty?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbzy9u">permalink</a>
+        </p>
+        <div class="comment" id="t1_dweja2i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Anaron">Anaron</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 28 2018 04:21:20</span>
+    </p>
+    <div class="collapsible">
+        <p>That's assuming it was OP's decision and his or hers alone. If that's the case, then I don't think a single error in judgment is reason to say that someone is "unfit for moderation duty".</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dweja2i">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwelh9n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/auximenes">auximenes</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 28 2018 05:15:57</span>
+    </p>
+    <div class="collapsible">
+        <p>It's a lot more than a single error. One led to another and to another -- all of which sheds a light on what kind of a shill OP is.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwelh9n">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbdrxs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/gitzip">gitzip</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:50:30</span>
+    </p>
+    <div class="collapsible">
+        <p>well c.g. for keeping the subreddit (for now :/)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbdrxs">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbhlt7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GoslingIchi">GoslingIchi</a>
+        <span class="score"> | 24 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:50:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Welcome back!</p>
+<p>Otherwise, I have to say that I'm rather opposed to browser extensions.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbhlt7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbj6a6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Excess">Excess</a>
+        <span class="score"> | 24 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:14:11</span>
+    </p>
+    <div class="collapsible">
+        <p>I guess this means we won't be able to use the search anymore, seeing as the titles would be encrypted?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbj6a6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbp62l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/uberafc">uberafc</a>
+        <span class="score"> | 22 points</span>
+        <span class="timestamp"> | Mar 26 2018 19:43:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Honestly it might have just been better to just move off of reddit. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbp62l">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb3pzx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/uwotm8_888">uwotm8_888</a>
+        <span class="score"> | 20 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:07:57</span>
+    </p>
+    <div class="collapsible">
+        <p>Feel free to use my sub r/megahosting u/indigo6alpha</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3pzx">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbbz5q">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:22:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Hey thanks! I will DM you on discord. I'm assuming you have the same username there?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbbz5q">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbej9r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/uwotm8_888">uwotm8_888</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:03:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Yup and i jave sent ypu a mod request. I dont have many sub so we can just use it even without going private</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbej9r">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbekk4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/uwotm8_888">uwotm8_888</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:04:14</span>
+    </p>
+    <div class="collapsible">
+        <p>Yo im on discord as maximiion#0192</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbekk4">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc0r2l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/akkbar">akkbar</a>
+        <span class="score"> | 20 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:44:20</span>
+    </p>
+    <div class="collapsible">
+        <p>people will not install some browser extension.. sounds so much like a scam that even if it isnt, people will think it is. would prob cut userbase by 65-70%</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc0r2l">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc2g7j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/divinekaos">divinekaos</a>
+        <span class="score"> | 18 points</span>
+        <span class="timestamp"> | Mar 26 2018 23:13:52</span>
+    </p>
+    <div class="collapsible">
+        <p>Nope.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc2g7j">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbjcb0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/abotokia">abotokia</a>
+        <span class="score"> | 17 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:16:39</span>
+    </p>
+    <div class="collapsible">
+        <p>If the titles are encrypted, will we be able to use the search bar and search shortcuts (side bar)?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbjcb0">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwcmbpo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AnonymousHerbMan">AnonymousHerbMan</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 27 2018 05:45:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Small variations in the title will mess up any searches. I don't think it's a good idea</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcmbpo">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcmr31">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AnonymousHerbMan">AnonymousHerbMan</a>
+        <span class="score"> | 15 points</span>
+        <span class="timestamp"> | Mar 27 2018 05:57:53</span>
+    </p>
+    <div class="collapsible">
+        <p>I think an offsite solution is still the best. Whether it's a reddit clone hosted on a server someone pays for, or a forums, something far away from reddit is the best bet. Encryption might work for a while, but who's to say it'll stop reddit from coming down on you in the future?</p>
+<p>The forums is working great for us over at /r/megaporn. Sure, we got a smaller community but the organization and search works well with a forums. Encryption is going to mess up search results, so /r/megalinks will be more of a RSS feed than a database of sorts. I love being able to pop on and search for movies I can't find other places.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcmr31">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb3fp1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ex_planelegs">ex_planelegs</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:02:40</span>
+    </p>
+    <div class="collapsible">
+        <p>Will you restore any deleted posts?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3fp1">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb3hdh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/iPhunwa2">iPhunwa2</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:03:31</span>
+    </p>
+    <div class="collapsible">
+        <p>No posts were deleted as submissions were restricted during the time. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3hdh">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb5j6o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/linuxwes">linuxwes</a>
+        <span class="score"> | 31 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:39:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Comments mentioning another site were deleted, and some users claim they were banned.  I'd like an explanation.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5j6o">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb79k6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/-TheBabadook">-TheBabadook</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:08:04</span>
+    </p>
+    <div class="collapsible">
+        <p>I figured they were warned for mentioning it (IDK why), but then kept spamming the link after repeated warnings. Resulting in a ban</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb79k6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb6zzm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/iPhunwa2">iPhunwa2</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:03:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Users? The one user who is banned has already been talked to through mod mail. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb6zzm">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbztc3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/auximenes">auximenes</a>
+        <span class="score"> | 19 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:28:25</span>
+    </p>
+    <div class="collapsible">
+        <p>Nice way of avoiding the question by only answering half of the post.</p>
+<p>https://ceddit.com/r/megalinks/comments/8684wq/announcement_submissions_restricted_till_further/?sort=new</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbztc3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb6gvv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nuvpr">nuvpr</a>
+        <span class="score"> | -13 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:54:58</span>
+    </p>
+    <div class="collapsible">
+        <p>That "other site" is pretending to be this subreddit without any affiliation whatsoever, and is being run by people even more happy about censorship than reddit. It's only fair this trash doesn't get advertised here.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb6gvv">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb7430">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/linuxwes">linuxwes</a>
+        <span class="score"> | 15 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:05:35</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>That "other site" is pretending to be this subreddit without any affiliation whatsoever</p>
+</blockquote>
+<p>In what way?  Are you suggesting that some user is confused thinking they are on this subreddit when really they are on the other site's similarly named sub?  That seems quite a stretch.</p>
+<blockquote>
+<p>is being run by people even more happy about censorship than reddit</p>
+</blockquote>
+<p>I understand if you were trying to move all your subs over there that would be very problematic.  But using it as an alternative for stuff reddit bans, assuming they are OK with it, seems like a nice backup plan.  I really don't care about the politics of the folks hosting something like /r/megalinks, provided I can get 90% of what I'm looking for I can dig up the rest elsewhere.  I could deal with this sub being on "that other right wing site" or "that other left wing site" equally.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb7430">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwble19">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nuvpr">nuvpr</a>
+        <span class="score"> | -6 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:47:10</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>In what way?</p>
+</blockquote>
+<p>This one guy co-opted the name, the sidebar, the post format and everything from this subreddit and put it there. Then came here advertising it as if it's where this subreddit moved, which is not true in the slightest.</p>
+<blockquote>
+<p>I could deal with this sub being on "that other right wing site" or "that other left wing site" equally.</p>
+</blockquote>
+<p>Same here, others' political views are none of my concern no matter what they are. It's only a problem to me when the admins of the website I'm on go <em>out</em> of their way to censor content because it doesn't align with their views.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwble19">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc8u93">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DaveSheepel">DaveSheepel</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 27 2018 01:05:48</span>
+    </p>
+    <div class="collapsible">
+        <p>Are you seriously defending censorship while complaining about censorship? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc8u93">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwcryfi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nuvpr">nuvpr</a>
+        <span class="score"> | -1 points</span>
+        <span class="timestamp"> | Mar 27 2018 09:11:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Do you call removing spam censorship?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcryfi">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwda19c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DaveSheepel">DaveSheepel</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 27 2018 16:00:52</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't label posts I disagree with "spam". There is a valid reason to post alternative backup sites.</p>
+<p>Now just admit you're full of shit.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwda19c">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwdhr08">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nuvpr">nuvpr</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 27 2018 17:54:22</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>I don't label posts I disagree with "spam"</p>
+</blockquote>
+<p>Not when they're posted a fuckton times in one thread, and advertised as something they're not.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwdhr08">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbgbi7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JustForRobins">JustForRobins</a>
+        <span class="score"> | -8 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:31:17</span>
+    </p>
+    <div class="collapsible">
+        <p>That site just censors alt right views, it's basically the lefts answer to voat. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbgbi7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbkj8v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nuvpr">nuvpr</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 26 2018 18:34:29</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>it's basically the lefts answer to voat</p>
+</blockquote>
+<p>Two sides of the same coin then</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbkj8v">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwc5bea">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JustForRobins">JustForRobins</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 27 2018 00:04:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Nah ones full of racist shitbags and the other full of communists</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc5bea">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwcrwth">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nuvpr">nuvpr</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 27 2018 09:09:28</span>
+    </p>
+    <div class="collapsible">
+        <p>These communists are racist shitbags too but towards different races.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcrwth">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb3s1c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/uwotm8_888">uwotm8_888</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:08:58</span>
+    </p>
+    <div class="collapsible">
+        <p>An user deleted all of their posts</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3s1c">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb3umh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/iPhunwa2">iPhunwa2</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:10:15</span>
+    </p>
+    <div class="collapsible">
+        <p>If a user decides to remove their posts, there really is no way for us to recover them. Only posts that were removed by automod or another moderator can be recovered. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3umh">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbzsku">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/auximenes">auximenes</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:28:04</span>
+    </p>
+    <div class="collapsible">
+        <p>You're lying.</p>
+<p>https://ceddit.com/r/megalinks/comments/8684wq/announcement_submissions_restricted_till_further/?sort=new</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbzsku">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwc74jl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Cqouta">Cqouta</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 27 2018 00:35:47</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm staying at raddle. Faster load times and no ads. I can finally use my computer to post links as opposed to use my tablet to post links.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc74jl">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb42yl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/uwotm8_888">uwotm8_888</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:14:19</span>
+    </p>
+    <div class="collapsible">
+        <p>I realize that i was just clearing it up for the op</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb42yl">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcooj6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/IAmAlreadyAGod">IAmAlreadyAGod</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 27 2018 07:01:25</span>
+    </p>
+    <div class="collapsible">
+        <p>The more you think about this, the more you realise this won't work.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcooj6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb7u86">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BungusMcFungus">BungusMcFungus</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:17:22</span>
+    </p>
+    <div class="collapsible">
+        <p>What license will the extension and server be under?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb7u86">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbceje">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | -14 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:29:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Both the extension and the server will have MIT licenses, but the vigenere cipher will unfortunately be closed source, for now.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbceje">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbzwdf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/auximenes">auximenes</a>
+        <span class="score"> | 40 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:29:51</span>
+    </p>
+    <div class="collapsible">
+        <p>No one is going to use it, you're literally wasting your time.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbzwdf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwdgo77">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/icze4r">icze4r</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 27 2018 17:38:35</span>
+    </p>
+    <div class="collapsible">
+        <p>Browser extension? 'Community'? The fuck are you talking about? Run a local program? A web server?</p>
+<p>Somebody just fucking make another subreddit. This is retarded. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwdgo77">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb4bst">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mrfrodough">Mrfrodough</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:18:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Any plans on the browser extension will be on mobile as well?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb4bst">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb5l77">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/uwotm8_888">uwotm8_888</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:40:24</span>
+    </p>
+    <div class="collapsible">
+        <p>Use firefox on mobile</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5l77">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb5yg3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mrfrodough">Mrfrodough</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:46:31</span>
+    </p>
+    <div class="collapsible">
+        <p>I do but wasnt sure if an extension that gets put out for pc automatically works on mobile or it has to be developed seperately.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5yg3">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbc1kz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:23:45</span>
+    </p>
+    <div class="collapsible">
+        <p>Firefox Mobile will support the PC extension, but we're looking into alternative solutions for mobile, like patching the official reddit APK.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbc1kz">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbc67p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mrfrodough">Mrfrodough</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:25:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Atleast the extension would serve for awhile, i didnt know you could basicly mod the official app. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbc67p">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwjmmzp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/rrrronny">rrrronny</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 30 2018 19:17:26</span>
+    </p>
+    <div class="collapsible">
+        <p>next brilliant idea, we will all download it, o mighty master.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwjmmzp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbbl86">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/roryjacobevans">roryjacobevans</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:16:47</span>
+    </p>
+    <div class="collapsible">
+        <p>Can you address how search and tags will be impacted? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbbl86">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb5cko">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/PIP_SHORT">PIP_SHORT</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:36:19</span>
+    </p>
+    <div class="collapsible">
+        <p>Is the Discord thing not happening anymore?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5cko">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwbgr0w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sharklaser5432">sharklaser5432</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:37:49</span>
+    </p>
+    <div class="collapsible">
+        <p>The group still exists but it's a mess to navigate.  Even in the separate channel that is just for filled requests there are tons of irrelevant posts that clutter up the feed.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbgr0w">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbnhls">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dylmye">dylmye</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 26 2018 19:18:18</span>
+    </p>
+    <div class="collapsible">
+        <p>slightly worried for you guys as this might have legal implications. you're going from hands-free platform moderation to what could be seen as active assistance. just watch your backs for everyone's sake and stay safe please. :) </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbnhls">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb4syz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/21SixtyP">21SixtyP</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:27:00</span>
+    </p>
+    <div class="collapsible">
+        <p>how will mobile users browse the sub? i dont think even android has browser extensions?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb4syz">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb5hqi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GeraldoDeRifia">GeraldoDeRifia</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:38:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Firefox does.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5hqi">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb8iln">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/swd120">swd120</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:28:05</span>
+    </p>
+    <div class="collapsible">
+        <p>an app that does the encoding/decoding perhaps?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb8iln">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb5b1v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/rule2productions">rule2productions</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:35:37</span>
+    </p>
+    <div class="collapsible">
+        <p>I just discovered this subreddit yesterday and fell in love with what you guys do. I've already found so much content that doesn't seem to be available anywhere else. I'm glad to hear this community will survive. Thanks for all you do.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5b1v">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb5mb0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Plays_You_Wonderwall">Plays_You_Wonderwall</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:40:54</span>
+    </p>
+    <div class="collapsible">
+        <p>Time to stock up on storage drives. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5mb0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb4hc7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Axelstrife">Axelstrife</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:21:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Im a little confused how will users be able to read the title if it's encoded?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb4hc7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb4rav">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:26:14</span>
+    </p>
+    <div class="collapsible">
+        <p>The browser extension will decode it.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb4rav">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb4x5z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Axelstrife">Axelstrife</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:29:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Ok I like it but mobile and tablet users will not be able to use extensions afaik.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb4x5z">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb51qp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:31:12</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah, we've considered that. We have some ideas on how to solve that issue (patching reddit android app is one of them), but nothing has been decided.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb51qp">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwb83qs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JRx117">JRx117</a>
+        <span class="score"> | 16 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:21:37</span>
+    </p>
+    <div class="collapsible">
+        <p>What about iOS?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb83qs">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwf3sgh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Jake548675">Jake548675</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 28 2018 14:16:05</span>
+    </p>
+    <div class="collapsible">
+        <p>Sorry, but obfuscation does little to nothing, because there also are humans reporting the links, not just bots. You should prepare a place to meet and regroup as a real "plan B" in the event this subreddit gets banned. It's going to happen eventually as Reddit gets more commercialized. The question isn't if, but when.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwf3sgh">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwdixo1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/QSCFE">QSCFE</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 27 2018 18:11:46</span>
+    </p>
+    <div class="collapsible">
+        <h1><strong><em>reddit source code is available on <a href="https://github.com/reddit-archive/reddit">github</a>, just install it on your own server or find good piracy friendly hosting and buy the cost from the adds, and that how you solve the ban or restrictions of reddit rules also no more DMCA takedowns because you will never delete shit (except if they send MEGA DMCA takedowns) and the feels and look of the site will be the same just more freedom</em></strong></h1>
+<p>.....<br>
+/u/indigo6alpha /u/iPhunwa2 /u/vcdupper /u/GoldFuzzy /u/siomi  /u/focus_rising /u/plain_dust  </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwdixo1">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwehzzw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/rED_kILLAR">rED_kILLAR</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 28 2018 03:53:38</span>
+    </p>
+    <div class="collapsible">
+        <p>when you tag more than 3 people per comment it doesn't alert any of them</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwehzzw">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwfbeak">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/QSCFE">QSCFE</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 28 2018 16:13:34</span>
+    </p>
+    <div class="collapsible">
+        <p>didn't know that, thanks for the info.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwfbeak">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb8nzt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sniperkitty10">sniperkitty10</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:30:29</span>
+    </p>
+    <div class="collapsible">
+        <p>Is there an updated discord invitation?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb8nzt">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbetid">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elijah369">elijah369</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:08:13</span>
+    </p>
+    <div class="collapsible">
+        <p>Hope u/jorma11 uploads his stuff again</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbetid">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwby61m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/PhiWeaver">PhiWeaver</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:00:51</span>
+    </p>
+    <div class="collapsible">
+        <p>Might not need a browser extension, the command-line could probably do everything itself, i.e load the sub posts as text, and also do the decrypting and downloading. </p>
+<p>Could probably be done by forking megatools.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwby61m">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc97h2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/saberskill">saberskill</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 27 2018 01:12:06</span>
+    </p>
+    <div class="collapsible">
+        <p>u/indigo6alpha need this subs discord link. The one in sidebar is expired</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc97h2">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb5sxu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/greatflicks">greatflicks</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:43:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you for being proactive.  A few days of thought and patience will help the sub last longer.  </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb5sxu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc1fbo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/klkfahu">klkfahu</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:55:59</span>
+    </p>
+    <div class="collapsible">
+        <p>Even though it wasn't needed, thanks for taking measures to preserve/protect the sub!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc1fbo">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcbw5d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/a200tristan">a200tristan</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 27 2018 01:59:00</span>
+    </p>
+    <div class="collapsible">
+        <p>I very much appreciate the hard work and ingenuity going into this project. Best of luck and long live Mega</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcbw5d">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwdqkb2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MrTattyBojangles">MrTattyBojangles</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 27 2018 20:04:13</span>
+    </p>
+    <div class="collapsible">
+        <p>Glad it's all sorted out. Welcome back MEGAlinks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwdqkb2">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwf4vml">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/chapling1313">chapling1313</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 28 2018 14:33:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Why not try somehtign like TPB's Pirate Browser? Mitigates much of the concern of the users and helps keep the community going.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwf4vml">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwf9t9o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Lunatic2014">Lunatic2014</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 28 2018 15:49:54</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't want to use some random extension running from some random person's PC. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwf9t9o">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwgkk2y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MaccasAU">MaccasAU</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 29 2018 05:02:57</span>
+    </p>
+    <div class="collapsible">
+        <p>please please just keep megalinks as it is and if it gets banned move to a diffrent websute. easy. Could have a list of regular uploaders and downloaders to PM and everyone could just follow from website to website, or make Megalinks private.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwgkk2y">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwh22xk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/kbverde">kbverde</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 29 2018 13:47:35</span>
+    </p>
+    <div class="collapsible">
+        <p>Just discover this subreddit and wanted to thank everybody, the admins, contributors, general public, everybody. Just wow amazing subreddit, its going help a lot for a few months away from home. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwh22xk">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwhxenh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Derk_cone">Derk_cone</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 29 2018 21:31:56</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't think the extension works on Firefox quantum?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwhxenh">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwiebg7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sniperkitty10">sniperkitty10</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 30 2018 02:24:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Was anyone else banned from the discord? I can't seem to find a reason as to why, but my account definitely can't rejoin.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwiebg7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwisucm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ihavenogreypoupon">ihavenogreypoupon</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 30 2018 08:51:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Lots of people got banned when the mods decided to clear out any mega.nz links, it's possible you didn't get unbanned afterwards. what was your username?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwisucm">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwj1dfb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sniperkitty10">sniperkitty10</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 30 2018 13:27:04</span>
+    </p>
+    <div class="collapsible">
+        <p>SK10#5093</p>
+<p>Ah I see, I noticed the new rule about only posting encrypted links, but that was announced after I was banned so that makes sense. Thanks</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwj1dfb">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwiw7f4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mrizzle1991">mrizzle1991</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 30 2018 11:07:17</span>
+    </p>
+    <div class="collapsible">
+        <p>I’m glad that the sub lives on!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwiw7f4">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwj7xlq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MrKyleOwns">MrKyleOwns</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 30 2018 15:23:49</span>
+    </p>
+    <div class="collapsible">
+        <p>With this new browser extension mobile users will no longer be allowed to download. Is this on purpose?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwj7xlq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbghps">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Behalter">Behalter</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 26 2018 17:33:52</span>
+    </p>
+    <div class="collapsible">
+        <p>So, once the extension is implemented, posters will choose whether or not to encode their links, or just the title/text of the post itself? Dosen't making it optional still leave the sub open for a potential shut down? Will mods be going back over old posts and encoding them to ensure that a shut down can't be linked to older content still available on the sub?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbghps">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcl7hm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/iMadeThisToSayThanks">iMadeThisToSayThanks</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 27 2018 05:13:24</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>Chrome/Firefox/Opera</p>
+</blockquote>
+<p>no chance of a Safari extension?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcl7hm">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwcuaf2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Harry_sexy">Harry_sexy</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 27 2018 10:44:32</span>
+    </p>
+    <div class="collapsible">
+        <p>yuck!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcuaf2">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc1nmw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DeathtotheCavalry">DeathtotheCavalry</a>
+        <span class="score"> | -1 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:59:57</span>
+    </p>
+    <div class="collapsible">
+        <p>P R O F I T &lt;3</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc1nmw">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbyl68">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/heavymetalelf">heavymetalelf</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 26 2018 22:07:48</span>
+    </p>
+    <div class="collapsible">
+        <p>I just want to say I really appreciate the effort that is going into trying to save/salvage the sub and the community. </p>
+<p>While a browser extension may not be ideal, I think if you are going to bitch about it, then you're not required to install or use it. After all, we're accessing links that people have shared that often times contains copyrighted material to which they do not own the copyright, and to which you, the link-clicker certainly do not own the copyright to. </p>
+<p>Nothing in that scenario says "do it to my exact specifications because it must be my way or no way at all". It sounds a lot more like a bunch of people being ingrateful of the time and effort being spent to develop a method to continue on in the face of systemic changes that is not perfect.</p>
+<p>I would argue that if you trust the mods to run the sub and you trust the people providing uploads, that a browser extension or an encryption program is reasonable. I also feel it is reasonable to not publish the cypher, because an encryption is only valid while the key remains secret. This is aside from the speculated usefulness of any given solution.</p>
+<p>The fact of the matter is that times are changing, as much as we may not like it, and we have to change with them. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbyl68">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcfhjh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/kuretake">kuretake</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 27 2018 03:05:28</span>
+    </p>
+    <div class="collapsible">
+        <p>This is awesome! I'm also a little bummed because I just spent a ton of time writing a decoder bookmarklet :P</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcfhjh">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwd9j5n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Tagliavini">Tagliavini</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 27 2018 15:53:26</span>
+    </p>
+    <div class="collapsible">
+        <p>MY WD EasyStore Appears to have Died. </p>
+<p>SSHHHHIIIITTTT!!!!!!</p>
+<p>I hooked it up to my laptop on Sunday and I noticed (after a short while) that it didn't show up. I tried a few different usb ports and nothing. </p>
+<p>I can hear it spinning, but it's repeating the same pattern of clicks and scratchy sounds over and over... almost like morse code.</p>
+<p>I have roughly 2.5-3TB of stuff on it... is there anything I can do? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwd9j5n">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwjfjnv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dhawal402">dhawal402</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 30 2018 17:23:26</span>
+    </p>
+    <div class="collapsible">
+        <p>Where’s the drop - deadmau5 available on tidal. Can anyone provide download? Flac? 🙏🏻</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwjfjnv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwk9r2z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/_stevenjus_">_stevenjus_</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 31 2018 02:40:00</span>
+    </p>
+    <div class="collapsible">
+        <p>does anyone have Swiss Army Man (Original Motion Picture Soundtrack) on flac format????         <br>
+i only have the amazing soundtrack of this movie in mp3 but i havent been able to find it on flac format through mega. I was wondering if anyone were to have it or has the link to it. im sure its out there through torrent but thats something i cant do because i dont have a vpn.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwk9r2z">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb3j8e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Wildmen03">Wildmen03</a>
+        <span class="score"> | -3 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:04:29</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for the update, I look forward to see what you all come up with. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb3j8e">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb6atw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/R3a1ityCheque">R3a1ityCheque</a>
+        <span class="score"> | -3 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:52:08</span>
+    </p>
+    <div class="collapsible">
+        <p>back in the game!</p>
+<p>Hope this works well, or that we go down in glorious flames!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb6atw">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb6fty">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/pp33320y">pp33320y</a>
+        <span class="score"> | -3 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:54:28</span>
+    </p>
+    <div class="collapsible">
+        <p>So glad that we are back. Thank you Mods &lt;3</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb6fty">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwc1plb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DeathtotheCavalry">DeathtotheCavalry</a>
+        <span class="score"> | -3 points</span>
+        <span class="timestamp"> | Mar 26 2018 23:00:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Great work mods</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwc1plb">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcf3tk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/PhiWeaver">PhiWeaver</a>
+        <span class="score"> | -4 points</span>
+        <span class="timestamp"> | Mar 27 2018 02:58:08</span>
+    </p>
+    <div class="collapsible">
+        <p>The extension can be a good idea if done correctly.  </p>
+<p>It won't stop individual links from being found and taken down, but it will provide plausible deniability for the existence of the subreddit, as long they don't call the extension megalinks downloader or something too obvious.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcf3tk">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb554p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/red_storm_risen">red_storm_risen</a>
+        <span class="score"> | -5 points</span>
+        <span class="timestamp"> | Mar 26 2018 14:32:50</span>
+    </p>
+    <div class="collapsible">
+        <p>No biggie. </p>
+<p>Glad you’re back. </p>
+<p>Love y’all. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb554p">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbbqwy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Devorer">Devorer</a>
+        <span class="score"> | -7 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:19:10</span>
+    </p>
+    <div class="collapsible">
+        <p>sooo happy this sub is back in action! looking forward to the add on!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbbqwy">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwcljfu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DisastrousProgrammer">DisastrousProgrammer</a>
+        <span class="score"> | -8 points</span>
+        <span class="timestamp"> | Mar 27 2018 05:22:23</span>
+    </p>
+    <div class="collapsible">
+        <p>HOLY SHIT that Chrome Extension sounds AMAZING. </p>
+<p>If you could pull it off it would be huge for other subreddits to use the same technology. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwcljfu">permalink</a>
+        </p>
+        <div class="comment" id="t1_dwddzwr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Nuit013">Nuit013</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 27 2018 16:59:40</span>
+    </p>
+    <div class="collapsible">
+        <p>Username checks out.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwddzwr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbcbcc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/fonzerrillii">fonzerrillii</a>
+        <span class="score"> | -9 points</span>
+        <span class="timestamp"> | Mar 26 2018 16:27:52</span>
+    </p>
+    <div class="collapsible">
+        <p>Good idea... </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbcbcc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwbr8nv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MayMeiMaiMae">MayMeiMaiMae</a>
+        <span class="score"> | -9 points</span>
+        <span class="timestamp"> | Mar 26 2018 20:13:42</span>
+    </p>
+    <div class="collapsible">
+        <p>Have some of my emoji gold🌟 🌟 🌟 🌟 🌟 </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwbr8nv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dwb8fdn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TySwindel">TySwindel</a>
+        <span class="score"> | -10 points</span>
+        <span class="timestamp"> | Mar 26 2018 15:26:41</span>
+    </p>
+    <div class="collapsible">
+        <p>You guys are seriously the best mods I’ve seen on reddit. Thank you for all you do. The browser extension is a beautiful solution </p>
+<p>Edit: why did this get downvoted. I dont mean for it to sound sarcastic. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/8799w6/_/dwb8fdn">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

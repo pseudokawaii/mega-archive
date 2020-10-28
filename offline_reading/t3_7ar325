@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7ar325">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/wildwildthoughts">wildwildthoughts</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Nov 04 2017 14:55:53</span>
+    </p>
+    <strong>[MUSIC] Amine - Good For You [Album.320kbps.mp3]</strong>
+    <p><p><strong>Amine - Good For You</strong></p>
+<p>Help a brother out with some comment karma below if you appreciate the share!</p>
+<p>.</p>
+<p>.</p>
+<p><strong><em>Tracklist:</em></strong></p>
+<ul>
+<li>01 - Veggies.mp3</li>
+<li>02 - Yellow.mp3</li>
+<li>03 - Caroline.mp3</li>
+<li>04 - Hero.mp3</li>
+<li>05 - Spice Girl.mp3</li>
+<li>06 - STFU.mp3</li>
+<li>07 - Wedding Crashers.mp3</li>
+<li>08 - Sundays.mp3</li>
+<li>09 - Turf.mp3</li>
+<li>10 - Blinds.mp3</li>
+<li>11 - Dakota.mp3</li>
+<li>12 - Slide.mp3</li>
+<li>13 - Money.mp3</li>
+<li>14 - Beach Boy.mp3</li>
+<li>15 - Heebiejeebies (Bonus).mp3</li>
+</ul>
+<p>.</p>
+<p>.</p>
+<p>Replace 'x' with 'mega'</p>
+<p><strong>Link:</strong> https://x.nz/#F!nFRGlSxC</p>
+<p><strong>Key:</strong> !1Qmpf-ojZqrdW2VrnUkGPg</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7ar325">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dpc3srm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/wildwildthoughts">wildwildthoughts</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Nov 04 2017 14:56:15</span>
+    </p>
+    <div class="collapsible">
+        <p>Enjoy the tunes :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7ar325/_/dpc3srm">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dpcb2cz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/omni461">omni461</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Nov 04 2017 17:29:12</span>
+    </p>
+    <div class="collapsible">
+        <p>Thx Op. Link takes you to a folder with multiple artists, Amine included. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7ar325/_/dpcb2cz">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

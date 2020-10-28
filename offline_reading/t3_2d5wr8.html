@@ -1,0 +1,227 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_2d5wr8">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/87linux">87linux</a>
+        <span class="score"> | 15 points</span>
+        <span class="timestamp"> | Aug 10 2014 18:22:36</span>
+    </p>
+    <strong>[Meta] Bash script to download files without a web browser</strong>
+    <p><ul>
+<li>Requirements: GNU coreutils, openssl, curl, xxd</li>
+<li>Usage: <code>./mega-dl.sh "FULL_MEGA_URL" "OUTPUT_FILE_NAME"</code><pre><code>#!/bin/bash
+
+if [[ $# != 2 ]]; then 
+    echo "usage: mega-dl.sh &lt;url&gt; &lt;output&gt;"
+    exit 1
+fi
+
+url="$1"
+enc_file="$2.enc"
+out_file="$2"
+
+id=`echo $url | awk -F '!' '{print $2}'`
+key=`echo $url | awk -F '!' '{print $3}' | sed -e 's/-/+/g' -e 's/_/\//g' -e 's/,//g'`
+b64_hex_key=`echo -n $key | base64 --decode --ignore-garbage 2&gt; /dev/null | xxd -p | tr -d '\n'`
+key[0]=$(( 0x${b64_hex_key:00:16} ^ 0x${b64_hex_key:32:16} ))
+key[1]=$(( 0x${b64_hex_key:16:16} ^ 0x${b64_hex_key:48:16} ))
+key=`printf "%x" ${key[*]}`
+iv="${b64_hex_key:32:16}0000000000000000"
+response=`curl --silent --request POST --data-binary '[{"a":"g","g":1,"p":"'$id'"}]' https://eu.api.mega.co.nz/cs`
+echo "$response"
+new_url=`echo "$response" | awk -F '"' '{print $10}'`
+curl --output "$enc_file" "$new_url"
+openssl enc -d -aes-128-ctr -K $key -iv $iv -in "$enc_file" -out "$out_file"
+rm -f "$enc_file"
+</code></pre>
+</li>
+</ul>
+<p>This would pretty much only be useful if you want to download things without a web browser, but if you're a better bash hacker than me, you might be able to continue an incomplete download. Good luck with that.</p>
+<p>EDIT: Fixed to support spaces in the output file name</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_cjmfeaj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Bludgeon_4_Bacon">Bludgeon_4_Bacon</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Aug 10 2014 19:31:03</span>
+    </p>
+    <div class="collapsible">
+        <p>Can you explain what this is and the benefits of using it? Total noob question</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8/_/cjmfeaj">permalink</a>
+        </p>
+        <div class="comment" id="t1_cjmlti9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/87linux">87linux</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Aug 10 2014 23:26:05</span>
+    </p>
+    <div class="collapsible">
+        <p>It removes the requirement of needing a web browser to download mega files. So you could download them on a raspberry pi or some other headless server.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8/_/cjmlti9">permalink</a>
+        </p>
+        <div class="comment" id="t1_cjmmkwf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Bludgeon_4_Bacon">Bludgeon_4_Bacon</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 10 2014 23:56:10</span>
+    </p>
+    <div class="collapsible">
+        <p>ahh ok thanks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8/_/cjmmkwf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_cjn0ek8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tomarran">tomarran</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 11 2014 12:10:28</span>
+    </p>
+    <div class="collapsible">
+        <p>Top! Might try and knock together a web front end for this - dump in your mega link and it downloads it to a defined location. </p>
+<p>How does this work with a folder of files?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8/_/cjn0ek8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_cjnz7dd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nolog">nolog</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 12 2014 11:56:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Very interesting and helpful! Did you find this out by yourself, analysing the source code?</p>
+<p>EDIT: Another Question: On the <code>new_url=</code> line it doesn't seem to work for me. Downloading the data from that location with this POST content, gives me this:</p>
+<pre><code>[{"s":294074232,"at":"-fVDa5pBVny1d_NDpV3G7dDe_yg4IGqj6-Mg1733Sb1ox64OWCi-92o7TlG3KGg56bQD0tj2us4Wz8BV4KW7Qg"}]
+</code></pre>
+<p>and then running <code>awk -F '"' '{print $10}'</code> on it just gives an empty string, since there are just six double quotes.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8/_/cjnz7dd">permalink</a>
+        </p>
+        <div class="comment" id="t1_cjoo6c0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/87linux">87linux</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 13 2014 02:03:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Strange. Which file are you downloading? It should have given you one more JSON field called "g".</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8/_/cjoo6c0">permalink</a>
+        </p>
+        <div class="comment" id="t1_cjp6rvb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nolog">nolog</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 13 2014 17:00:22</span>
+    </p>
+    <div class="collapsible">
+        <p>I just took an arbitrary chosen link from this subreddit, I'm pretty sure it was <a href="https://mega.co.nz/#!ORo0ULya!DOgwg0zWKUf_En5_dHiTYNcMjXzeGKceTCjb8lk1RHM">[Tv Show] Hell On Wheels Season 4 Episode 1</a>.</p>
+<p>Strangely enough, now that I tried it again, I do indeed get the <code>g</code> parameter.</p>
+<p>Did you find this procedure out all by yourself, analysing the source code? Because this is the first page I find about how the Mega web interface downloads and decrypts a file.</p>
+<p>EDIT: Formatting</p>
+<p>EDIT2: I've tried it anew, and now I don't get the <code>g</code> paramter anymore, but instead an additional <code>e</code> parameter with value <code>-18</code>. Seems like it doesn't always work.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2d5wr8/_/cjp6rvb">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

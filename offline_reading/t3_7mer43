@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7mer43">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/grell851">grell851</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Dec 27 2017 12:29:29</span>
+    </p>
+    <strong>[Movie] Give a girl a Break 1953 DVDrip x264 574 MB</strong>
+    <p><p>decode with base 64</p>
+<p>aHR0cHM6Ly9tZWdhLm56LyMhbjVOVkFTYlMhbDM2eFlYZEk0cHNoVkpXS0ttTldKbXotTnhSV2hXN2RNa3JneVctS2xUcw==</p>
+<p>When a temperamental star walks out of a big Broadway show, it's time to Give a Girl a Break. But which of the hopefuls will land the lead? Suzy (Debbie Reynolds) brings pizzazz. Joanna (Helen Wood) offers swellegant sophistication. And lovely Madelyn (Marge Champion) is the director's former dance partner and former love. This breezy backstager is memorable for its Burton Lane-Ira Gershwin score and for the once-in-a-lifetime collaboration of three legendary musical-world directors: Stanley Donen (Singin' in the Rain) behind the camera and Gower Champion and Bob Fosse (future directors of, respectively, Broadway's Hello, Dolly and Chicago) bringing dazzling dance grace and physicality to the other side of the lens.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7mer43">permalink</a>
+    </p>
+</div>
+
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

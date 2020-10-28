@@ -1,0 +1,782 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_6xhzpi">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/cobalt-green">cobalt-green</a>
+        <span class="score"> | 170 points</span>
+        <span class="timestamp"> | Sep 01 2017 22:31:03</span>
+    </p>
+    <strong>[META] Here is a javascript bookmark to decode base 64 without leaving the page</strong>
+    <p><p>Edit: You should use HA5HBANG's version instead. Glad to see I'm not the only one who wanted something like this.</p>
+<p>I thought you guys might like this</p>
+<pre><code>javascript:
+var encoded = prompt("Input the Base64 text:");
+try
+{
+    var decoded = atob(encoded);
+    alert(decoded);
+}
+catch(error)
+{
+    alert("Couldn't decode");
+}
+</code></pre>
+<p>How to use it - https://my.mixtape.moe/bgvldc.mp4</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dmg2mmu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 34 points</span>
+        <span class="timestamp"> | Sep 01 2017 22:57:39</span>
+    </p>
+    <div class="collapsible">
+        <p>I used to use something similar, but tweaked it to an <code>prompt</code> box instead of an <code>alert</code>. This lets you edit the link in place (to remove <code>#Salt!</code> for instance, or whatever other crap our uploaders are putting in these links). It also gets the currently selected text on the page, so no need to copy and paste. Works in Chrome. Haven't tested in other browsers.</p>
+<pre><code>javascript:var x=prompt('Your decoded text:', atob(window.getSelection().toString()));
+</code></pre>
+<p>edit: fixed. tnx u/cobalt-green!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg2mmu">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg3mp4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cobalt-green">cobalt-green</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:20:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Wow, that is much better! Turns two clicks into one and makes it easier to clean up the result. But I think you meant to put the var x before the prompt, not inside it.</p>
+<pre><code>javascript: var x = prompt('Your decoded text:', atob(window.getSelection().toString()));
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg3mp4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg5gl5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 00:01:49</span>
+    </p>
+    <div class="collapsible">
+        <p>you're right, didn't look close enough when typing. thanks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg5gl5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg3t7k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sigtrap">sigtrap</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:24:14</span>
+    </p>
+    <div class="collapsible">
+        <p>Doesn't seem to work in Firefox.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg3t7k">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg4gdy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DV865">DV865</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:38:52</span>
+    </p>
+    <div class="collapsible">
+        <p>Works fine in my Firefox v55.0.3</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg4gdy">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg5jo7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 00:03:50</span>
+    </p>
+    <div class="collapsible">
+        <p>There was a typo. Try it now?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg5jo7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgb9qk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sigtrap">sigtrap</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 02:20:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Yep now it works. Thanks</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgb9qk">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgnycu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Anaron">Anaron</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 09:49:54</span>
+    </p>
+    <div class="collapsible">
+        <p>This is great. Thanks!</p>
+<p>And thanks OP for the idea.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgnycu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgtw0a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/chagmed">chagmed</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 13:53:30</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm missing something. If, e.g., I need to remove <code>2017</code> from the following L+K prior to decoding, how would I do that using the bookmarklet? I highlight, click the bookmarklet, and get the result. How do I remove the above salt prior to conversion?</p>
+<pre><code>Link: I0YhSEIx2017Q1FKd0Q=
+
+Key: IWZnSGp4LVY4TEZldz2017JWYVhDQU1aV0E=
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgtw0a">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgw2sf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 14:51:35</span>
+    </p>
+    <div class="collapsible">
+        <p>The first step of this code is to convert selected text from base64. It needs to be proper base64, so if anyone puts extra characters in the middle of encoded text, it will produce partially garbled results. You'd have to edit the original text first to remove <code>2017</code>. </p>
+<p>edit: You'd have to use u/cobalt-green's original code because it lets you edit the text when inputting. Mine lets you edit the output. It would be easy enough to combine the code to allow editing at both ends.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgw2sf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dp56ygr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dylpickles1133">dylpickles1133</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Oct 31 2017 14:45:31</span>
+    </p>
+    <div class="collapsible">
+        <p>First and foremost, this is awesome. Thank you for this.</p>
+<p>I do have a question though. When decoding the link on this <a href="https://www.reddit.com/r/megalinks/comments/79tscu/tv_pack_24_complete_seasons_19_movie_20012014_web/">post</a>, the result gives this weird "NL" at the end of the string. https://imgur.com/N6Sv6SV Any idea what this is or where it comes from? When I paste the deobfuscated link in the address bar, the "NL" disappears. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dp56ygr">permalink</a>
+        </p>
+        <div class="comment" id="t1_dp58jfq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Oct 31 2017 15:14:22</span>
+    </p>
+    <div class="collapsible">
+        <p>It's a newline character. Very common to find these in base64 encoded text. There are some base64 encoders that always add a newline at the end of the text. Sometimes, it's the user's fault, ie the person encoding may select text and inadvertently select a newline before and/or after the intended text. </p>
+<p>It can be annoying to look at, but harmless. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dp58jfq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg66p7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/WifeKilledMy1stAcct">WifeKilledMy1stAcct</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 02 2017 00:19:11</span>
+    </p>
+    <div class="collapsible">
+        <p>For Chrome, there's this simple extension. It has decrypted all keys for me without even having to right-click or anything!  https://chrome.google.com/webstore/detail/base64-encode-and-decode/kcafoaahiffdjffagoegkdiabclnkbha</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg66p7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgbezg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TJHookerWithAPenis">TJHookerWithAPenis</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 02 2017 02:24:36</span>
+    </p>
+    <div class="collapsible">
+        <p>I think an extension is more likely to affect browser performance, but it's good to know that exists.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgbezg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgwz3j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 15:13:31</span>
+    </p>
+    <div class="collapsible">
+        <p>This is nice. I've combined both versions by u/cobalt-green and u/HA5HBANG so you can edit both the input &amp; output if need be:</p>
+<blockquote>
+<p>javascript:
+var encoded = prompt("Input the Base64 text:");
+try
+{
+    var decoded = atob(encoded);
+    prompt('Your decoded text:', decoded);
+}
+catch(error)
+{
+    alert("Couldn't decode");
+}</p>
+</blockquote>
+<p>Click cancel when you're done copying/editing the decoded text, otherwise, you'll leave the page.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgwz3j">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgxswn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 15:32:45</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>Click cancel when you're done copying/editing the decoded text, otherwise, you'll leave the page.</p>
+</blockquote>
+<p>Nice job. To avoid the navigation problem, just assign the output of the prompt to a dummy variable:</p>
+<pre><code>javascript: var encoded = prompt("Input the Base64 text:"); try { var decoded = atob(encoded); var x=prompt('Your decoded text:', decoded); } catch(error) { alert("Couldn't decode"); }
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgxswn">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh04xr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/chagmed">chagmed</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 02 2017 16:23:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you! Small change: automatically copies highlighted text, allows editing.</p>
+<pre><code>javascript: var encoded = prompt("Input the Base64 text:",window.getSelection().toString()); try { var decoded = atob(encoded); var x = prompt('Your decoded text:', decoded); } catch(error) { alert("Couldn't decode"); }
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmh04xr">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh0hz2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 16:31:03</span>
+    </p>
+    <div class="collapsible">
+        <p>Even better! I think we've arrived. This is probably the best general-purpose method. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmh0hz2">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh0kan">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/chagmed">chagmed</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 16:32:25</span>
+    </p>
+    <div class="collapsible">
+        <p>I stand on the shoulders of giants. Thank you all.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmh0kan">permalink</a>
+        </p>
+        <div class="comment" id="t1_dudcixa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TJHookerWithAPenis">TJHookerWithAPenis</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 17 2018 01:40:51</span>
+    </p>
+    <div class="collapsible">
+        <p>Good work &amp; thank you /u/HA5HBANG and /u/chagmed this is awesome. I was on this thread early and didn't see what teamwork and a little time would do to improve the script. So glad I came back to it. I would have half a mind to submit it to bestof if we weren't trying to keep a low profile. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dudcixa">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgyodg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 15:52:07</span>
+    </p>
+    <div class="collapsible">
+        <p>Awesome thanks :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgyodg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgso2b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/madwilliamflint">madwilliamflint</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 13:16:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Oh thank god you magnificent bastard. This shit should be gilded.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgso2b">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg20dn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EposVox">EposVox</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 01 2017 22:44:11</span>
+    </p>
+    <div class="collapsible">
+        <p>Woah sweet. If only it could somehow translate it on the page, haha</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg20dn">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg9dc5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/thesunmustdie">thesunmustdie</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 01:34:40</span>
+    </p>
+    <div class="collapsible">
+        <p>Easy enough to write an extension app that detects base-64 strings on Megalinks threads (using regex) and replaces it with decoded content — if you know some JavaScript. I might do it myself tomorrow if I have time, because it would be a pretty handy tool to have.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmg9dc5">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgp4ka">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douhaveanygreypoupon">douhaveanygreypoupon</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 10:53:36</span>
+    </p>
+    <div class="collapsible">
+        <p>There was a bookmarklet posted for making plain-text mega ids/decryption keys into urls, you could probably use it as a base</p>
+<p><a href="https://redd.it/6l62bh">[META] JavaScript bookmarklet to automatically link-ify MEGA IDs (and decryption keys if present)</a></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgp4ka">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgr9sl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/thesunmustdie">thesunmustdie</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 12:28:49</span>
+    </p>
+    <div class="collapsible">
+        <p>Excellent. Thank you.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgr9sl">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgn1ab">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 08:58:48</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgn1ab">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgq1gi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/1231231231231232131">1231231231231232131</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 11:39:00</span>
+    </p>
+    <div class="collapsible">
+        <p>So you guys are trying to automatize the anti bot measurements. what could possibly go wrong...</p>
+<p>Granted base64 is a retarded solution, and I've no idea why it was revived.</p>
+<p>echo "passphrase" | base64 --decode </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgq1gi">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgr94k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/thesunmustdie">thesunmustdie</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 12:28:07</span>
+    </p>
+    <div class="collapsible">
+        <p>Playing devil's advocate:</p>
+<blockquote>
+<p>"So you guys are trying to automatize the anti bot measurements"</p>
+</blockquote>
+<p>We just need to stay one step ahead of them.</p>
+<blockquote>
+<p>"what could possibly go wrong..."</p>
+</blockquote>
+<p>The bots catch up and we modify the code slightly to compensate.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgr94k">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgsp08">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/madwilliamflint">madwilliamflint</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 13:17:43</span>
+    </p>
+    <div class="collapsible">
+        <p>This will always be what happens. Always. It is the way of things.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgsp08">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgwk0s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HA5HBANG">HA5HBANG</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 15:03:24</span>
+    </p>
+    <div class="collapsible">
+        <p>I deleted my first comment accidentally. Here's the gist again:</p>
+<p>IMO, I really don't think this helps bots. It's difficult to write general code to recognize base64 on a page, because the character set is just the alphabet in upper and lower case and a few extra characters. If someone <em>does</em> code a bot to recognize base 64 links, then converting those links into the proper format will be the simplest step of the code. </p>
+<p>Providing a tool such as the one in this thread for easier <strong>link conversion</strong> isn't going to make a difference in <strong>link recognition</strong>, and that is the step we are trying to address on this sub when obfuscating links. </p>
+<p>I would love to hear from others more knowledgeable than I. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgwk0s">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgy6g0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/1231231231231232131">1231231231231232131</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 15:41:08</span>
+    </p>
+    <div class="collapsible">
+        <p>true. People were claiming the sub is invested with bots. I still think it's manual labor, otherwise all the old posts would be affected as well, but there are year old uploads that still work fine. But who knows...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmgy6g0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmhqhtn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MRCAB">MRCAB</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 03 2017 02:03:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Cool.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmhqhtn">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmi1sfy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MyBarcode">MyBarcode</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 03 2017 08:09:51</span>
+    </p>
+    <div class="collapsible">
+        <p>How did you make that gif so smooth :o</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmi1sfy">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmihkid">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MrTattyBojangles">MrTattyBojangles</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 03 2017 17:02:05</span>
+    </p>
+    <div class="collapsible">
+        <p>This and none of the ones in the comments seem to get the job done any faster, at least not for me. But I appreciate you all trying.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/_/dmihkid">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

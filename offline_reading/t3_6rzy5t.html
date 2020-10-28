@@ -1,0 +1,315 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_6rzy5t">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/TubbyBud">TubbyBud</a>
+        <span class="score"> | 28 points</span>
+        <span class="timestamp"> | Aug 06 2017 18:18:45</span>
+    </p>
+    <strong>[DISCUSSION] How do you rip and encode your collections?</strong>
+    <p><p>I have a sizable collection of DVDs that I would like to share however, I only have a very basic understanding of how to rip and encode. I think I have ripped only 1 DVD and that was dreadful. If you can, could you provide an eli5 style answer. Im not very literate in these types of things so any answer would be very gratefully accepted. Any advice for settings to use for encoding or ripping would be well received also.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dl90cwj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Gregorian_Sluts">Gregorian_Sluts</a>
+        <span class="score"> | 25 points</span>
+        <span class="timestamp"> | Aug 06 2017 18:53:08</span>
+    </p>
+    <div class="collapsible">
+        <p><a href="https://handbrake.fr/">Handbrake</a> is the go-to standard for ripping and re-encoding. <a href="https://www.ffmpeg.org/">ffmpeg</a>, which Handbrake uses in part under the hood, is also very useful, but is a commandline program with somewhat obtuse documentation.</p>
+<p>Handbrake does require <a href="https://en.wikipedia.org/wiki/Libdvdcss">libdvdcss</a> to be able to rip copy-protected (typically commercial DVDs), which it does not come with by default. Fortunately, it's pretty easy to download a copy of libdvdcss and drop it in the right location. Handbrake will then happily rip just about anything on DVD. Feel free to tell me what platform you're on (MacOS, Windows, Linux, etc.) and I'll see what I can dig up for you.</p>
+<p>Beyond that, there is no ELI5 possible because half of this will reference acronyms and jargon that are literally meaningless to the layman. That said:</p>
+<p>For most purposes, H264 video and AAC audio are the defacto video codec formats for home-theater players. This isn't universal, however, so refer to your manual~. Handbrake has these codec sets as options, and you'll most likely be using those formats for many of Handbrake's built-in presets.</p>
+<p>For sharing, you might also want to consider HEVC and H265 video formats. These provide superior quality-for-size to H264, but require more resources to decode and play (but not much more).</p>
+<p>Denizens of Megalinks are hopefully savvy enough to use a transcoding media service, or to at least manually transcode what they download to something that fits their playback environment. So, do whatever.</p>
+<p>As for your DVDs, you should note that most DVDs offer video sources that are at max <a href="https://en.wikipedia.org/wiki/DVD-Video#Video_data">720 × 576 pixels, or 720 × 480 pixels</a>. Therefore, your DVD collection will not muster a <a href="https://en.wikipedia.org/wiki/720p">720p</a> or <a href="https://en.wikipedia.org/wiki/1080p">1080p</a> rip (which are generally 1280x720 or 1920x1080 pixels). Those are achieved through BluRay rips, or some other source (like webDL's).</p>
+<p>But, that isn't bad. Given Mega's bandwidth restrictions, lower quality (and therefore smaller) rips will still be appreciated <em>so long as they are appropriately labeled</em>. People can download the bunch all in one go, so long as they don't care too much about resolution and quality. So, be sure indicate in your post title that your rips are [DVDrip], and maybe indicate that they are [576p] or [480p].</p>
+<p>That said, don't bundle your rips all in one file. Do keep them separate, and maybe in a Mega Folder. That guy that drops the <a href="https://www.reddit.com/r/megalinks/comments/6q5s5t/movie_even_more_movies_from_the_80s_90s_1080p/">decade packs</a> is a good model to follow.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl90cwj">permalink</a>
+        </p>
+        <div class="comment" id="t1_dl9b3w7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Dracwing">Dracwing</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Aug 06 2017 22:41:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Just to clarify. Handbrake uses libav, not ffmpeg.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl9b3w7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dl9o4k3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Gregorian_Sluts">Gregorian_Sluts</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Aug 07 2017 03:32:45</span>
+    </p>
+    <div class="collapsible">
+        <p>While you're totally on the ball, the Handbrake docs do mention that it offers ffmpeg's mpeg2 and mpeg4 "part 2 encoder for fast, low quality encoding." This satisfies my 'uses in part' statement.</p>
+<p>https://handbrake.fr/docs/en/latest/technical/video-codecs.html</p>
+<p>The libav and ffmpeg matter is sort of a see-saw anyways, and it's likely that we'll see one absorbed into the other at some point because they're just spite-forks of one another.</p>
+<p>The whole logo thing was totally dickish.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl9o4k3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dl8zwju">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MiniTick">MiniTick</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Aug 06 2017 18:43:50</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm not the best at this so take what I say with a grain of salt...</p>
+<p>I use DVD Decrypter to get the files from protected DVDs.</p>
+<p>Then I use <a href="https://handbrake.fr/">Handbrake</a> to encode them to MKV's.  There's better guides out there, and I'm sure I'll get corrected, but I mostly leave all the settings the same except for the video tab. You can leave it as H.264 if you're fine with that or change it to H.265. I change the container to MKV from MP4.  After that, I set the Constant Quality to RF 18 for DVDs (480p) or you can experiment with variable bitrate (make sure to turn on 2-pass for that).  </p>
+<p>For Optimise Video, I set Encoder Preset to Slow (there's not a lot of gain for going slower than that, but if you really want to eke out as much quality for file size, you can go slower).</p>
+<p>It's good to check Preview and do a Live Preview to see how your output is going to turn out.</p>
+<p>Hope this helps!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl8zwju">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dl9831s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/omni461">omni461</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Aug 06 2017 21:35:20</span>
+    </p>
+    <div class="collapsible">
+        <p>I would like to start off by saying that I am pretty new to this myself. If anyone has anything to add to this or any corrections, I welcome them.</p>
+<p>I use <a href="http://www.makemkv.com/download/">makeMKV</a> to convert my physical media into digital media. Once makeMKV is installed 
+start by loading your dvd into the pc drive, then start up makeMKV and hit the "dvd icon" (looks like a CD) on makeMKV. It creates a very large digital copy of the movie in excellent quality. It's a very simple program that basically holds your hand through the short and simple process.</p>
+<p>Once that is done I use <a href="https://github.com/stax76/staxrip/releases">staxRIP</a> to re-encode my video into H.265 with the h.265 hardware encoder. Using this method I can encode into H.265 at about 200-900 fps. Resulting in good quality files with extremely small file sizes, very quickly. I average about 5-15 minutes to encode a 1 hour video file. </p>
+<p>Install StaxRIP (and .NET 4.7 if your OS is prior to Windows 10 1703 update, link above) and start it up. Then right click on the "Source" box, select your previously made MKV file. Select auto for all options and then choose the audio and subtitles you want. Click "ok" and let the program demux (extract) the chosen audio and subtitles. Once it's done you are ready to get into the meat of it. Left click on the "x264" text to select an encoder. Since my nvidia video card supports HEVC I can choose NVIDIA H.265. If you don't have a HEVC supported video card your encode times will increase exponentially. If you have an Intel CPU, you can choose from the other options such as INTEL H.265 or INTEL H.264 or just H.264/5 if you have an AMD CPU. With that done you can leave everything else as is and click "next" to begin the re-encoding process or you can fine tune your settings.</p>
+<p>These are my settings; I click on the "edit" button of my 1st audio track and make sure the codec is AAC and the "Channels" are set to stereo. Then I make sure "Default" is selected, to set the stereo channel as the default playback audio (this is mostly for compatibility as some media playback devices will fail to load a video if the audio us unsupported). I also make sure that "Normalize" is unchecked (it's like night listening mode). Finally I name my audio track, "English Stereo", under Advanced "stream Name". After all that I hit ok and select my 2nd audio track by right clicking on the empty box under "Audio". Once an audio track is chosen click on "edit". If it was a 5.1 or higher I change the "codec" to AC3, the channels to 5.1 and make sure "normalize" and "default" are NOT selected before renaming it, "English 5.1" and hitting "ok". If you only have a stereo audio dont worry about the secondary audio track.</p>
+<p>In order to control the size of my re-encodes I change my encoder options. Click on "encoder options" change the "mode" to "VBR" select "ok" and under "target you can now manually change the video bit rate. Based on my source video files, I prefer a bitrate of about 3500-4500 in H.265. Now, in order to not unnecessarily add size to your created file, you should check the bitrate of your source MKV file. When you started up StaxRIP and it demuxed your MKV, a log file was created with this information. It's located in the same spot that makeMKV program saved it's video. The log file will be in a folder called title_temp with "title" being the name of your file. Look for "title_new_staxrip.log" open it up with notepad and under "video" it should show the bitrate. Make a mental note of this, back in StaxRIP you can choose this exact bitrate for your new file or you can use a lower bit rate. Just don't go over this bit rate as that will make your re-encoded video larger without any increase in quality. As you change the "Video Bitrate" you will see, in real-time, how that affects the "Size" of your video. If you choose a bitrate that is too low, the quality will suffer.</p>
+<p>If I included subtitles during the demux I like to check under "Container Configuration" to make sure the subtitles are set up properly. If any of your subtitles say "Forced" be sure to check the "Forced" box, as this will load those subtitles automatically, even when subtitles are not selected. For parts where any foreign/alien lines are spoken during an English movie. If you want to open the individual subtitle files to check what's in them, sometimes they are directors commentary, you can use a program called <a href="https://github.com/SubtitleEdit/subtitleedit/releases">SubtitleEdit</a>. </p>
+<p>With all that done click "ok", "Next" and then finally "Start". The time it takes to complete depends on you PC specs and the encoder you chose. Good luck! If you have any questions feel free to ask.</p>
+<p>Edited for grammar lol</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl9831s">permalink</a>
+        </p>
+        <div class="comment" id="t1_dl98alv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/omni461">omni461</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Aug 06 2017 21:39:51</span>
+    </p>
+    <div class="collapsible">
+        <p>Photo of my FPS while encoding in H.265 with an i5 and a GTX1070. http://imgur.com/x7vf7XN</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl98alv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dlap0l2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/groudon2224">groudon2224</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 07 2017 19:30:41</span>
+    </p>
+    <div class="collapsible">
+        <p>How has the lack of B-Frames due to NVEnc affected your encoded files? One major put-off for me with using NVEnc is the major drop in compression efficiency due to this. However with GPU encoding the performance increase is drastic, albeit you sacrifice a lot of functionality with it. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dlap0l2">permalink</a>
+        </p>
+        <div class="comment" id="t1_dlb045j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/omni461">omni461</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 07 2017 22:57:57</span>
+    </p>
+    <div class="collapsible">
+        <p>I personally haven't noticed anything odd, I use plex with roku on a 4k TV. From my understanding even in HEVC references are still based on a pyramid hierarchy. You do lose the compression of the B frames but h.265 compresses in a different manner anyways. Honestly though, I didn't know about B frames until someone asked me about them yesterday, so I may be wrong.
+* I did notice that before I started using the hardware encoder. That I could get even smaller file sizes at comparable quality using the software h.265 encoding. But the difference in the time it took to encode the files was ridiculously huge. So I decided that the trade off between shorter encoding times vs a slightly larger file sizes was worth it. That's the only real thing I've noticed.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dlb045j">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dl8zelc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/xxdil111xx">xxdil111xx</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 06 2017 18:33:25</span>
+    </p>
+    <div class="collapsible">
+        <p>I too would like to know this, as I have some collections on DVD myself</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl8zelc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dl94bvw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GamerBears">GamerBears</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 06 2017 20:16:21</span>
+    </p>
+    <div class="collapsible">
+        <p>I use VidCoder &amp; MakeMKV. I have never done DVD encodes mostly just Blu-ray. A suggestion if you plan on sharing these make sure to make the audio passthrough. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dl94bvw">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dla8qbv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Matt07211">Matt07211</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 07 2017 14:41:49</span>
+    </p>
+    <div class="collapsible">
+        <p>MakeMKV to rip, Handbrake if I need to encode, MKVTools if I need to edit the mkv files directly.</p>
+<p>I leave my DVD rips pure and untouched (including all audio and subtitles) and I plan to rip and transcode my Blu-ray when I get a USB Blu-ray player for my laptop (not any time soon).</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dla8qbv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dlbcad7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 08 2017 03:19:52</span>
+    </p>
+    <div class="collapsible">
+        <p>I create an iso from blu-ray discs using a hacked PS3, transfer those to my PC over network, mount the iso with DVDFab Virtual Drive, decrypt with DVDFab Passkey 9 and rip using MakeMKV. I also create a decrypted iso while I'm at it using IMGBurn. To encode, I use ffmpeg.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6rzy5t/_/dlbcad7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

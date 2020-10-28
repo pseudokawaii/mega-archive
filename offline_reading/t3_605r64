@@ -1,0 +1,352 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_605r64">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/achimba">achimba</a>
+        <span class="score"> | 55 points</span>
+        <span class="timestamp"> | Mar 18 2017 19:01:29</span>
+    </p>
+    <strong>[BOOKS] Computer Science Books</strong>
+    <p><p>add mega</p>
+<p>.nz/#!dABXgBCJ</p>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    cout &lt;&lt; "28 essential computer science books" &lt;&lt; endl;
+    return 0;
+}
+</code></pre></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/605r64">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_df3tktx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/heardtherewasgirls">heardtherewasgirls</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 18 2017 21:27:09</span>
+    </p>
+    <div class="collapsible">
+        <p>public static void main(String[] args) {</p>
+<p>System.out.println("Thanks!");</p>
+<p>}</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df3tktx">permalink</a>
+        </p>
+        <div class="comment" id="t1_df5v7vc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dedservice">dedservice</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 20 2017 06:10:29</span>
+    </p>
+    <div class="collapsible">
+        <p>print "Thanks!"</p>
+<p>oh, the joy of python.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df5v7vc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_df3ni8t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/achimba">achimba</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 18 2017 19:01:54</span>
+    </p>
+    <div class="collapsible">
+        <p>!Atkd93eu-9hYFH_bDxLqwSMV8q46i0FfHooggJj5sEQ</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df3ni8t">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_df48371">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Cartmanishere">Cartmanishere</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 19 2017 03:10:20</span>
+    </p>
+    <div class="collapsible">
+        <pre><code>#include &lt;stdio.h&gt;
+
+main(){
+    int i;
+    for(i=0;i&lt;=1000;i++){
+        printf("Thank You!!");
+    }
+}
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df48371">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_df3no3k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/achimba">achimba</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 18 2017 19:05:43</span>
+    </p>
+    <div class="collapsible">
+        <pre><code>function getList() {
+    var listUrl = "http://pastebin.com/y3syaVGJ";
+    return listUrl;
+}
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df3no3k">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_df3vhho">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nickfinney">nickfinney</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 18 2017 22:12:00</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks!! Is there a particular order you'd start with?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df3vhho">permalink</a>
+        </p>
+        <div class="comment" id="t1_df41p9h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/achimba">achimba</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 19 2017 00:33:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Maybe start with C?</p>
+<p>Kernighan, Brian W. &amp; Ritchie, Dennis M. - The ANSI C Programming Language</p>
+<p>Some books are about learning languages; C, C++, and Ruby. Some books are about concepts and theories; algorithms and data structures. Some books are about the coding process; test-driven and agile development. This collection is mainly oriented  toward C/C++ development.</p>
+<p>For programming in any language I think these would be useful reads: Test-Driven Development, Mythical Man-Month, and Code Complete.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df41p9h">permalink</a>
+        </p>
+        <div class="comment" id="t1_df41srr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nickfinney">nickfinney</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 19 2017 00:35:38</span>
+    </p>
+    <div class="collapsible">
+        <p>awesome, much appreciated. Thanks again mate</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df41srr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_df4bj2t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/is_it_fun">is_it_fun</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 19 2017 04:42:25</span>
+    </p>
+    <div class="collapsible">
+        <p>print "Meow! Thanks!"</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df4bj2t">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_df51qbg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lulgate">lulgate</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 19 2017 19:19:23</span>
+    </p>
+    <div class="collapsible">
+        <p>am kinda new here and can you tell me how i can download this? i tried googling.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df51qbg">permalink</a>
+        </p>
+        <div class="comment" id="t1_df532pi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/achimba">achimba</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 19 2017 19:48:23</span>
+    </p>
+    <div class="collapsible">
+        <p><a href="https://youtu.be/Ud26_unveq4">###HOW TO DOWNLOAD###</a></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df532pi">permalink</a>
+        </p>
+        <div class="comment" id="t1_df53j10">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lulgate">lulgate</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 19 2017 19:58:11</span>
+    </p>
+    <div class="collapsible">
+        <pre><code>.MODEL SMALL
+.STACK 100H
+.DATA
+ STRING_1  DB  'Thank You Sir'
+.CODE
+ MOV AX, @DATA             
+ MOV DS, AX
+ LEA DX, STRING_1           
+ MOV AH, 9            
+ INT 21H
+ MOV AH, 4CH              
+ INT 21H
+ MAIN ENDP
+ END MAIN
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df53j10">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_df533aj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/youtubefactsbot">youtubefactsbot</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 19 2017 19:48:45</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p><a href="http://youtu.be/Ud26_unveq4"><strong>How To Download My Posts [0:32]</strong></a></p>
+<p><a href="https://www.youtube.com/channel/UC_d8IifcQe2_WL1LXQlHL1A"><em>^j ^dm</em></a> ^in ^People ^&amp; ^Blogs</p>
+<p><em>^4,717 ^views ^since ^Mar ^2017</em></p>
+</blockquote>
+<p><a href="/r/youtubefactsbot/wiki/index">^bot ^info</a></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/605r64/_/df533aj">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

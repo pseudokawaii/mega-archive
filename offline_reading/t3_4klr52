@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_4klr52">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | 37 points</span>
+        <span class="timestamp"> | May 23 2016 02:12:40</span>
+    </p>
+    <strong>[TV] Game of Thrones S06E05</strong>
+    <p><a href="https://mega.co.nz/#!O8dDAAqa!Q0FXDuu-hpK9fniQ-ga8ffuSMCQyQ1hlrh1zQwMo1ec">https://mega.co.nz/#!O8dDAAqa!Q0FXDuu-hpK9fniQ-ga8ffuSMCQyQ1hlrh1zQwMo1ec</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/4klr52">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_d3iot2d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/andreweugene">andreweugene</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 25 2016 04:15:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Why is the file no longer available?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4klr52/_/d3iot2d">permalink</a>
+        </p>
+        <div class="comment" id="t1_d3kivqe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/bATcc">bATcc</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 26 2016 15:32:41</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>Becasue OP and everyone else here don't know that changing a filename from "game-of-thrones-s06e05-hdtv-x264-killers" to less obvious: "gts6e5" would prevent file from getting removed due to copyright complaint.</p>
+</blockquote>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4klr52/_/d3kivqe">permalink</a>
+        </p>
+        <div class="comment" id="t1_d40kaas">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/andreweugene">andreweugene</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 08 2016 06:24:12</span>
+    </p>
+    <div class="collapsible">
+        <p>ohhh I see! :/</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4klr52/_/d40kaas">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

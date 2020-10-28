@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7csr20">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | 18 points</span>
+        <span class="timestamp"> | Nov 14 2017 03:16:43</span>
+    </p>
+    <strong>[TV] Lucifer S03E07 [1.1 GB]</strong>
+    <p><p><strong>L</strong>: <a href="https://mega.co.nz/#!VOIl2ZwS">mega.link</a></p>
+<p><strong>K</strong>: avwjj_Xx1MSGm5bjcCnZlAxoHXeS1lCNjtwL6q0xpXk</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7csr20">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dpsn1az">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/xidral">xidral</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Nov 14 2017 07:02:32</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks doood</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7csr20/_/dpsn1az">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dpsn4hr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Lusfer21">Lusfer21</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Nov 14 2017 07:05:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Love you!!!! </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7csr20/_/dpsn4hr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsdr4zz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/chrsvo">chrsvo</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 08 2018 20:25:32</span>
+    </p>
+    <div class="collapsible">
+        <p>thanks</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7csr20/_/dsdr4zz">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

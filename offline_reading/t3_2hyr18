@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_2hyr18">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/aponicalixto">aponicalixto</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Oct 01 2014 05:13:01</span>
+    </p>
+    <strong>The Shining (1980) [720p]</strong>
+    <p><a href="https://mega.co.nz/#!rYsnQAIZ!0CFe_r4Rih3GR9Jyg0DAc4HMFcdgFvPUfihShCTLudI">https://mega.co.nz/#!rYsnQAIZ!0CFe_r4Rih3GR9Jyg0DAc4HMFcdgFvPUfihShCTLudI</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/2hyr18">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_ckxei2q">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/realityengine">realityengine</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Oct 01 2014 13:05:08</span>
+    </p>
+    <div class="collapsible">
+        <p>A 720p encode that's 650 megs for a 2 hour 25 min movie? That's a horrible noob encoder. Pass.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2hyr18/_/ckxei2q">permalink</a>
+        </p>
+        <div class="comment" id="t1_ckxy7nw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/aponicalixto">aponicalixto</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Oct 01 2014 23:49:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Okay man, but a free movie is a free movie :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2hyr18/_/ckxy7nw">permalink</a>
+        </p>
+        <div class="comment" id="t1_ckxyexp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/realityengine">realityengine</a>
+        <span class="score"> | -1 points</span>
+        <span class="timestamp"> | Oct 01 2014 23:56:31</span>
+    </p>
+    <div class="collapsible">
+        <p>Very true, it's just a pet peeve like shite yify encodes.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/2hyr18/_/ckxyexp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

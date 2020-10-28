@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7nwr59">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/countygeneral">countygeneral</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Jan 03 2018 18:54:46</span>
+    </p>
+    <strong>[TV] MSNBC: Tuesday, 2 January 2018 [360p WEBRip | x264 | AAC] [2.87GB]</strong>
+    <p><p>Tuesday, 2 January 2018: <strong>My Nuclear Button Is Bigger Than Your Nuclear Button</strong>  </p>
+<p>South Korea proposes date with North Korea | Iran in disarray | Anxious White House aides | Trump's Deep State Slam | Orrin Hatch will retire and gives a chance to Mitt Romney for a political comeback | Al Franken's last day in the Senate | Trump: "I too have a nuclear button" | The Fusion GPS op-ed  </p>
+<p>In this pack:<br>
+<em> Morning Joe<br>
+</em> Deadline: White House (hosted by Nicolle Wallace)<br>
+<em> MTP Daily (hosted by Chuck Todd)<br>
+</em> The Beat with Ari Melber (guest hosted by Ayman Mohyeldin)<br>
+<em> Hardball with Chris Matthews (guest hosted by Steve Kornacki)<br>
+</em> All In with Chris Hayes (guest hosted by Joy-Ann Reid)<br>
+<em> The Rachel Maddow Show<br>
+</em> The Last Word with Lawrence O'Donnell (special guest: Lawrence's beard)<br>
+* The 11th Hour with Brian Williams (guest hosted by Nicolle Wallace)  </p>
+<p><a href="http://links.snahp.it/417msnbc20180102">Link</a> (password is the name of this subreddit)<br>
+for Friday's round-up, <a href="https://www.reddit.com/r/megalinks/comments/7n33f7/tv_msnbc_news_hours_dec_29_2017_360p_webripx264/">click here</a></p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7nwr59">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_ds5taq7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/aManPerson">aManPerson</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 04 2018 03:17:10</span>
+    </p>
+    <div class="collapsible">
+        <p>thank you.  also, shadow banned comment here, for some reason.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7nwr59/_/ds5taq7">permalink</a>
+        </p>
+        <div class="comment" id="t1_ds5xvuw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/countygeneral">countygeneral</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 04 2018 04:57:40</span>
+    </p>
+    <div class="collapsible">
+        <p>You just told that shadow banned user he is shadow banned. You can feel the lightbulbs (and the ensuing disappointment) going on suddenly.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7nwr59/_/ds5xvuw">permalink</a>
+        </p>
+        <div class="comment" id="t1_ds5zyew">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/aManPerson">aManPerson</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 04 2018 05:50:47</span>
+    </p>
+    <div class="collapsible">
+        <p>he might have a good cake recipe he wants to share.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7nwr59/_/ds5zyew">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

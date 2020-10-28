@@ -1,0 +1,227 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_60z6a3">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/TheEvenDarkerKnight">TheEvenDarkerKnight</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 23 2017 02:12:16</span>
+    </p>
+    <strong>[META] How to merge video files</strong>
+    <p><p>So I was downloading a season of a tv show and one of the episodes is split into two parts, but neither files works on their own. Therefore, I was thinking I needed to merge them to get it to work. How do I do this?</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/60z6a3">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dfai9k1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Apocalypse_Gladiator">Apocalypse_Gladiator</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 23 2017 02:45:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Did they come in .rar format and were they named .part1 and .part2? If so, while they're in the same folder, just extract the first one with winrar and it should automatically unpack both parts as one.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dfai9k1">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dfaiq79">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/eightballthrowaway">eightballthrowaway</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 23 2017 02:56:03</span>
+    </p>
+    <div class="collapsible">
+        <p>alternatively, with 7zip installed, select them both and right click &gt; 7zip &gt; extract. theyll merge into one</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dfaiq79">permalink</a>
+        </p>
+        <div class="comment" id="t1_dfb10yx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheEvenDarkerKnight">TheEvenDarkerKnight</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 23 2017 13:58:26</span>
+    </p>
+    <div class="collapsible">
+        <p>this worked, thank you</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dfb10yx">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dfaj3s5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/vcdupper">vcdupper</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 23 2017 03:04:55</span>
+    </p>
+    <div class="collapsible">
+        <p>And thirdly, if you actually need to merge 2 video files together Movavi Video Editor works very well</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dfaj3s5">permalink</a>
+        </p>
+        <div class="comment" id="t1_dfashzs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Seegras1">Seegras1</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 23 2017 08:48:21</span>
+    </p>
+    <div class="collapsible">
+        <p>As said, all you probably need is to use the correct packer like rar or 7z. But here's how to do it otherwise:</p>
+<p>Merging files:</p>
+<p>on Unix (Linux, MacOS, Android): cat input1 input2 &gt; output</p>
+<p>on Windows: copy input1+input2 output</p>
+<p>Merging movies:</p>
+<p>mencoder -forceidx -ovc copy -oac copy -o out.avi in1.avi in2.avi</p>
+<p>ffmpeg -i "concat:input1.mpg|input2.mpg" -c copy output.mpg</p>
+<p>avimerge -o target.avi -i source1.avi source2.avi</p>
+<p>ogmmerge -o target.ogm source1.ogm source2.ogm</p>
+<p>mkvmerge -o target.mkv source1.mkv + source2.mkv</p>
+<p>All of these programs are available on modern Linux distributions, probably also on MacOS. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dfashzs">permalink</a>
+        </p>
+        <div class="comment" id="t1_dfc8mqz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/zbxr81">zbxr81</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 24 2017 04:49:10</span>
+    </p>
+    <div class="collapsible">
+        <p>On Windows you have to use the /b (binary) switch. Otherwise COPY "treats a Control-Z [EOF] in a text file as marking the end of meaningful data, and appends a Control-Z [EOF] to the end when writing a text file" (Wikipedia), so you will end up with truncation or insertion of garbage EOF characters. The EOF character is obsolete nowadays...</p>
+<p>copy /b input1+input2 output</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dfc8mqz">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dfcutpw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheGoodSheep">TheGoodSheep</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 24 2017 16:45:25</span>
+    </p>
+    <div class="collapsible">
+        <p>Maybe they used HJ split, but I doubt that, last time I used it was 10 years ago or so.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dfcutpw">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dicdr5z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Lemongreen201503">Lemongreen201503</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 02 2017 00:56:42</span>
+    </p>
+    <div class="collapsible">
+        <p>There are many video joiner software that allows you to join separate video together: 
+Windows Movie Maker(only available on Windows)
+Freemaker (only available for Windows)
+Avidmux (for Windows, Mac OS X and Linux)
+VLC (for Windows, Mac and Linux)
+iMovie (for Mac)
+Pavtube Video Converter Ultimate for Windows/Mac</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/60z6a3/_/dicdr5z">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

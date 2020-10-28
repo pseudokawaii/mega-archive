@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_4uxkok">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/SpatialWheel">SpatialWheel</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Jul 27 2016 23:11:43</span>
+    </p>
+    <strong>[QUESTION] Sorting by New</strong>
+    <p><p>When i sort by newest instead of top posts they don't show up newest to oldest they show up out of order. E.g posts from 1 day ago show up before posts from 9 hours ago...</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/4uxkok">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_d5tpx9z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/vcdupper">vcdupper</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jul 27 2016 23:42:08</span>
+    </p>
+    <div class="collapsible">
+        <p>I noticed this also I have messaged /u/indigo6alpha about it as he was doing work on the site earlier but I haven't heard back yet.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4uxkok/_/d5tpx9z">permalink</a>
+        </p>
+        <div class="comment" id="t1_d5tw779">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/SpatialWheel">SpatialWheel</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jul 28 2016 02:12:56</span>
+    </p>
+    <div class="collapsible">
+        <p>Ok</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4uxkok/_/d5tw779">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

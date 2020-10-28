@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7t3r53">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/grell851">grell851</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Jan 26 2018 10:42:53</span>
+    </p>
+    <strong>[Movie] Dive Bomber 1941 DVDrip x264 903 MB</strong>
+    <p><p>decode with base 64
+aHR0cHM6Ly9tZWdhLm56LyMhcHlCSG1TalQhUFVTX2FFR3VKcVVOTy1HTXhycGtjSnY4LXdrNkdkWWV0Nk9jYUFEUzQwbw==</p>
+<p>Errol Flynn, Fred MacMurray and Alexis Smith star in this dramatic tale of two men who must choose between love of country and the love of a woman during the desperate early days of World War II and the often-lethal development of the Dive Bomber. As the very existence of the United States and the Free World is threatened by Germany and Japan, U.S. Navy surgeon Lt. Doug Lee (Flynn--The Adventures of Robin Hood) races to find a way to keep pilots from losing consciousness during power dives into a bombing run. A powerful new weapon to defend the free world could be developed, but at a high cost in test pilots. Now, as Lt. Lee and Commander Joe Blake (MacMurray--Double Indemnity) vie for the heart of Linda Fisher (Smith--The Age of Innocence), these two men will have to rise above their differences . . . and one will have to take the possibly deadly flight to test a Lee's new pressure suit that could may the outcome of the war.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7t3r53">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dt9lina">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/SubZorro">SubZorro</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 26 2018 10:43:04</span>
+    </p>
+    <div class="collapsible">
+        <h5>Subtitles for this movie:</h5>
+<hr>
+<blockquote>
+<ul>
+<li>
+<p><strong>Dive Bomber (1941)</strong> - <code>2 CD</code> - <a href="http://dl.opensubtitles.org/en/download/vrf-9be32c39/sub/101097">Download Subtitle</a></p>
+</li>
+<li>
+<p><strong>Dive Bomber (Michael Curtiz, 1941) [Dual ENG-ESP] [XViD-MP3]</strong> - <code>1 CD</code> - <a href="http://dl.opensubtitles.org/en/download/vrf-f3276554/sub/3304557">Download Subtitle</a></p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<p>^This ^list ^of ^subtitles ^are ^taken ^from <a href="http://www.opensubtitles.org">^opensubtitles.org</a> ^| ^For ^feedback ^or ^suggestions ^contact <a href="http://www.reddit.com/message/compose/?to=indigo6alpha">^/u/indigo6alpha</a></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7t3r53/_/dt9lina">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dta0kwy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/StubbsCastaway">StubbsCastaway</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 26 2018 16:35:22</span>
+    </p>
+    <div class="collapsible">
+        <p>If you care at all about aviation, particularly Naval Air, you should own this movie.  The plot and lines are weak, but the aircraft...Oh the glorious aircraft!</p>
+<p>http://www.imdb.com/title/tt0033537/?ref_=fn_al_tt_1</p>
+<p>https://www.rottentomatoes.com/m/dive_bomber</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7t3r53/_/dta0kwy">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

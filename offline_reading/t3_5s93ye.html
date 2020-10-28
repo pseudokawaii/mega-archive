@@ -1,0 +1,180 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_5s93ye">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/makzimus">makzimus</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Feb 05 2017 18:48:30</span>
+    </p>
+    <strong>[META] Title case loses after posting</strong>
+    <p><p>When I type something in the title box, title case automatically applies. But after submitting, the formatting gets lost.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/5s93ye">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dddaqep">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Feb 05 2017 19:44:36</span>
+    </p>
+    <div class="collapsible">
+        <p>That's common in a lot of subreddits, actually. The submission text boxes will auto-capitalize every word, whether it makes it grammatically correct or not. As for turning that off, you may be able to disable the stylesheet with Reddit Enhancement Suite. I believe it's a problem with the "Naut" theme that many subreddits use.</p>
+<p>According to <a href="https://www.reddit.com/r/naut/comments/4q66lo/feedback_users_finding_the_autocapitalization_of/d4qidxy/">this</a> post it can be turned off by having a moderator add the following code to the end of the stylesheet.</p>
+<pre><code> textarea.title { 
+text-transform: none!important; 
+}
+</code></pre>
+<p>Is it possible to get this fixed /u/vcdupper?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5s93ye/_/dddaqep">permalink</a>
+        </p>
+        <div class="comment" id="t1_dddauve">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/makzimus">makzimus</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 05 2017 19:47:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Actually, I think it would be better to retain the style after posting. After all, titles are nothing but movie titles .LOL</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5s93ye/_/dddauve">permalink</a>
+        </p>
+        <div class="comment" id="t1_dddaz3h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Feb 05 2017 19:49:59</span>
+    </p>
+    <div class="collapsible">
+        <p>I agree that titles should be written beginning with capital letters, however it's confusing to users who are trying to post as it makes them think that they're post is automatically being capitalized when it's actually not.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5s93ye/_/dddaz3h">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dddi46i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/vcdupper">vcdupper</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 05 2017 22:30:08</span>
+    </p>
+    <div class="collapsible">
+        <p>Added let know if it helps</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5s93ye/_/dddi46i">permalink</a>
+        </p>
+        <div class="comment" id="t1_dddoetj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 06 2017 00:48:40</span>
+    </p>
+    <div class="collapsible">
+        <p>Working great! Thank you.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5s93ye/_/dddoetj">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dde7y4l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sirin3">sirin3</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 06 2017 10:01:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Or you could do the opposite:</p>
+<pre><code>.link a.title {
+   text-transform: capitalize;
+}
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5s93ye/_/dde7y4l">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_4j1ydb">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/justaquickqq">justaquickqq</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | May 12 2016 17:57:57</span>
+    </p>
+    <strong>[Ideas] Organising this place</strong>
+    <p><p>I don't really know much about how reddit works, but is there maybe a way to remove old posts with links that no longer work. Like a way to report a post as no longer working and the moderators to be able to remove it?
+Just an idea as a few times I've had to search through a ton of old posts when I search all of which have dead links in them before finding a working one. </p>
+<p>Another possible idea is if there could be a list of links that have gone down and been deleted so that people can re-upload the stuff. Either the original uploaders or someone who downloaded before the link went down. </p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/4j1ydb">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_d32yz91">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/justaquickqq">justaquickqq</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | May 12 2016 18:05:14</span>
+    </p>
+    <div class="collapsible">
+        <p>I've just had a look and it seems that most of the moderators for this subreddit are also moderators for hundreds of others and have had no input or made any contribution to this particular subreddit in a very long time. Is there any way of other people who actually contribute to the subreddit being made moderators instead? I'm talking people like vcdupper, igotyoufam, meowticklebutt. Those people contribute to the forum and from the dedication that I can see with uploads would be willing to exercise some control over the content of the forum. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/4j1ydb/_/d32yz91">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

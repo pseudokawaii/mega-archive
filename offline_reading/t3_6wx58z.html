@@ -1,0 +1,960 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_6wx58z">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/Grenff">Grenff</a>
+        <span class="score"> | 102 points</span>
+        <span class="timestamp"> | Aug 30 2017 05:40:26</span>
+    </p>
+    <strong>[How To] Encode in x265/H.265/HEVC for the impatient ones via the graphics card's hardware encoder using XMedia Recode</strong>
+    <p><p>I tried to comment a post about x265 encoding in the Everybody Loves Raymond thread, but it looks like I am lacking the rights to comment. </p>
+<p>So I start this new thread, about a quick how to encode in x265/H.265/HEVC for the impatient ones who own a NVIDIA graphics card with a x265/H.265/HEVC hardware encoder (e.g. GTX 1060).</p>
+<p>Encoding with your graphics card is blindingly fast. Transcoding a full Everybody Loves Raymond season (24 episodes, 9 hours) from 720p/x264 to 720p/HEVC takes only about 19 minutes. The same transcoding would take me probably around 4-5 hours if done by CPU (i7).  </p>
+<p>Unfortunately, encoding by graphics card needs more bitrate for the same quality the pure CPU encoding would deliver. I usually target only a 50% size reduction when I transcode from x264 to HEVC with the graphics card. But I have not made a science out of this, so I could be wrong.</p>
+<p><strong>So here is the quick &amp; dirty How To based on the (freeware) software XMedia Recode (http://www.xmedia-recode.de/en/index.html):</strong></p>
+<ol>
+<li>
+<p>Drag &amp; Drop all the files you like to transcode into XMedia recode.</p>
+</li>
+<li>
+<p>Mark all the files (assuming you want to encode all of them with the same settings).</p>
+</li>
+<li>
+<p>Format tab: choose format "Matroska".</p>
+</li>
+<li>
+<p>Video tab: choose codec "HEVC / H.265 (NVIDIA NVENC)" and adjust the bitrate to your preferences (for Everybody Loves Raymond (720p) I chose min 1500 and max 15000 and went from 670 MB (x264) to 270 MB (HEVC) file size per episode) - for 1080p movies I usually choose min 3500 and max 20000. Sometimes I use more bitrate - especially when there is a lot of film grain, action or eye candy - and sometimes less (e.g. animated movies).</p>
+</li>
+<li>
+<p>Audio tab: switch mode to copy (add extra tracks if desired).</p>
+</li>
+<li>
+<p>Subtitle tab: switch the mode to "copy" and then choose the subtitles you like to keep (important: choose "copy" first and then select the subtitles or the subtitles will be rendered into the movie).</p>
+</li>
+<li>
+<p>Set the destination for the files at the bottom of the main window and then click on the "add to queue" button. </p>
+</li>
+<li>
+<p>Look in the jobs tab and make sure everything is o.k. ....codecs, bitrates, framerates, copied audio and subtitles...</p>
+</li>
+<li>
+<p>Hit the "Encode" button.</p>
+</li>
+</ol>
+<p>Check the quality. If you don't like it, increase the video bitrate and encode it again - encoding is so insane fast, you can just do that.</p>
+<p>Again, I have not made a science out of these settings, so these are probably not the best. But for me they are getting the job done.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/6wx58z">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dmbiz5j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douchebanner">douchebanner</a>
+        <span class="score"> | 25 points</span>
+        <span class="timestamp"> | Aug 30 2017 07:51:57</span>
+    </p>
+    <div class="collapsible">
+        <p>please, dont do this, hardware encoding is a waste of bandwidth, if you care so much about speed just use one of the fast presets on h264 and you should get better quality at a smaller size at a reasonable speed.</p>
+<p>just because h265 is newer than h264 doesnt mean that everyone should be using it, specially hw h265.</p>
+<p>hw encoding is ok when you dont care about size but for sharing... just dont.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbiz5j">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmcitnl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/oeffoeff">oeffoeff</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Aug 30 2017 21:22:42</span>
+    </p>
+    <div class="collapsible">
+        <p>This. I think hw-encoding is good if you want to stream, otherwise I would always prefer sw encoding. Quality is much better.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmcitnl">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmdkzt3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/w00denspoon">w00denspoon</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Aug 31 2017 14:16:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Yea, nvidia hevc looks like garbage when low bitrate.  Its simply meant for speed at all costs.
+https://www.techspot.com/article/1131-hevc-h256-enconding-playback/page7.html</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmdkzt3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbvlkm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MrTattyBojangles">MrTattyBojangles</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Aug 30 2017 14:36:30</span>
+    </p>
+    <div class="collapsible">
+        <p>It works for UTR.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbvlkm">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbjgo4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Axelstrife">Axelstrife</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 08:14:52</span>
+    </p>
+    <div class="collapsible">
+        <p>Isnt hardware encoding the one you use CPU ? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbjgo4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmbkd0s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douchebanner">douchebanner</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Aug 30 2017 08:58:09</span>
+    </p>
+    <div class="collapsible">
+        <p>gpu</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbkd0s">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbka4m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EvolutionVII">EvolutionVII</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 08:54:18</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>if you care so much about speed just use one of the fast presets on h264 and you should get better quality at a smaller size at a reasonable speed.</p>
+</blockquote>
+<p>but you get a shitty output compared to low bitrate H265</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbka4m">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmbknbc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douchebanner">douchebanner</a>
+        <span class="score"> | -4 points</span>
+        <span class="timestamp"> | Aug 30 2017 09:12:07</span>
+    </p>
+    <div class="collapsible">
+        <p>depends on how low you want to go, h264 is sharper at reasonable bit rates compared to the soft diarrhea h265 squirts at any bit rate, and its faster than h265 and more compatible. the small difference in file size is not worth the excessive encoding time and the softer video</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbknbc">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmbkqv1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EvolutionVII">EvolutionVII</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 09:16:45</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm refering to &lt;4mbits with fast action sequences</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbkqv1">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmblbfs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douchebanner">douchebanner</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 09:44:29</span>
+    </p>
+    <div class="collapsible">
+        <p>hmmm... youre talking 1080p at less than 4mbits... yeah, at that bitrate sw h265 should have the upper hand</p>
+<p>i always use 2-pass so thats what im referring to, and i was comparing it to hw h265.</p>
+<p>using 2-pass you can have fast and slow scenes on the same movie , the bitrate gets distributed accordingly.</p>
+<p>im not saying h265 is shit, but hw encoding tends to be shit at lower bitrates compared to sw fast presets (2pass).</p>
+<p>is the "breaking point" of sw h265 lower than h264? sure. is it worth the extra encoding time? not for me.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmblbfs">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbm04k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sarinth">sarinth</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 10:17:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Can you guide me to set up good compression setting in Handbrake? I'm using h.265 encoder, 1500 avg bitrate with 2-pass encoding.
+This setting is relatively slow but results are very good - compression/quality</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbm04k">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmfx18w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mteg">mteg</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 01 2017 21:00:04</span>
+    </p>
+    <div class="collapsible">
+        <p>You're wasting both encoding time and hardware space : don't use 2-pass encoding.</p>
+<p>Aim for a quality, then you'll sometimes get smaller files than you expected, sometimes bigger but on average (on your hard drive). It will take the same GB than 2 pass, except that two pass will give you some movies where you're wasting space (since you won't notice the quality increase from the quality you were settling for) and some where the quality will be shitty because you didn't spend the bitrate when needed.
+You'll also have wasted CPU time on the first pass (but that's less of a problem, except your post was about the long time it took to encode in the first place...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmfx18w">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmc4sqr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douchebanner">douchebanner</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 17:17:04</span>
+    </p>
+    <div class="collapsible">
+        <p>i dont use handbrake, sorry. 1500? wow</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmc4sqr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbimf6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Axelstrife">Axelstrife</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Aug 30 2017 07:36:06</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks here's one i did Stargate ark of truth original file i had is 7.92GB (largest i could find at the time of download)  and after it's 4.26GB x265.
+http://screenshotcomparison.com/comparison/116088
+Not too bad though the original file i had wasn't the best.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbimf6">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmchdwr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AeroRandy">AeroRandy</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 20:56:44</span>
+    </p>
+    <div class="collapsible">
+        <p>Wouldn't it be better to take a screenshot of a fast paced scene? That's where things usually go to shit in compressed videos.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmchdwr">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmd2gmi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Axelstrife">Axelstrife</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 31 2017 04:28:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah ofc it doesn't look nearly as good.
+Can't wait for coffeelake CPU's so i can buy I7 8700 or Ryzen 1700 depending on whats better and encode thing in my lifetime. my i5 6400 sucks.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmd2gmi">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbvk2q">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MrTattyBojangles">MrTattyBojangles</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 14:35:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Nice, the difference is barely noticeable.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbvk2q">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmbxhdy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Axelstrife">Axelstrife</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 15:10:53</span>
+    </p>
+    <div class="collapsible">
+        <p>it's not too bad 
+Here is a better example.</p>
+<p>https://drive.google.com/open?id=0B2L-MFr5wlCaN0R4RzQ3cl9Eakk</p>
+<p>^ Original file Grym 17.3GB x264</p>
+<p>https://drive.google.com/file/d/0B2L-MFr5wlCaV0htTVpXRnFJb0k/view</p>
+<p>^ x265 8.32GB</p>
+<p>Not too bad since it took 15 minutes to cut the size in half with VERY little Image quality loss.
+Im sure CPU encoding would too a better job at making them file size smaller though.</p>
+<p>I used google drive since that site before i noticed massive loss of quality when uploading these images.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbxhdy">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmf78dh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiederian">tiederian</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 01 2017 12:50:03</span>
+    </p>
+    <div class="collapsible">
+        <p>What settings did you use to achieve this? I tried it with an episode of Elementary and had pretty dire results.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmf78dh">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmcl5mc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mac10Pro">Mac10Pro</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Aug 30 2017 22:06:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Can all refrain from saying 'Little' image quality loss, when that's as far from the truth as you can get. I compared a Guardians of the Galaxy Vol.2 x264 with a x265, 30gb/17gb and the 'little' loss is significant; you can no longer see the individual hair strands of the characters. That's not 'little'. That's a motherfucking shit load of image quality gone... Rant aside, I have a 1080ti so I might do this for fun xD</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmcl5mc">permalink</a>
+        </p>
+        <div class="comment" id="t1_dutpg8j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/riade3788">riade3788</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 25 2018 23:19:08</span>
+    </p>
+    <div class="collapsible">
+        <p>you are simply wrong ....I encoded such stuff at 4k and lost almost no quality on 50' screen at 4k x265 is just better as long you are using blueray source...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dutpg8j">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbu8t0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Redditor20121">Redditor20121</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 14:10:39</span>
+    </p>
+    <div class="collapsible">
+        <p>For somebody with AMD GPU (RX 480/550 etc..) you can use A's Video converter which is also very fast.</p>
+<p>http://bluesky23.yukishigure.com/en/AsVideoConv.html</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbu8t0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmc1szu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/R3a1ityCheque">R3a1ityCheque</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 16:26:05</span>
+    </p>
+    <div class="collapsible">
+        <p>Any really solid guides on how to do this with handbrake (and the best settings)? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmc1szu">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmc6xr9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 17:53:26</span>
+    </p>
+    <div class="collapsible">
+        <p>Use handbrake nightly with CRF 20 or CBR 3500k on slow preset.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmc6xr9">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmc8h1o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/R3a1ityCheque">R3a1ityCheque</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 18:20:18</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for the advice. Have tried a few encodes with it but haven't been satisfied with the quality so far (too much pixelation in dark scenes) but that's def different to the presets I was using. Cheers! </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmc8h1o">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmfxvqt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mteg">mteg</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 01 2017 21:17:02</span>
+    </p>
+    <div class="collapsible">
+        <p>CRF 18 or 17 can be necessary for some movies. grain profile also sometimes, heard they even improved it in the latest releases.</p>
+<p>Pixelation in dark scenes may also be the sign of a low quality screen, where blacks aren't as black as they should be. If you're not supposed to see anything else than black at the theater, there's little point in keeping them just because somewhere someone on the Internet likes his luminosity at 100% on a crappy LCD screen.</p>
+<p>As for problems in moving scenes (other posters), neither x265 nor x264 were made to provide wonderful screenshots. If you're pausing to compare, you're doing it wrong - compare VIDEO samples, not your mom's scrapbook.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmfxvqt">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmc247r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tallgf">tallgf</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 16:31:19</span>
+    </p>
+    <div class="collapsible">
+        <p>will this work on a Radeon HD7870?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmc247r">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmc6vcg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 30 2017 17:52:18</span>
+    </p>
+    <div class="collapsible">
+        <p>You can also do the same with StaxRip.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmc6vcg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmdi8b3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/w00denspoon">w00denspoon</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Aug 31 2017 13:23:43</span>
+    </p>
+    <div class="collapsible">
+        <p>From what I know the only advantage to hardware encoding is for streaming, because otherwise the low quality encoding is simply no different from h.264 quality if not worse from what I remember. The only purpose is to minimize framerate hit when gaming and encoding to share at the same time, hardware encoders still can't do this kind of stuff right at all.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmdi8b3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmf733n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiederian">tiederian</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 01 2017 12:46:18</span>
+    </p>
+    <div class="collapsible">
+        <p>I tried this out and the results were abysmal. As you can see, slight loss in quality with CRF 22 SW encoding, massive loss with xmedia HW encoding. I even tried upping the minimum bitrate with xmedia to 8000 out of curiosity, and the quality was still far worse and the file was 900mb larger.</p>
+<p>https://drive.google.com/file/d/0B7g69TCdbPEoeFJEc0Roc2c2ZWM</p>
+<p>^ Elementary S02E01 1.6gb x264</p>
+<p>https://drive.google.com/file/d/0B7g69TCdbPEoUmdjVm5MbkQzWmc</p>
+<p>^ 1gb x265 3000-20000 VBR with xmedia</p>
+<p>https://drive.google.com/file/d/0B7g69TCdbPEoaVhrM3NILWNXb3M</p>
+<p>^ 745mb x265 CRF 22 with Handbrake Nightly</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmf733n">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbjlw9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/CameraMan1">CameraMan1</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 08:21:39</span>
+    </p>
+    <div class="collapsible">
+        <p>link is down</p>
+<p>EDIT: jk you just need to delete a couple characters</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbjlw9">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmblx8j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/YouWantShopped">YouWantShopped</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 10:13:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Don't bother reencode 720p with x265. HEVC 50% reduction margin only benefit larger resolution videos. 1080p+</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmblx8j">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbvx75">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Plays_You_Wonderwall">Plays_You_Wonderwall</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 14:42:33</span>
+    </p>
+    <div class="collapsible">
+        <p>Not sure if it's related but wonder if you can help.</p>
+<p>My roku hates the audio on the x265 4K files. Think it has to do with multiple audio tracks. Trying to encode the audio only to something like ac3 or aac. </p>
+<p>When I try to keep video but encode audio on xmedia it doesn't work. Open the 4K file and the radio button only let's me select audio only, the other selections are greyed out. </p>
+<p>Another option I've looked at is ffmpeg via command line. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbvx75">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmfy2ar">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mteg">mteg</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 01 2017 21:20:42</span>
+    </p>
+    <div class="collapsible">
+        <p>I use MKVToolnixGUI, extract the audio, run this little script:</p>
+<h1>!/bin/bash</h1>
+<p>for a in *.mka; do
+  f="${a[@]/%mka/aac}"
+  ffmpeg -i "$a" -strict experimental -c:a aac -qscale:a 4 "$f"
+done</p>
+<p>(-qscale:a 4 is overkill, but in case I have to share it with DTS weeaboos that makes sure there won't be any audible quality difference with a blind test).</p>
+<p>Then remix with MKVToolnixGUI.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmfy2ar">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg3geb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Plays_You_Wonderwall">Plays_You_Wonderwall</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:16:15</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks, I figured out a way to convert it finally last night.</p>
+<p>Extract only english audio using MKVTool and encode audio only from DTS to AAC using ffmpeg.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmg3geb">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbyv8k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/j3tstream">j3tstream</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 15:35:26</span>
+    </p>
+    <div class="collapsible">
+        <p>in w7 x64 and totally freezes upon pressing encode... any one know whats up with that?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbyv8k">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmcejir">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DogFriedRice13">DogFriedRice13</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 30 2017 20:06:34</span>
+    </p>
+    <div class="collapsible">
+        <p>Can you do 10bit with XMedia?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmcejir">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dqhzt78">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Lemongreen201503">Lemongreen201503</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Nov 29 2017 09:47:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Although performance is significantly improved by using Nvidia’s HEVC encoder, NVENC, but it comes at a cost of quality. Simply put, you’re not going to get as good a quality at the same bitrates using Nvidia’s encoder compared to using Handbrake. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dqhzt78">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbmn7e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Nippy69">Nippy69</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Aug 30 2017 10:46:04</span>
+    </p>
+    <div class="collapsible">
+        <p>Can't you also use handbreak to encode x265 wouldn't that be faster since it's not internet based like xmedia.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbmn7e">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmbm39k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AReallyScaryGhost">AReallyScaryGhost</a>
+        <span class="score"> | -1 points</span>
+        <span class="timestamp"> | Aug 30 2017 10:21:32</span>
+    </p>
+    <div class="collapsible">
+        <p>It's beyond me why people are so obsessed with x265 and still talk about quality.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbm39k">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmbojli">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/commit_bat">commit_bat</a>
+        <span class="score"> | 18 points</span>
+        <span class="timestamp"> | Aug 30 2017 11:54:36</span>
+    </p>
+    <div class="collapsible">
+        <p>Better quality at same bitrate sounds pretty straightforward to me.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmbojli">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmd7g06">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Apansy">Apansy</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Aug 31 2017 07:12:20</span>
+    </p>
+    <div class="collapsible">
+        <p>A lot of x265 encoders have been doing it wrong and that is why x265 looks bad. But a well encoded x265 without targeting a low bitrate/filesize will look great.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dmd7g06">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dpau5yj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/clrksml">clrksml</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Nov 03 2017 18:29:03</span>
+    </p>
+    <div class="collapsible">
+        <p>It's beyond me why people bother to encode h265. When most android devices on the market don't support h265. You have to transcode it to a playable format like h264 or mpeg.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6wx58z/_/dpau5yj">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

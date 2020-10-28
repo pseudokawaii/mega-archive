@@ -1,0 +1,218 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_170nu0">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/YCSMD">YCSMD</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Jan 21 2013 23:05:14</span>
+    </p>
+    <strong>Is this feasible in the future?  (Torrent to MEGA storage)</strong>
+    <p><p>So an idea crossed my mind just now.  What if there was a service that provided the ability to download torrents directly to a storage service (MEGA in this case) which you could then download from MEGA after it was finished?</p>
+<p>I know I see issues with privacy, encryption and legality, not to mention the increased strain on the servers, but I wonder if there is a way around all that?  I wouldn't expect this service to be free, but Im just throwing it out there and seeing if anyone thinks this could be a possibility in the future?</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/170nu0">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_c813sfa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/fenrisulfur">fenrisulfur</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Jan 21 2013 23:16:09</span>
+    </p>
+    <div class="collapsible">
+        <p>What you are doing is describing a seedbox.</p>
+<p>Go check out /r/seedboxes</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c813sfa">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81413c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/YCSMD">YCSMD</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 21 2013 23:28:15</span>
+    </p>
+    <div class="collapsible">
+        <p>Look at that!  Thanks</p>
+<p>Question, does the file need to be fully downloaded to the server before downloading to the PC or can they happen in parallel for large files?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c81413c">permalink</a>
+        </p>
+        <div class="comment" id="t1_c819aop">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/krustyarmor">krustyarmor</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Jan 22 2013 03:58:25</span>
+    </p>
+    <div class="collapsible">
+        <p>BitTorrent doesn't download sequentially but rather it just grabs whatever bits happen to be available until it's gotten the whole thing.  This is why you can begin uploading while you are still downloading; you have bits available..</p>
+<p>Pretty much all other download methods that you might use to get the file from you seedbox to your own box (such as SFTP, for example) will want to read and transmit sequentially (because it expects to be reading a complete file.</p>
+<p>So you could theoretically download in parallel if they both did so sequentially, as long as the second download speed did not exceed the first download speed.  A 1:1 speed ratio is just a proxy that keeps a local copy for the proxy server box.</p>
+<p>So, no, not really feasible with bittorrent.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c819aop">permalink</a>
+        </p>
+        <div class="comment" id="t1_c82qzy3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Icovada">Icovada</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 24 2013 15:07:55</span>
+    </p>
+    <div class="collapsible">
+        <p>If you "rsync -av" it, it will download the complete file at first (including eventual "holes") and plug them every time you re-run the command, without downloading the whole complete file</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c82qzy3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_c81477f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/fenrisulfur">fenrisulfur</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 21 2013 23:37:02</span>
+    </p>
+    <div class="collapsible">
+        <p>I am not sure as I have never really thought much about seedboxes but I cannot a reason that you could not do it.</p>
+<p>Of course the downside is that seedboxes cost you money.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c81477f">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_c814ku2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/InfantsInInfantry">InfantsInInfantry</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 21 2013 23:56:55</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't think we'll ever be able to download contents of torrents to our MEGA drives, but it definitely is feasible to automate the upload of files to MEGA.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c814ku2">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_c815k28">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/thekiwi99">thekiwi99</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 00:49:49</span>
+    </p>
+    <div class="collapsible">
+        <p>This is possible, but the problem is finding a machine to run it on.  Simultaneously downloading a torrent and uploading the file to MEGA isn't hard, but there is no way to torrent straight to their servers.  So you need a seedbox.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c815k28">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_c81gjf8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 15:01:42</span>
+    </p>
+    <div class="collapsible">
+        <p>See <a href="http://put.io">put.io</a>.
+I don't believe it has the same encryption ability as MEGA, but it is pretty useful nonetheless.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170nu0/_/c81gjf8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

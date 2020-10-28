@@ -1,0 +1,914 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7peeq4">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/indigo6alpha">indigo6alpha</a>
+        <span class="score"> | 328 points</span>
+        <span class="timestamp"> | Jan 10 2018 09:01:47</span>
+    </p>
+    <strong>[INFO/GUIDE] Use browser built-in Base64 decoder instead of third-party websites</strong>
+    <p><p>Browsers already have a base64 encoder/decoder built-in. Use these bookmarks to invoke those built-in JS functions instead of using third-party websites:</p>
+<p><strong>Decode selected text</strong>: Use this to decode a base64 encoded string in-place (<a href="https://gist.github.com/indigo6alpha/dfe56e67f235cffd0732586357e793fe">Source</a>)</p>
+<pre><code>javascript:function c(){}c.prototype.get=function(){var a="";window.getSelection?a=window.getSelection().toString():document.selection&amp;&amp;"Control"!=document.selection.type&amp;&amp;(a=document.selection.createRange().text);return a};c.prototype.set=function(a){if(window.getSelection){var b=window.getSelection();b.rangeCount&amp;&amp;(b=b.getRangeAt(0),b.deleteContents(),b.insertNode(document.createTextNode(a)))}else document.selection&amp;&amp;document.selection.createRange&amp;&amp;(b=document.selection.createRange(),b.text=a)};try{var d=new c,e=atob(d.get());d.set(e)}catch(a){alert(a.message)};
+</code></pre>
+<p><strong>Decode entered text</strong>: Use this to input a base64 encoded string and get the decoded string back (<a href="https://gist.github.com/indigo6alpha/5585dc1d4ea22c17ff2882c630915243">Source</a>)</p>
+<pre><code>javascript:try{var a=prompt("Enter base64 encoded string: ");null!==a&amp;&amp;console.log(prompt("Base64 decoded string:",atob(a)))}catch(b){alert(b.message)};
+</code></pre>
+<p>JS code snippets I've posted are minified. I've added the source links for reference.</p>
+<p><strong><a href="https://i.imgur.com/H2betWR.gifv">How to add these as bookmarks in Chrome</a></strong></p>
+<p><strong>Sample Base64 text</strong>: U2FtcGxlIEJhc2U2NCB0ZXh0</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7peeq4">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dsgm1wm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dnlg">dnlg</a>
+        <span class="score"> | 20 points</span>
+        <span class="timestamp"> | Jan 10 2018 09:24:32</span>
+    </p>
+    <div class="collapsible">
+        <p>There's also chrome extension for this.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgm1wm">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsh4wec">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 34 points</span>
+        <span class="timestamp"> | Jan 10 2018 17:13:53</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsh4wec">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsi6k90">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/laldans">laldans</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Jan 11 2018 04:23:10</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>or coding.</p>
+</blockquote>
+<p>I'm pretty sure copying someone else's code is coding as much as buying a painting is painting.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsi6k90">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dsho60l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Sunny_Cakes">Sunny_Cakes</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 10 2018 22:16:31</span>
+    </p>
+    <div class="collapsible">
+        <p>The bookmarklet is your extension tbh.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsho60l">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgr241">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/kozinc">kozinc</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 10 2018 12:39:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Cool! Could you give me a link please?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgr241">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsgr6vy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mike072292">Mike072292</a>
+        <span class="score"> | 18 points</span>
+        <span class="timestamp"> | Jan 10 2018 12:43:54</span>
+    </p>
+    <div class="collapsible">
+        <p>https://chrome.google.com/webstore/detail/base64-encode-and-decode/kcafoaahiffdjffagoegkdiabclnkbha?utm_source=gmail</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgr6vy">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsgu4g7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/kozinc">kozinc</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 13:59:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgu4g7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsi11rm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/greatflicks">greatflicks</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 11 2018 02:33:13</span>
+    </p>
+    <div class="collapsible">
+        <p>nice, thanks</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsi11rm">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgo5e0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TwiztidJuggla420">TwiztidJuggla420</a>
+        <span class="score"> | 14 points</span>
+        <span class="timestamp"> | Jan 10 2018 10:54:25</span>
+    </p>
+    <div class="collapsible">
+        <p>There is also a new Firefox add-on that does this as well. I just downloaded it and tried it out. It is much faster and easier than using base64decode.com. It's going to save me a lot of time. :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgo5e0">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsgprnq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/gazongagizmo">gazongagizmo</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Jan 10 2018 11:57:25</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>a new Firefox add-on</p>
+</blockquote>
+<p>name? ^rank? ^^serial ^^number?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgprnq">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsgpxkg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TwiztidJuggla420">TwiztidJuggla420</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Jan 10 2018 12:03:09</span>
+    </p>
+    <div class="collapsible">
+        <p>base64 decoder 1.0 By thedingo (Dev)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgpxkg">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsgs513">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DJ_Endman">DJ_Endman</a>
+        <span class="score"> | 13 points</span>
+        <span class="timestamp"> | Jan 10 2018 13:11:03</span>
+    </p>
+    <div class="collapsible">
+        <p>https://addons.mozilla.org/en-US/firefox/addon/base64-decoder/</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgs513">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgqnui">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/thegreatshazham">thegreatshazham</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 10 2018 12:27:24</span>
+    </p>
+    <div class="collapsible">
+        <p>Brilliant thanks for this will save me leaving a tab with base64 on it</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgqnui">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsgs0i8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TwiztidJuggla420">TwiztidJuggla420</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 10 2018 13:07:52</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah, I just installed it myself. I wish I had it long ago. It would have saved me a lot of time constantly switching between tabs, lol.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgs0i8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgo5hc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Jan 10 2018 10:54:32</span>
+    </p>
+    <div class="collapsible">
+        <p>Wow, didn't realise you could execute JS via bookmarks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgo5hc">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsgs4fs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/duckwizzle">duckwizzle</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Jan 10 2018 13:10:36</span>
+    </p>
+    <div class="collapsible">
+        <p>You can type JavaScript directly into the URL bar on any page, doesn't have to be a bookmark</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgs4fs">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsi19hg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pissymon">Pissymon</a>
+        <span class="score"> | -8 points</span>
+        <span class="timestamp"> | Jan 11 2018 02:37:20</span>
+    </p>
+    <div class="collapsible">
+        <p>thats pretty cool.  I wonder what other codes can you run?  maybe you can do C++ or SQL haha</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsi19hg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dshbepa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/R3DSMiLE">R3DSMiLE</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 10 2018 18:55:19</span>
+    </p>
+    <div class="collapsible">
+        <p>TYL the name as well: bookmark_let_</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshbepa">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgnk5a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EGDoto">EGDoto</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Jan 10 2018 10:28:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Nice tip, thanks for sharing!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgnk5a">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgmyml">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/exhippy">exhippy</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 10 2018 10:03:05</span>
+    </p>
+    <div class="collapsible">
+        <p>The Chrome/Opera extension works well.Very easy.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgmyml">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dshw9k5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/FortheredditLOLz">FortheredditLOLz</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 11 2018 01:01:44</span>
+    </p>
+    <div class="collapsible">
+        <p>Could also use terminal for this.</p>
+<p>echo U2FtcGxlIEJhc2U2NCB0ZXh0 | base64 -D</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshw9k5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgm4ru">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/_x265_">_x265_</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 10 2018 09:27:55</span>
+    </p>
+    <div class="collapsible">
+        <p>Works great in Opera too!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgm4ru">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgm77v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Futcharist">Futcharist</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 10 2018 09:30:40</span>
+    </p>
+    <div class="collapsible">
+        <p>This is great, thank you</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgm77v">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgp7t3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Kakito104">Kakito104</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 10 2018 11:37:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Any way to do this on mobile?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgp7t3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgx21f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/DIDNT_READ_YOUR_SHIT">DIDNT_READ_YOUR_SHIT</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 10 2018 15:00:13</span>
+    </p>
+    <div class="collapsible">
+        <p>Success! Thanks fam</p>
+<p>Stickystacky this on the sidebar or something</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgx21f">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgqn7e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Tushar2998">Tushar2998</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 12:26:49</span>
+    </p>
+    <div class="collapsible">
+        <p>This is Awesome .. thanks a lot ! </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgqn7e">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgtnb7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/redbreadredemption">redbreadredemption</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 13:48:42</span>
+    </p>
+    <div class="collapsible">
+        <p>ELI5 pls</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgtnb7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsgtrqp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 13:51:16</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsgtrqp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsh2t60">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Cynicbats">Cynicbats</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 16:40:03</span>
+    </p>
+    <div class="collapsible">
+        <p>How cool!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsh2t60">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsh39kv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JASON9818">JASON9818</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 16:47:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Is there a way to implement it in Violentmonkey?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsh39kv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsheq4n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TimeZ0ne">TimeZ0ne</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 19:48:19</span>
+    </p>
+    <div class="collapsible">
+        <p>My MAN!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsheq4n">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dshmg6k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cyberdoggy">cyberdoggy</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 21:49:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks, this makes life a step easier!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshmg6k">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dshsh9o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheAmnesiacKid">TheAmnesiacKid</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 23:32:03</span>
+    </p>
+    <div class="collapsible">
+        <p>Amazing. Thank you!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshsh9o">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dshyckf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BlindSins">BlindSins</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 11 2018 01:41:35</span>
+    </p>
+    <div class="collapsible">
+        <p>This bookmark thing looks great, much better than the website I created to turn links into shareable encoded links.</p>
+<p>Thanks for the share.</p>
+<p><strong>Edit:</strong> For those of you who messaged me, <a href="https://keykode.ml">Keykode</a>.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshyckf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsj71p2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Chandz0">Chandz0</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 11 2018 19:10:46</span>
+    </p>
+    <div class="collapsible">
+        <p>This works perfectly, thanks!  Also thanks for the how-to gif!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsj71p2">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dska8wu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ShmebulockJunior">ShmebulockJunior</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 12 2018 08:19:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Also <a href="https://www.reddit.com/r/megalinks/comments/6xhzpi/meta_here_is_a_javascript_bookmark_to_decode_base/dmh04xr/">this</a>.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dska8wu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsm788b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Get_Jhinxed">Get_Jhinxed</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 13 2018 11:51:29</span>
+    </p>
+    <div class="collapsible">
+        <p>Works great!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsm788b">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsyfrk4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TarBenderr">TarBenderr</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 20 2018 05:07:12</span>
+    </p>
+    <div class="collapsible">
+        <p>Curious to know why. I've been using https://www.base64decode.org/, should I not be?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsyfrk4">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dt0i7k5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mr_Soupe">Mr_Soupe</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 21 2018 15:47:24</span>
+    </p>
+    <div class="collapsible">
+        <p>This thread should be pinned up for ever on r/Megalinks ...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dt0i7k5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsh9jz2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nikesta">nikesta</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Jan 10 2018 18:25:59</span>
+    </p>
+    <div class="collapsible">
+        <p>So I've posted about this before, I've spent countless hours creating a base64 decoder and Encoder.. I'm not a programmer but I learned how do these stuff. I've been using this site for a while and It makes my life easier and you'll make mine easier with all these stuff you all post.</p>
+<p>Anyway please consider checking it out. Let me know what you like or hate. and issues you have.</p>
+<p>EDIT: The old version had a few mistakes. FIXED Version
+http://links.snahp.it/344Base64%20Encoder%20and%20Dcoder</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dsh9jz2">permalink</a>
+        </p>
+        <div class="comment" id="t1_dshf5j0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/achimba">achimba</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Jan 10 2018 19:54:59</span>
+    </p>
+    <div class="collapsible">
+        <p>I would advise against running any arbitrary executable. Given that there are quick javascript solutions to this, one should not have to run an exe. caveat emptor.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshf5j0">permalink</a>
+        </p>
+        <div class="comment" id="t1_dshkqe6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nikesta">nikesta</a>
+        <span class="score"> | -1 points</span>
+        <span class="timestamp"> | Jan 10 2018 21:22:24</span>
+    </p>
+    <div class="collapsible">
+        <p>https://imgur.com/a/1Rs8U this is what it looks like.. personally I really does simplify things for me. because I can open the link directly.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshkqe6">permalink</a>
+        </p>
+        <div class="comment" id="t1_dshkqth">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/imguralbumbot">imguralbumbot</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2018 21:22:34</span>
+    </p>
+    <div class="collapsible">
+        <p>^(Hi, I'm a bot for linking direct images of albums with only 1 image)</p>
+<p><strong>https://i.imgur.com/aV0P2FO.png</strong></p>
+<p>^^<a href="https://github.com/AUTplayed/imguralbumbot">Source</a> ^^| ^^<a href="https://github.com/AUTplayed/imguralbumbot/blob/master/README.md">Why?</a> ^^| ^^<a href="https://np.reddit.com/user/AUTplayed/">Creator</a> ^^| ^^<a href="https://np.reddit.com/message/compose/?to=imguralbumbot&amp;subject=ignoreme&amp;message=ignoreme">ignoreme</a> ^^| ^^<a href="https://np.reddit.com/message/compose/?to=imguralbumbot&amp;subject=delet%20this&amp;message=delet%20this%20dshkqth">deletthis</a> </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7peeq4/_/dshkqth">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7per92">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/grell851">grell851</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Jan 10 2018 10:30:15</span>
+    </p>
+    <strong>[Movie] I Could go On Singing 1963 DVDrip x264 669 MB</strong>
+    <p><p>decode with base 64</p>
+<p>aHR0cHM6Ly9tZWdhLm56LyMhcjVORWxKcmEhMHk2d1VGRDM4TFhOYThMY0hSYnlseVo2R1lpV1lTczlTckwybURkdTlwYw==</p>
+<p>When celebrated singer Jenny Bowman (Judy Garland) asks her ex-lover David (Dirk Bogarde) to let her see their son, Matt, she is unprepared for the emotional consequences. Though Matt doesn’t even know Jenny is his mother, their growing bond will force Jenny to make the most diffi cult choice of her life: between the rewards of motherhood and the glamorous life of the stage.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7per92">permalink</a>
+    </p>
+</div>
+
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

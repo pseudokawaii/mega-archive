@@ -1,0 +1,392 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_5ug8wg">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 14 points</span>
+        <span class="timestamp"> | Feb 16 2017 17:00:36</span>
+    </p>
+    <strong>[META] MegaDownloader encrypted links</strong>
+    <p><p>Hello everyone,<br>
+I've noticed the new trend of encrypting Mega Links, which is cool to be honest.<br>
+I'm just having some problems with them since I don't have a Windows machine, and apparently the source code is missing part of the encryption password (ENC_XOR array, for whom may be interested).  </p>
+<p>Has anyone found a way to crack the password / decrpyt the links in order to use them in a Linux / Mac OS environment?  </p>
+<p>Have a wondeful day you all, and thanks to the uploaders :)</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_ddu7v1m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cheztir">cheztir</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 16 2017 22:27:14</span>
+    </p>
+    <div class="collapsible">
+        <p>I was able to pull the ENC_XOR byte array (unpack it and run through .net reflector).</p>
+<pre><code>ENC_XOR = new byte[] { 12, 0x39, 0xfb, 120, 0x12, 0x4b, 6, 250, 0x55 };
+</code></pre>
+<p>I'll see if I have some time later and I could whip up a command line utility that just decrypts the URLs.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddu7v1m">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddv8r3y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 17 2017 16:30:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Done it: <a href="https://github.com/denysvitali/megadecrypter">megadecrypter</a></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddv8r3y">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddvap12">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cheztir">cheztir</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 17 2017 17:07:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Looks good man. I couldn't get openssl to cooperate to save my life when I was trying to test the concept. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddvap12">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ddubz91">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 16 2017 23:54:14</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you! I'll write a Crystal app to decrypt the links &lt;3</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddubz91">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dduccri">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douhaveanygreypoupon">douhaveanygreypoupon</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 17 2017 00:02:22</span>
+    </p>
+    <div class="collapsible">
+        <p>So you'll be able to go from mega://enc(blah into mega://#!F22KSJ2!DSSDK?</p>
+<p>If this is the case please bear in mind these links are intentionally encrypted because we <strong>don't</strong> want the link visible.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/dduccri">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddud9vp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cheztir">cheztir</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 17 2017 00:22:34</span>
+    </p>
+    <div class="collapsible">
+        <p>It doesn't change anything about the public visibility, MegaDownloader isn't some hidden/private tool and it's using the same encryption for every link.</p>
+<p>The only difference is now those on other platforms besides Windows (or using a different download client) can use the encrypted links.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddud9vp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dduj4bc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 17 2017 02:38:38</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't know if its me, but apparently the exe is not decompilable by any software, including .NET Reflector. I'm using Windows 10 with .NET Reflector 9.0.1.374</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/dduj4bc">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddujrh3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cheztir">cheztir</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 17 2017 02:54:19</span>
+    </p>
+    <div class="collapsible">
+        <p>I should've explained a bit more with my first post. The binary release of MegaDownloader is packed, compressed, and sort of obfuscated by a tool called <a href="https://autohotkey.com/mpress/mpress_web.htm">mpress</a> so most tools are very confused by this. .Net Reflector at least sees the mpress routines used for the lzma compression and bootstrapping.</p>
+<p>To see the disassembled/reflected .NET code you'll have to unpack the binary first. I used a tool called <a href="http://de4dot.com/">de4dot</a> to unpack the binary then load it into Reflector. From there it was just a matter of finding the constructor for the class and pulling the value. Hope this helps.</p>
+<p>I'm curious to examine the unpacked code and check if there are any other differences between the source and binary versions.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddujrh3">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddum4qe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 17 2017 03:51:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Makes sense. I thought at first that by "unpack" you meant "Install it, don't analyze the installer" :D</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddum4qe">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ddtrj27">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douhaveanygreypoupon">douhaveanygreypoupon</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 16 2017 17:31:21</span>
+    </p>
+    <div class="collapsible">
+        <pre><code>Private Shared ENC_XOR As Byte() = New Byte() {-} ' REMOVED FROM SOURCE CODE, SORRY
+</code></pre>
+<p>Is it possible this was left out of the source code intentionally to prevent reverse engineering/decrypting the real link?</p>
+<p>I haven't seen anyone besides myself use MD Encrypted links - but make sure to include a "public" folder/key because I'm aware not even can or wants to use MegaDownloader.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddtrj27">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddttljy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 16 2017 18:08:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Yes indeed, that's why I posted this.<br>
+Yeah, I saw that you include a public folder link too, but was looking for a possible solution to this, so we can all switch to encrypted links :P</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddttljy">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddtzapl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douhaveanygreypoupon">douhaveanygreypoupon</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 16 2017 19:49:59</span>
+    </p>
+    <div class="collapsible">
+        <p>You're probably out of luck in this case, I don't think MD is even actively developed anymore. </p>
+<p>I've seen jDownloader mentioned here a few times - it might be worth submitting a feature request to allow jD to make its own mega encrypted links. It's a long shot, the encrypt option for MD is very specific in terms of its audience.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddtzapl">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddu0bkq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 16 2017 20:08:26</span>
+    </p>
+    <div class="collapsible">
+        <p>Well, I just wanted it to be able to decrypt some of the links I've seen here, that's all (:  </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddu0bkq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ddtxcrc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Cartmanishere">Cartmanishere</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 16 2017 19:14:41</span>
+    </p>
+    <div class="collapsible">
+        <p>I've never tried this but maybe you can try running MegaDownloader on linux or mac using Wine. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddtxcrc">permalink</a>
+        </p>
+        <div class="comment" id="t1_ddtxh38">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 16 2017 19:16:48</span>
+    </p>
+    <div class="collapsible">
+        <p>Never did I, but what I need is a CLI tool to decrypt the links, since I use a server of mine to downloads MEGA contents</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddtxh38">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ddv8rxg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/denvit">denvit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 17 2017 16:31:05</span>
+    </p>
+    <div class="collapsible">
+        <p>For anyone wondering: I've created <a href="https://github.com/denysvitali/megadecrypter">megadecrypter</a>, it should work on any platform (you have to compile it btw)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/ddv8rxg">permalink</a>
+        </p>
+        <div class="comment" id="t1_dim2bmv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Jorchking">Jorchking</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 08 2017 04:07:02</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't know how the heck that works. Can you do a instructions for newbie or a software preferably?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5ug8wg/_/dim2bmv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

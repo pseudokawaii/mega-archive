@@ -1,0 +1,510 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7pr3ge">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/whitewolfghost">whitewolfghost</a>
+        <span class="score"> | 87 points</span>
+        <span class="timestamp"> | Jan 11 2018 20:37:42</span>
+    </p>
+    <strong>[INFO/GUIDE] Remove BOLD using Javascript bookmark</strong>
+    <p><p>I saw you can decode base64 using bookmark.  So I attempted to remove bold letters with bookmark.  I found this <a href="http://patisserie.keensoftware.com/en/pages/remove-word-formatting-from-rich-text-editor-with-javascript">code</a>.
+And I just did the cut and paste job.  I am not a javascript programmer.  I have only tested it in Chrome.</p>
+<p><strong>Remove Bold</strong>: Use this to remove bold letters from selected string.</p>
+<pre><code>javascript:function c(){}function cleanHTML(e){var t=/(\n|\r| class=(")?Mso[a-zA-Z]+(")?)/g,n=e.replace(t," "),o=new RegExp("\x3c!--(.*?)--\x3e","g"),n=n.replace(o,""),c=new RegExp("&lt;(/)*(meta|link|span|\\?xml:|st1:|o:|font)(.*?)&gt;","gi");n=n.replace(c,"");for(var a=["strong","style","script","applet","embed","noframes","noscript"],r=0;r&lt;a.length;r++)c=new RegExp("&lt;"+a[r]+".*?"+a[r]+"(.*?)&gt;","gi"),n=n.replace(c,"");for(var i=["style","start"],r=0;r&lt;i.length;r++){var l=new RegExp(" "+i[r]+'="(.*?)"',"gi");n=n.replace(l,"")}return n}c.prototype.get=function(){var e="";if(void 0!==window.getSelection){var t=window.getSelection();if(t.rangeCount){for(var n=document.createElement("div"),o=0,c=t.rangeCount;o&lt;c;++o)n.appendChild(t.getRangeAt(o).cloneContents());e=n.innerHTML}}else void 0!==document.selection&amp;&amp;"Text"==document.selection.type&amp;&amp;(e=document.selection.createRange().htmlText);return e},c.prototype.set=function(e){var t,e;if(window.getSelection&amp;&amp;window.getSelection().getRangeAt){(t=window.getSelection().getRangeAt(0)).deleteContents();var n=document.createElement("div");n.innerHTML=e;for(var o,c=document.createDocumentFragment();o=n.firstChild;)c.appendChild(o);t.insertNode(c)}else document.selection&amp;&amp;document.selection.createRange&amp;&amp;(t=document.selection.createRange(),e=3==node.nodeType?node.data:node.outerHTML,t.pasteHTML(e))};try{var d=new c,e=cleanHTML(d.get());d.set(e)}catch(e){alert(e.message)}
+</code></pre>
+<p><a href="https://i.imgur.com/H2betWR.gifv">How to add these as bookmarks in Chrome</a></p>
+<p><strong>For testing</strong>: not<strong>bold</strong>bold</p>
+<p>Just incase someone wants the full Source Code:</p>
+<pre><code>function c()
+{
+}
+
+// removes MS Office generated guff
+function cleanHTML(input)
+{
+    // 1. remove line breaks / Mso classes
+    var stringStripper = /(\n|\r| class=(")?Mso[a-zA-Z]+(")?)/g; 
+    var output = input.replace(stringStripper, ' ');
+
+    // 2. strip Word generated HTML comments
+    var commentSripper = new RegExp('&lt;!--(.*?)--&gt;','g');
+    var output = output.replace(commentSripper, '');
+    var tagStripper = new RegExp('&lt;(/)*(meta|link|span|\\?xml:|st1:|o:|font)(.*?)&gt;','gi');
+
+    // 3. remove tags leave content if any
+    output = output.replace(tagStripper, '');
+
+    // 4. Remove everything in between and including tags '&lt;style(.)style(.)&gt;'
+    var badTags = ['strong', 'style', 'script','applet','embed','noframes','noscript'];
+
+    for (var i=0; i&lt; badTags.length; i++)
+    {
+        tagStripper = new RegExp('&lt;'+badTags[i]+'.*?'+badTags[i]+'(.*?)&gt;', 'gi');
+        output = output.replace(tagStripper, '');
+    }
+
+    // 5. remove attributes ' style="..."'
+    var badAttributes = ['style', 'start'];
+
+    for (var i=0; i&lt; badAttributes.length; i++)
+    {
+        var attributeStripper = new RegExp(' ' + badAttributes[i] + '="(.*?)"','gi');
+        output = output.replace(attributeStripper, '');
+    }
+
+    return output;
+}
+
+c.prototype.get = function()
+{
+    var html = "";
+    if (typeof window.getSelection != "undefined")
+    {
+        var sel = window.getSelection();
+        if (sel.rangeCount)
+        {
+            var container = document.createElement("div");
+            for (var i = 0, len = sel.rangeCount; i &lt; len; ++i)
+            {
+                container.appendChild(sel.getRangeAt(i).cloneContents());
+            }
+            html = container.innerHTML;
+        }
+    }
+    else if (typeof document.selection != "undefined")
+    {
+        if (document.selection.type == "Text")
+        {
+            html = document.selection.createRange().htmlText;
+        }
+    }
+    return html;
+};
+
+c.prototype.set = function(html)
+{
+    var range, html;
+    if (window.getSelection &amp;&amp; window.getSelection().getRangeAt)
+    {
+        range = window.getSelection().getRangeAt(0);
+        range.deleteContents();
+        var div = document.createElement("div");
+        div.innerHTML = html;
+        var frag = document.createDocumentFragment(), child;
+        while ( (child = div.firstChild) )
+        {
+            frag.appendChild(child);
+        }
+        range.insertNode(frag);
+    }
+    else if (document.selection &amp;&amp; document.selection.createRange)
+    {
+        range = document.selection.createRange();
+        html = (node.nodeType == 3) ? node.data : node.outerHTML;
+        range.pasteHTML(html);
+    }
+};
+
+try
+{
+    var d = new c;
+    var e = cleanHTML(d.get());
+    // alert(e);
+    d.set(e)
+}
+catch(a)
+{
+    alert(a.message)
+};
+</code></pre></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dsjeoha">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lpjunior999">lpjunior999</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Jan 11 2018 21:11:48</span>
+    </p>
+    <div class="collapsible">
+        <p>This is interesting. I mostly browse on Android and just set up a way to decode base64 with Tasker, I'll have to try adding this.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsjeoha">permalink</a>
+        </p>
+        <div class="comment" id="t1_dskirqt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AabidS10">AabidS10</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 12 2018 13:38:45</span>
+    </p>
+    <div class="collapsible">
+        <p>Can you tell me the Tasker way?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dskirqt">permalink</a>
+        </p>
+        <div class="comment" id="t1_dskq9np">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/lpjunior999">lpjunior999</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 12 2018 16:06:34</span>
+    </p>
+    <div class="collapsible">
+        <p>Tasker can convert variables to and from base64. I use a plugin app called AutoShare to grab the encoded link, decode it, and copy it my clipboard. I'll do a write-up sometime, I'd also like to find a way to make it remove letters, etc. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dskq9np">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dstli3j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/duckwizzle">duckwizzle</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 17 2018 16:38:06</span>
+    </p>
+    <div class="collapsible">
+        <p>Do you also download on android?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dstli3j">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dsjgpek">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Jan 11 2018 21:43:59</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsjgpek">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsjx5ev">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MALON">MALON</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 12 2018 02:38:37</span>
+    </p>
+    <div class="collapsible">
+        <p>I see nothing bypassing bold in here, am i wrong</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsjx5ev">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dsjv1dx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tyler_swift">tyler_swift</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Jan 12 2018 01:57:24</span>
+    </p>
+    <div class="collapsible">
+        <p>Where can this be useful? Honestly asking.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsjv1dx">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsjzhi9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ruralcricket">ruralcricket</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Jan 12 2018 03:25:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Some posters add a couple of <strong>B</strong>old letters to the mega link or key and ask you to remove them as part of confusing the DMCA bots. Of course after cutting &amp; pasting into a URL, they are no longer bold...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsjzhi9">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsk2575">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tyler_swift">tyler_swift</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 12 2018 04:22:29</span>
+    </p>
+    <div class="collapsible">
+        <p>I see, thanks.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsk2575">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsk3018">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/xipharg">xipharg</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 12 2018 04:42:10</span>
+    </p>
+    <div class="collapsible">
+        <p>wouldn't it be fairly easy for a bot scraping the sub for links to simply throw out the those  characters enclosed in strong tag? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsk3018">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsk57aw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pissymon">Pissymon</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Jan 12 2018 05:36:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah, pretty much.  People like to think they are so smart and genius by coming up with these "methods," but in reality, really all they are doing is delaying their demise.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsk57aw">permalink</a>
+        </p>
+        <div class="comment" id="t1_dsk78ct">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/prometheus371">prometheus371</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Jan 12 2018 06:33:38</span>
+    </p>
+    <div class="collapsible">
+        <p>isnt that the point though? to delay the death of the link?Even if its just for a little bit?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsk78ct">permalink</a>
+        </p>
+        <div class="comment" id="t1_dskbrno">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/xipharg">xipharg</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 12 2018 09:23:43</span>
+    </p>
+    <div class="collapsible">
+        <p>maybe, but it's a very simple addition if they pay any attention to this sub at all. Someone who can create a proper bot to mine these links can probably update it to work around this in a couple of minutes. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dskbrno">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dsjkjt0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/un10able">un10able</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 11 2018 22:46:56</span>
+    </p>
+    <div class="collapsible">
+        <p>you, I like you</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsjkjt0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsjucau">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cyberdoggy">cyberdoggy</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 12 2018 01:44:13</span>
+    </p>
+    <div class="collapsible">
+        <p>Perfect just what I needed thanks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsjucau">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dskyz31">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mteg">mteg</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 12 2018 18:26:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks a lot, that's really great (especially because it leaves everything but the bold in place, without having to open a dialog like the base64 javascript bookmark I've been using.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dskyz31">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dsmh9oz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HTPC-">HTPC-</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 13 2018 16:41:08</span>
+    </p>
+    <div class="collapsible">
+        <p>Dude this is awesome!! thanks very much.  Between this and now the b64 addon I have, decrypting links is a breeze!</p>
+<p>again, thanks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dsmh9oz">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dt0i7yf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mr_Soupe">Mr_Soupe</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 21 2018 15:47:38</span>
+    </p>
+    <div class="collapsible">
+        <p>This thread should be pinned up for ever on r/Megalinks ...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7pr3ge/_/dt0i7yf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

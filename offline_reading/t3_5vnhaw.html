@@ -1,0 +1,841 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_5vnhaw">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/jacquescedric">jacquescedric</a>
+        <span class="score"> | 72 points</span>
+        <span class="timestamp"> | Feb 23 2017 02:29:43</span>
+    </p>
+    <strong>[META] macOS application for downloading from Mega</strong>
+    <p><p>I realised that some Mac users out there were having difficulty bypassing the download limit on Mega and didn't want to use the MegaTools command line tool. So I wrote this App which is essentially a GUI frontend for Megatools.</p>
+<blockquote>
+<p>https://github.com/jacquesCedric/Ananke</p>
+</blockquote>
+<p>It's open source, and it's spam free.</p>
+<p>Also, I'm fairly new to posting on Reddit. So apologies if I've committed some kind of faux pas.</p>
+<blockquote>
+<p>~~Edit: Seems to be a problem with machines running Sierra. Will try and sort it out ASAP~~</p>
+<p>Second Edit: I've sussed out what the problem is. After upgrading to Sierra, and goofing around on the other two laptops I have access to, I realised that macOS doesn't really allow static compilation of programs. The issue comes from a package that megaTools relies on (glib) not being installed by default. All I can really recommend is installing Homebrew, then megaTools, and then using Ananke as a GUI frontend. I will update the readme to reflect this shortcoming. Sorry, gang.</p>
+</blockquote></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dhuhe9o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pnnsnndlltnn">Pnnsnndlltnn</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | May 21 2017 14:21:06</span>
+    </p>
+    <div class="collapsible">
+        <p>For Mac users who can't get the app to work (wouldn't work for me with Sierra 10.12.3), you can do this:</p>
+<ol>
+<li>
+<p>Install Homebrew</p>
+</li>
+<li>
+<p>Enter <em>brew install megatools</em> in your terminal</p>
+</li>
+<li>
+<p>Then enter <em>megadl 'whatever mega link you want to download'</em> in the terminal once the megatools are installed. Don't forget the quotations marks.</p>
+</li>
+</ol>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dhuhe9o">permalink</a>
+        </p>
+        <div class="comment" id="t1_di1c8by">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dsfdgsggf1">dsfdgsggf1</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 25 2017 18:38:32</span>
+    </p>
+    <div class="collapsible">
+        <p>I get " skipping invalid mega download link"  </p>
+<p>How do I add the password?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/di1c8by">permalink</a>
+        </p>
+        <div class="comment" id="t1_di1cbse">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pnnsnndlltnn">Pnnsnndlltnn</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 25 2017 18:40:17</span>
+    </p>
+    <div class="collapsible">
+        <p>As in the decryption key? Paste the key into the mega.nz site when it prompts you, and then paste the new URL (after you've entered the decryption key) into your terminal.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/di1cbse">permalink</a>
+        </p>
+        <div class="comment" id="t1_di1dhmj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dsfdgsggf1">dsfdgsggf1</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 25 2017 19:01:47</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>As in the decryption key?</p>
+</blockquote>
+<p>yes.</p>
+<p>OK.  I have the mega extension turned on so I don't get a normal looking url.  I assume its the url of the mega link with the decryption key attached to it?  If so I added that and now I get something about "weird packets" and it fails. </p>
+<p>mega is acting really strange for me.  I can't even load the link in safari and it keeps denying the key in chrome</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/di1dhmj">permalink</a>
+        </p>
+        <div class="comment" id="t1_di1egc6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pnnsnndlltnn">Pnnsnndlltnn</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 25 2017 19:19:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Hmm. Strange! I'm using chrome, no mega extension, and after the decryption key I get a unique URL</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/di1egc6">permalink</a>
+        </p>
+        <div class="comment" id="t1_di1ff0s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dsfdgsggf1">dsfdgsggf1</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 25 2017 19:36:58</span>
+    </p>
+    <div class="collapsible">
+        <p>got it working with a different link,,, thanks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/di1ff0s">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_diy77nq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/6642099">6642099</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 15 2017 18:25:31</span>
+    </p>
+    <div class="collapsible">
+        <p>i can't get files to download this way. it says 'server returned 509' </p>
+<blockquote>
+<p>megadl</p>
+</blockquote>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/diy77nq">permalink</a>
+        </p>
+        <div class="comment" id="t1_diy9jj0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pnnsnndlltnn">Pnnsnndlltnn</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 15 2017 19:07:05</span>
+    </p>
+    <div class="collapsible">
+        <p>I just started getting that same message in the last day or two. It's like the megatools are getting caught by the 5GB limit now 😔</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/diy9jj0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dj2tg24">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/royalspark">royalspark</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 18 2017 20:19:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Hi I'm noob in this things, does this files will slow or damage the Mac
+because I Just bought the new MacBook Pro and I'm scared to do this steps and in the same time I want the app. Sorry for my English .</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dj2tg24">permalink</a>
+        </p>
+        <div class="comment" id="t1_dj2v693">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pnnsnndlltnn">Pnnsnndlltnn</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 18 2017 20:58:42</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm also fairly noob but no, it did not damage or slow my computer in any way.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dj2v693">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_de3hteo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Cantdiggthis">Cantdiggthis</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Feb 23 2017 03:40:22</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm not able to get this to work, while it runs and I'm able to select the download directory - when I copy a link and press the download button, it seems as if it is working as the two buttons are greyed out, but after a few seconds the two buttons can be selected again, as if there was an error.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3hteo">permalink</a>
+        </p>
+        <div class="comment" id="t1_de3hzaq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jacquescedric">jacquescedric</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 03:44:03</span>
+    </p>
+    <div class="collapsible">
+        <p>Hmmmm. That's unusual but it may be because the download started and was then aborted for an unusual reason. Check the folder you downloaded to for any partially completed downloads, then delete them and try to download again.</p>
+<p>If that fails. Could you please try building in Xcode and then see what the debugging console says?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3hzaq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de3hzdh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/contiveros">contiveros</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 03:44:06</span>
+    </p>
+    <div class="collapsible">
+        <p>The same thing is happening to me as well, do I/we need to install megatools?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3hzdh">permalink</a>
+        </p>
+        <div class="comment" id="t1_de3ipuy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jacquescedric">jacquescedric</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Feb 23 2017 04:00:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Hey, just checked on two other Macbooks and megadl crashed on one but worked on the other. I wonder if it could do with the fact that the working machines run El Capitan, and the machine where it crashed was using Sierra.</p>
+<p>Could you please tell me what version of OSX you're using?</p>
+<blockquote>
+<p>Edit: Thanks for your input</p>
+</blockquote>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3ipuy">permalink</a>
+        </p>
+        <div class="comment" id="t1_de3k14t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/contiveros">contiveros</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Feb 23 2017 04:31:40</span>
+    </p>
+    <div class="collapsible">
+        <p>It may not work right now in Sierra, but thank you for working so hard on getting something to work for others. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3k14t">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de3isr6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Cantdiggthis">Cantdiggthis</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 04:02:44</span>
+    </p>
+    <div class="collapsible">
+        <p>Sierra (public beta 10.12.4), looks like that's the pattern.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3isr6">permalink</a>
+        </p>
+        <div class="comment" id="t1_de3j5z2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/otiliorules">otiliorules</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 23 2017 04:11:19</span>
+    </p>
+    <div class="collapsible">
+        <p>Same and I'm on Sierra 10.12.3</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3j5z2">permalink</a>
+        </p>
+        <div class="comment" id="t1_de3tznc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/PricelessPersuader">PricelessPersuader</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Feb 23 2017 10:50:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Same.</p>
+<p>No crash but it wont download </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3tznc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_de3jq34">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/contiveros">contiveros</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 04:24:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Sierra </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3jq34">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_de3tgj2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/yador">yador</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Feb 23 2017 10:22:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Wouldn't something like Jdownloader 2 work?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3tgj2">permalink</a>
+        </p>
+        <div class="comment" id="t1_de4218p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/docholoday">docholoday</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Feb 23 2017 15:05:10</span>
+    </p>
+    <div class="collapsible">
+        <p>JD2 did work for a while at the beginning, but in the last couple months they must have identified it as a client somehow and now it just keeps saying "Bandwidth Exceeded", regardless of how much you've actually downloaded. </p>
+<p>I moved on to the command line and it's been working fine for a while, but it has some drawbacks (no que, folder downloads only, etc). </p>
+<p>I'm interested to try what OP made.</p>
+<p>EDIT: Tried it, seems to work fine on El Cap. I haven't upgraded to Sierra yet.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de4218p">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dgyfslu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/pables420">pables420</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Apr 30 2017 19:31:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for making this! Is there anyway to download specific folders/directories instead of everything within a link?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dgyfslu">permalink</a>
+        </p>
+        <div class="comment" id="t1_dh5f4d8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/xkillachillix">xkillachillix</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 05 2017 02:30:23</span>
+    </p>
+    <div class="collapsible">
+        <p>Sorry to not to reply to your comment but it seems to have worked for you. I have done all the instructions and when i go to open the megadl file it opens a terminal and says no links. where do i open the application/put in the links?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dh5f4d8">permalink</a>
+        </p>
+        <div class="comment" id="t1_dh6x77h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/pables420">pables420</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | May 06 2017 02:09:57</span>
+    </p>
+    <div class="collapsible">
+        <p>its an app, it doesnt run in terminal. once you download the zip, it has an app inside of it, if youre in sierra and have run all the brew commands you can open the app and use it as normal. as of now theres no way to download specific folders, only a whole directory</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dh6x77h">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_djhzwyt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/KenPinBowling">KenPinBowling</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jun 28 2017 05:52:13</span>
+    </p>
+    <div class="collapsible">
+        <p>Hey, dude. I downloaded the Ananke application and followed all the steps, but it doesn't seem to be working. The application's text will turn a greyish colour when I click download, then return to their normal colour after a few seconds. Do you know how to fix this problem?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/djhzwyt">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de3hhkq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/contiveros">contiveros</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 03:32:54</span>
+    </p>
+    <div class="collapsible">
+        <p>You just made me feel all tingly in my bathing suit area. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3hhkq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de3iysc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Apodacaac">Apodacaac</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 04:06:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Has anyone tried this that has used MiPony ? How does this compare?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3iysc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de3mtjt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Over__Analyse">Over__Analyse</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 05:45:20</span>
+    </p>
+    <div class="collapsible">
+        <p>I've read this a couple of times now but I couldn't find any more info, what is this Mega download limit people refer to? Browser downloads limit speed? And the MEGAsync app/megatools don't?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3mtjt">permalink</a>
+        </p>
+        <div class="comment" id="t1_de3sx3x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douhaveanygreypoupon">douhaveanygreypoupon</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 09:54:08</span>
+    </p>
+    <div class="collapsible">
+        <p>5GB transfer cap.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3sx3x">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_de3st31">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/superwario22">superwario22</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 09:48:32</span>
+    </p>
+    <div class="collapsible">
+        <p>thanks so much for this! I have Sierra on my Mac so haven't downloaded it yet but i can't wait to download it once the error is fixed! thanks again!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3st31">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de3yvqh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ediskrad73">ediskrad73</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 13:52:14</span>
+    </p>
+    <div class="collapsible">
+        <p>checking in, running Sierra and getting an error. looking forward to this working!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3yvqh">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de41twh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/R3b37K">R3b37K</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 15:00:47</span>
+    </p>
+    <div class="collapsible">
+        <p>Didn't work for me: 10.11.6</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de41twh">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de4leei">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 23 2017 20:47:04</span>
+    </p>
+    <div class="collapsible">
+        <p>thank you for this! but im on Sierra too.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de4leei">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de594kj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/otiliorules">otiliorules</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 24 2017 05:06:23</span>
+    </p>
+    <div class="collapsible">
+        <p>I followed the steps in your readme and it works perfectly.  This was super easy to set up too.  Thank you so much!!!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de594kj">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de6d0kp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mad_hedgehog">mad_hedgehog</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 24 2017 22:32:28</span>
+    </p>
+    <div class="collapsible">
+        <p>how do i open it? it came in a zip file and then a folder???</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de6d0kp">permalink</a>
+        </p>
+        <div class="comment" id="t1_de6mlct">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jacquescedric">jacquescedric</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Feb 25 2017 02:15:55</span>
+    </p>
+    <div class="collapsible">
+        <p>Hmmm. If you download the .zip from the Github releases page it should just decompress to an app. I just downloaded and tested it then without issue. Perhaps try re-downloading and try again?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de6mlct">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dfr4rte">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/longnecks0">longnecks0</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Apr 03 2017 02:16:32</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks! Works great :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dfr4rte">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dkyl3c5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/pables420">pables420</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jul 31 2017 10:56:05</span>
+    </p>
+    <div class="collapsible">
+        <p>This no longer works and it's affecting all of the mega applications. More info here: https://www.reddit.com/r/megalinks/comments/6f0z7h/meta_megadownloader_and_megatools_are_no_longer/</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/dkyl3c5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_de3zofy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Feb 23 2017 14:12:33</span>
+    </p>
+    <div class="collapsible">
+        <p>Windows 7</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5vnhaw/_/de3zofy">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

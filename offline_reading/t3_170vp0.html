@@ -1,0 +1,363 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_170vp0">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/unrevoked">unrevoked</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Jan 22 2013 00:50:57</span>
+    </p>
+    <strong>I simply don't get it.</strong>
+    <p><p>If mega is not getting the decryption keys and every file get's its own randomly generated encryption key based on your password then how is it able to decrypt files when I login from a complete other computer. It cant re-randomize my password a replicate the has for each file it must be syncing. </p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/170vp0">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_c818i86">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Woofcat">Woofcat</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Jan 22 2013 03:20:30</span>
+    </p>
+    <div class="collapsible">
+        <p>What is occurring is that Megaupload is generating two encryption keys that are both stored on megauploads servers. </p>
+<p>first, a key that is only used for uploading data to your account. This requires your password to encrypt the data on megauploads servers. </p>
+<p>second, is a key that is used to decrypt the data when you download it or send a link to someone. </p>
+<p>The passphrase to access these keys is your password. When you generate a link for someone to download a file, the URL contains the passphrase needed to decrypt the files. This is why the website tells you to give the URL to someone over secure channels, as leaking the URL basically leaks the decryption key. </p>
+<p>So in short, two keys which are protected by your passphrase. If anyone else has more information on Mega's encryption scheme please feel free to jump in and correct me.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c818i86">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81dtuc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/nederhandal">nederhandal</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 22 2013 09:43:46</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>When you generate a link for someone to download a file, the URL contains the passphrase needed to decrypt the files. This is why the website tells you to give the URL to someone over secure channels, as leaking the URL basically leaks the decryption key. </p>
+</blockquote>
+<p>This is why submitting links to a leaked working print of the latest blockbuster film is probably not in your best interest. That being said...</p>
+<p>Say FOX issues a takedown notice for the link they found to their material on some message board. MEGA takes down the link and is forced to reveal the IP address that was used to upload the file. Correct? Or is there something else protecting you here? I'm just trying to figure out the possible repercussions of somebody else posting your link on a public forum for example.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81dtuc">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81exia">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Woofcat">Woofcat</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 22 2013 12:30:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Yes, the encryption really doesn't serve a purpose besides. </p>
+<ol>
+<li>Stopping the use of searching for a file by hash (md5, sha1, etc) to remove all links of movie.avi</li>
+<li>In the event of Mega.co.nz's servers being seized no-one is at risk for the content they uploaded.</li>
+</ol>
+<p>So linking to something on reddit for instance, or another forum defeats the encryption as you are sharing with the world. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81exia">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81fcck">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HardlyWorkingDotOrg">HardlyWorkingDotOrg</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 13:20:52</span>
+    </p>
+    <div class="collapsible">
+        <p>That is also my understanding. But then, why are there already things being posted in this very subreddit? I could take the link, check if it is really what it claims to be and then go to Mega and ask them to produce the user info who uploaded it. hell, they possibly know which IPs downloaded this specific file. And then I can go ahead just as I would with catching illegal torrent users.  </p>
+<p>This is from the perspective of a lawyer/investigator hired by the movie industry, of course.  </p>
+<p>Unless I am missing something, why would I ever give out a link to anything I have in my Mega account? Even if I only give out the link once to my friend. I can't tell what he will do with it. And it'll be my ass on the line.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81fcck">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81fs34">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Woofcat">Woofcat</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 22 2013 14:03:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Well, to be honest no-one knows Mega's IP retention period besides them. </p>
+<p>Also, there is no law that they must provide who uploaded the content, the DMCA (which is American) is only a provision to take down content. Lawyers aren't chasing every single user as it's fruitless. Otherwise kids who upload them lip-syncing Justin Beiber on YouTube would be getting sued. They simply aren't. </p>
+<p>Bonus points for Mega is that they have no USA based servers anymore to potentially avoid DMCA issues. </p>
+<p>Yes if served a subpoena for all IP's related to a file, in which ever court applies to Mega. They would have to provide the data they have. However then you'd have to case down ISP's and ask them for potentially months old IP records of which subscriber had an IP on Jan 5th 2012.. as an example. </p>
+<p>If either party doesn't have the information due to data retention policies then any legal action is basically dismissed as they can't find the party responsible. </p>
+<p>So as far as I can tell, MPAA wants to know the IP of someone who uploaded IronMan.avi. They need to sue for the records under a court which applies to Mega.co.nz. After getting the records, and completing that battle they then need to sue the ISP in which ever country it's in for access to which subscriber had that IP on the date of the infringement. The ISP may or may not have this data, and the courts may rule against disclosing the information. </p>
+<p>Then they need to Sue the end user, who has a plethora of defences of open Wi-Fi to the classic prove that the Subscription holder downloaded it and not my kid / kids friend with his laptop etc. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81fs34">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_c81k0jr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheTerrasque">TheTerrasque</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 22 2013 17:58:48</span>
+    </p>
+    <div class="collapsible">
+        <p>Close, but no dynamite.</p>
+<p>They have three tools in their toolkit: Random generator, AES128 and RSA.</p>
+<p>They generate a random RSA keypair in the browser when you create the account (using timing events from mouse and keyboard for random), then AES encrypt the private key with your password. The public key and the encrypted private key then gets sent to the server.</p>
+<p>When you upload a new file, a new random key is generated, the file and metadata are AES encrypted with that key, then the key is encrypted via your RSA public key and sent to the server.</p>
+<p>When you download it again, the encrypted key is received, decrypted with your private RSA key, then file is decrypted with that key. When you share link, the key is added on the url (after the # sign, meaning it is only accessible to the client JS, not to the server).</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81k0jr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_c818m02">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/unrevoked">unrevoked</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 03:25:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for the explanation. So it generates a new encryption key for each file, and the Javascript client then encrypts those keys with my password and stores it back to the Mega servers. The mega server simply gives me my encrypted key store on login. Correct?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c818m02">permalink</a>
+        </p>
+        <div class="comment" id="t1_c818pla">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Woofcat">Woofcat</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Jan 22 2013 03:30:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Yep, the keys are technically on their servers (they have to be) however useless to them unless they ask each user for their password. </p>
+<p>From a strick security standpoint this is a bad method of handeling encryption as unless you check the javascript source of the page on each visit they could alter the encryption code being passed with out you noticing. Also if someone MitM's your connection with SSL then they could also access your content. </p>
+<p>However giving that this is a file locker and generally not used for classified documents etc, it's more than enough for the average person. However remember if Mega was served with a subpoena they could alter the code for just your account etc. (see husmail.com incident). </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c818pla">permalink</a>
+        </p>
+        <div class="comment" id="t1_c819b96">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/unrevoked">unrevoked</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 03:59:11</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for the great explanation. :P</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c819b96">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_c816d01">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Jane888">Jane888</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 01:32:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Your key isn't based on your password, its generated when you create and account based on your mouse movements and keyboard input. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c816d01">permalink</a>
+        </p>
+        <div class="comment" id="t1_c816ffz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/unrevoked">unrevoked</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 01:36:24</span>
+    </p>
+    <div class="collapsible">
+        <p>and therefore kept by them to decrypt files? Still doesn't make sense how they allow decryption over multiple computers with no syncing of decryption keys with the server. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c816ffz">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81rpzg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/myFriendThe">myFriendThe</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 23:52:13</span>
+    </p>
+    <div class="collapsible">
+        <p>what would make sense:</p>
+<p>-your computer encrypts the file, keeps the password for himself</p>
+<p>-your computer sends the encrypted file to the server, MEGA has no Idea what it could be</p>
+<p>-your computer gets back a link to the encrypted file</p>
+<p>-your computer mangles together the password and the link into the long chain of characters seen in the URL</p>
+<p>-you send this link to a friend and he opens it</p>
+<p>-his computer opens up the mega site and a javascript (not their server) reads the long chain of characters and reads from it: the actual link to the encrypted file and the password</p>
+<p>-his computer downloads the encrypted file (because decryption yet has to be done this happens wtih the html5 interface rather than with your browsers downloadmanager)</p>
+<p>-his computer decrypts the file with the password (here you can see the downloadmanager taking over to gather the final file)</p>
+<p>--benefits: MEGA never had any chance to know what you uploaded (unless they get a hold of your links or they lied about anything in this chain of things going on)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81rpzg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_c81rqid">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/myFriendThe">myFriendThe</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 23:52:59</span>
+    </p>
+    <div class="collapsible">
+        <p>what would make sense:</p>
+<p>-your computer encrypts the file, keeps the password for himself</p>
+<p>-your computer sends the encrypted file to the server, MEGA has no Idea what it could be</p>
+<p>-your computer gets back a link to the encrypted file</p>
+<p>-your computer mangles together the password and the link into the long chain of characters seen in the URL</p>
+<p>-you send this link to a friend and he opens it</p>
+<p>-his computer opens up the mega site and a javascript (not their server) reads the long chain of characters and reads from it: the actual link to the encrypted file and the password</p>
+<p>-his computer downloads the encrypted file (because decryption yet has to be done this happens wtih the html5 interface rather than with your browsers downloadmanager)</p>
+<p>-his computer decrypts the file with the password (here you can see the downloadmanager taking over to gather the final file)</p>
+<p>--benefits: MEGA never had any chance to know what you uploaded (unless they get a hold of your links or they lied about anything in this chain of things going on)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81rqid">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81rs45">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/myFriendThe">myFriendThe</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 22 2013 23:55:13</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm not registered. But if this is the case it should be impossible to get your files download links when you are on another computer (unless your password is also the key to an encrypted container with exactly that (LastPass, the popular password manager, works that way))</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/170vp0/_/c81rs45">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

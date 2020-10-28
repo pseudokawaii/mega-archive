@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_5i957v">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/PM_ME_YOUR_FELINE">PM_ME_YOUR_FELINE</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Dec 14 2016 06:42:19</span>
+    </p>
+    <strong>[QUESTION] Question about titles in MegaDownloader</strong>
+    <p><p>Hi.</p>
+<p>I was downloading a set of files with MegaDownloader, and I got an error about the length of the filename/folder name being too long.</p>
+<pre><code>File download failed.
+ * File code: N?4s9XCQDC
+ * Error type: An error occurred while trying to download the file.
+ * Server response: 
+ * Internal info: System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.
+   at System.IO.PathHelper.GetFullPathName()
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.File.Create(String path, Int32 bufferSize, FileOptions options)
+   at MegaDownloader.FileDownloader.downloadFile()
+</code></pre>
+<p>I've tried to change the name of the file or folder, but there is no way to change it, if you go into properties, the Textbox is uneditable.</p>
+<p>what can I do?</p>
+<p>Thank you.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/5i957v">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_db6iqgn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sheko404">sheko404</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 14 2016 11:07:03</span>
+    </p>
+    <div class="collapsible">
+        <p>i had this happen to me i think. basically a file path cant be more than 255 (?) characters long.  maybe try changing your download path to just C: for this one file? then when its completed you can change it back, and rename the file into a smaller titel.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5i957v/_/db6iqgn">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_db6zsk7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Dude036">Dude036</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 14 2016 18:28:57</span>
+    </p>
+    <div class="collapsible">
+        <p>Basically, you're trying to save it too far away in a folder. Similarly if you were to save a file under C:/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/folder/file.txt it wouldn't work. </p>
+<p>Shorten your file paths. i.e. C;/MegaDownloads/SaveShitHere.txt</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5i957v/_/db6zsk7">permalink</a>
+        </p>
+        <div class="comment" id="t1_db7by43">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/PM_ME_YOUR_FELINE">PM_ME_YOUR_FELINE</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 14 2016 22:16:49</span>
+    </p>
+    <div class="collapsible">
+        <p>Oh! Thanks! It is under a lot of folders</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/5i957v/_/db7by43">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

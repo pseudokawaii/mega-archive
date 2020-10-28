@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_76vr28">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/ZubinB">ZubinB</a>
+        <span class="score"> | 23 points</span>
+        <span class="timestamp"> | Oct 17 2017 02:57:38</span>
+    </p>
+    <strong>[TV] The Big Bang Theory S11E04 • The Explosion Implosion 720p HDTV HEVC x265-RMTeam [115MB]</strong>
+    <p><p><a href="http://www.imdb.com/title/tt0898266/"><strong>SYNOPSIS</strong></a></p>
+<p>&nbsp;</p>
+<p>What happens when hyperintelligent roommates Sheldon and Leonard meet Penny, a free-spirited beauty moving in next door, and realize they know next to nothing about life outside of the lab. Rounding out the crew are the smarmy Wolowitz, who thinks he's as sexy as he is brainy, and Koothrappali, who suffers from an inability to speak in the presence of a woman.</p>
+<p>&nbsp;</p>
+<p><em>S11E04 • The Explosion Implosion</em></p>
+<p>Wolowitz and Sheldon bond when they drive to the desert to shoot off a model rocket. Also, when Leonard's mom, finds a new best friend in Penny, it rubs Leonard the wrong way.</p>
+<p>&nbsp;</p>
+<p>M:</p>
+<blockquote>
+<p>https://x.nz/#!0WQQ1RAB</p>
+</blockquote>
+<p>K:</p>
+<blockquote>
+<p>!y8xWq16MEUxyv3CRCvRWrb42Gox1KvnKmRvyjneioiI</p>
+</blockquote>
+<p><strong>Instructions:</strong> Replace 'x' with 'mega'.</p>
+<p>&nbsp;</p>
+<p><a href="http://links.snahp.it/221ds">Openload</a></p>
+<p><a href="http://links.snahp.it/501ds">Zippyshare</a></p>
+<p>&nbsp;</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/76vr28">permalink</a>
+    </p>
+</div>
+
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

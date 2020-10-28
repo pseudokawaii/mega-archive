@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_716r47">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/TreyWait">TreyWait</a>
+        <span class="score"> | 21 points</span>
+        <span class="timestamp"> | Sep 19 2017 22:39:08</span>
+    </p>
+    <strong>[Movies] Kolchak: The Night Stalker TV movie 2-Pack (3 GB)</strong>
+    <p><p><a href="https://mega.nz/#F!4SwGCSgJ!JQTqsIwk2mUhx8lO-FHX2w">Link</a></p>
+<p>These are the 2 best versions I was able to find of the two <strong>Kolchak: The Night Stalker</strong> TV movies. They are XviD Rips of the DVDs. I added optional English subtitles, and muxed them as MKVs.</p>
+<p>&nbsp;</p>
+<p><strong>Included:</strong>
+ &nbsp;</p>
+<p>Kolchak TV Movie 1 - The Night Stalker(1972 - Dolby AC3)DVDRip.XviD.mkv (1.5 GB)
+&nbsp;</p>
+<p>Kolchak TV Movie 2 - The Night Strangler(1973 - Dolby AC3)DVDRip.XviD.mkv (1.5 GB)</p>
+<p>&nbsp;</p>
+<p><strong>EDIT: I fixed the formatting problems with the subtitles, and reuploaded the movies!</strong></p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/716r47">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dn8tiqo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/contiveros">contiveros</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 20 2017 02:37:21</span>
+    </p>
+    <div class="collapsible">
+        <p>You just gave me a nerdrection. I had these until a robbery in my old house over a decade ago. Been missing these for a long time. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/716r47/_/dn8tiqo">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dna64d9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ArmchairAnalrapist">ArmchairAnalrapist</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 20 2017 22:18:51</span>
+    </p>
+    <div class="collapsible">
+        <p>thank you so much! i loved this series as a kid!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/716r47/_/dna64d9">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dn8sit5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HeWhoMustNotBDpicted">HeWhoMustNotBDpicted</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 20 2017 02:16:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you! This takes me back to my youth.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/716r47/_/dn8sit5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,1532 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_6ydvts">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/IngrossoAxwell">IngrossoAxwell</a>
+        <span class="score"> | 73 points</span>
+        <span class="timestamp"> | Sep 06 2017 06:13:27</span>
+    </p>
+    <strong>[META] Thinking about switching your library to HEVC/H.265? AV1 and why you should consider waiting (x-post from /r/PleX)</strong>
+    <p><p>I just want to start and say that this is written by /u/pcjonathan. I am not sure how to crosspost a text post so if this breaks any rules, I fully apologize. This is a fantastic post about why you don't have to jump head first into x265 and I wanted to share with all of you.</p>
+<h1>Some background</h1>
+<p>AVC/H.264 is getting kind of old now and so along comes its its successor, HEVC/H.265, boasting a 30-50% improvement over AVC. It's relatively successful, but hardware is slow to support it and it's only just really coming into fruition this past year or two, despite being released in 2013.</p>
+<p>Why? Mainly, money. While non-commercial use cases don't need to pay, commercial ones do. We're mainly talking hardware support as well as content distribution. HEVC is <em>vastly</em> more expensive and complicated than AVC. Instead of 1 patent pool (a bunch of patents by various companies joined together), there are 3, as well as a separate company dealing with their own directly. This means that the costs are waaaay higher, which was enough to get the attention of multiple major companies. And thus, the Alliance of Open Media was born and the work on a new codec, AOMedia Video 1, began. It is the sucessor of Google's VP9 (mostly used by YouTube) with concepts from Mozilla's Daala and Cisco's Thor added.</p>
+<h1>Who is involved, expected release and adoption</h1>
+<p>AV1 is due for a bitstream freeze at the end of the year, although with a target of 20% improvement over HEVC at a certain area of additional encode time, this could end up being earlier or later. While we have no idea how the release groups will react (probably in the same way as to HEVC, i.e. waiting a bit for it to be optimised for faster/higher quality encodes), we can be fairly sure that adoption elsewhere will be relatively rapid.</p>
+<p>Due to Google, Mozilla and Microsoft's involvement, browser support can be expected within weeks, days, maybe even hours (Firefox <em>already</em> has it as a build option). General software support in applications is also expected soon after due to involvement from Microsoft (for Windows), VideoLAN (for VLC) and its open-source nature (for basically everything from OpenPHT to PMP (via MPV) to FFMPEG to whatever else. Hell, early test versions are already in a GUI encoder or two). Due to AMD, ARM, Intel and NVIDIA's involment, hardware support is expected wihtin 1-2 years and an increased hardware quality due to their involvement in the development process. Due to Amazon, BBC R&amp;D, Google, Hulu and Netflix's involvement, it is expected to be used by major content distributors. Both YouTube and Netflix have stated that they intend to implement it enmass within months.</p>
+<p>My point is that this is no flash in the pan and has every chance of being a very strong contender.</p>
+<h1>What does this mean for us?</h1>
+<p>While the improvement isn't much, it will have an improvement of at least 20% over HEVC (so around 45-60% over AVC).</p>
+<p>But the main difference would be browser support and thus increased support all round, especially for those who share their libraries where most people will use Plex Web. Even though Edge and Safari have limited HEVC support (Edge depends on hardware decoding, Safari will have it on the latest OS soon, so probably around 1-5% at most will have support), Chrome and Firefox don't and almost definitely will not add HEVC support (AVC was mostly down to Cisco but they're part of AOM so that probably won't happen again). They will, however, add AV1 support, (Around 75% of the market) which means files won't always need to be transcoded, greatly reducing CPU usage and allowing it to be used on more servers.</p>
+<p>Of course, this depends on Plex adding the feature, which could take a few months (For example, Chrome added FLAC in mid-Jan and Firefox added it August 2016. Plex added it as a supported direct-play codec in mid-April.)</p>
+<h1>Why Post?</h1>
+<p>While I'm sure those of you already in the HEVC ecosystem (especially Apple users) are probably going to continue with it, I would highly suggest anyone thinking about spending the time and effort redownloading/encoding HEVC content or buying HEVC equipment (like an NVIDIA SHIELD or Smart TV) to hold off for a bit to see what transpires. Even if AV1 goes nowhere and ends up dead, it would be good to be sure.</p>
+<h1>Afterthoughts</h1>
+<p>Afterthought #1: HEVC gives savings of around 30-50%. Don't go into it expecting a 500mb file to match that of a 2.5gb file, which is something I've seen a fair number of people here doing.</p>
+<p>Afterthought #2: x264 and x265 are open-source encoders to AVC and HEVC, not codecs of their own right. Also something I've seen people here confused about.</p>
+<p>Afterthought #3: If you're re-encoding your library in order to save disk space, consider whether the effort and the electricity cost is worth it (against, say, getting another HDD). Also consider the fact that tools like Handbrake don't change their CRF or bitrate settings automatically according to the content and so you could be artificially inflating the file size or losing much more quality than you bargained for.</p>
+<p>Afterthought #4: Do a fresh encode from the original source, not encoding the pre-existing encode. Encoding an encode results in shitter quality. </p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/6ydvts">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dmmpj7q">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EddieEbola">EddieEbola</a>
+        <span class="score"> | 30 points</span>
+        <span class="timestamp"> | Sep 06 2017 08:07:04</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm sticking with H264 for the time being. I've already spent years replacing all my movies SD with 1080p versions - I can't be bothered doing that again just to save some space. HDDs are cheap and my download speeds are around 150mb and uncapped so file size isn't too much of an issue. </p>
+<p>I'm also not going to change until more stuff is compatible. I share my library with my household, as well as family remotely, so it just makes sense to stick with a format that everyone can use. And no - I'm not going to build a Raspberry Pi, or a NUC or whatever - I mean stuff that normal consumers buy from PC World and can stick straight into their TV. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmpj7q">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmw1jy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Sep 06 2017 12:35:00</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmw1jy">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmzw99">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MarkoWolf">MarkoWolf</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 06 2017 14:07:01</span>
+    </p>
+    <div class="collapsible">
+        <p>My server can't handle feeding (not sure the proper term) an x265. It's an old ass iMac. Whenever I get desperate and download x265, even with the iMac and roku hardline ethernet directly into the same router.... I get the error that the server cannot keep up with the content. :-/</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmzw99">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmn16ww">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EddieEbola">EddieEbola</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 06 2017 14:33:52</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah, same for a lot of people. Which is why I'm</p>
+<blockquote>
+<p>not going to change until more stuff is compatible</p>
+</blockquote>
+<p>And even when everyones hardware catches up, your H264 rips will still play and look good. They'll just take up more space, which isn't really an issue for me.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmn16ww">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmn8tmn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 06 2017 16:56:51</span>
+    </p>
+    <div class="collapsible">
+        <p>Exactly. With cloud storage and cheap HDD who cares about saving $25 dollars when you don't have to spend money on content anyway. FFS avi still look okay. I do not need to see Vic Mackie in 4k</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmn8tmn">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmniak3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EddieEbola">EddieEbola</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 06 2017 19:47:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Naaaah man, I will only watch the Golden Girls in 10 bit UHD.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmniak3">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmobvwq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 07 2017 07:18:09</span>
+    </p>
+    <div class="collapsible">
+        <p>lmao.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmobvwq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmscgrt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 09 2017 21:14:33</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmscgrt">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmsk9r8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MarkoWolf">MarkoWolf</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 10 2017 00:13:53</span>
+    </p>
+    <div class="collapsible">
+        <p>If HEVC is the now... I'm going to need to upgrade my server... Which is very very very disappointing...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmsk9r8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmxhwv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EddieEbola">EddieEbola</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 06 2017 13:12:40</span>
+    </p>
+    <div class="collapsible">
+        <p>THANKS </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmxhwv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dnxozui">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HeWhoIsTheChosen">HeWhoIsTheChosen</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Oct 05 2017 08:59:47</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>AV1 is just another web standard, support will vary based on participants. They are competing with the ISO, ITU, IEC, MPEG and Fraunhofer HHI for that support. Which is a genuinely ridiculous notion in my mind.</p>
+</blockquote>
+<p>Agree. But with companies like Google, Hulu, Amazon and Netflix (Intel, ARM, NVIDIA, ...) developing the codec and already having declared their intention to use it on a massive scale, you can expect a way way waaaaaaay higher adaption rate and guranteed support for as long as anything can be expected.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dnxozui">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmnmltz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/derrickgw1">derrickgw1</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 06 2017 21:03:55</span>
+    </p>
+    <div class="collapsible">
+        <p>I have problems playing x265 rips on my Gen 2 Amazon Fire stick. Especially the 10 bit ones. How do you do it. What software do you use. VLC doesn't work for me.</p>
+<p>I can play like x265 files that are like 500mb for an hour long tv episode that you'll get for weekly releases.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnmltz">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmsc4ui">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 09 2017 21:07:15</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmsc4ui">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmtwahl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/derrickgw1">derrickgw1</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 10 2017 21:45:15</span>
+    </p>
+    <div class="collapsible">
+        <p>yeah i don't use plex because requires i run a server and my computer is just a mac laptop that's not on all the time. i'm not dedicating to server use. plus i do use it constantly while the tv is on plus. For a while i'm gonna be use  264. it just works. I'm not to concerned with what formats a company is using. I just want it to play well on my device i don't care the format.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmtwahl">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmna4fc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rhinofreak">Rhinofreak</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 06 2017 17:20:24</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>my download speeds are around 150mb and uncapped</p>
+</blockquote>
+<p>I came.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmna4fc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmsmxs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/w00denspoon">w00denspoon</a>
+        <span class="score"> | 15 points</span>
+        <span class="timestamp"> | Sep 06 2017 10:37:49</span>
+    </p>
+    <div class="collapsible">
+        <p>For now the bandwidth savings are worth it
+30-50% savings in download time/bandwidth are still significant.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmsmxs">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmnaeee">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rhinofreak">Rhinofreak</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Sep 06 2017 17:25:21</span>
+    </p>
+    <div class="collapsible">
+        <p>especially for us people with shitty internet</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnaeee">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmznny">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 14 points</span>
+        <span class="timestamp"> | Sep 06 2017 14:01:51</span>
+    </p>
+    <div class="collapsible">
+        <p>Interesting but a few notes, some more important than others:</p>
+<ol>
+<li>
+<p>HEVC file compression is actually in the range of 40%-60% over AVC with a theoretical (although almost certainly unachievable on most files) limit of 75% compression without quality loss, this is because HEVC can identify groups of static pixels which do not need to be stored in subsequent frames in blocks 4x larger than AVC (64x64 vs 16x16 - see pic: https://icdn7.digitaltrends.com/image/hevcslide1-640x640.png
+)</p>
+</li>
+<li>
+<p>Technically HEVC, AVC, x264, and x265 are all <em>decoding</em> standards, not encoders or encoding algorithms.  The codec actually defines who a file should be read back, not written, which is why there is so much variability between encoders: they can use any process they want to create the file as long as the result conforms to the expected standard</p>
+</li>
+<li>
+<p>I wouldn't reccomend waiting based off the possiblity that a future codec might surpass the one you are using now.  Everyone is always trying to build a better mousetrap and there is always new technology on the horizon, I generally don't recommend waiting on that since it takes years to adopt a standard and by the point what you're looking at becomes widely used someone will be developing the next version.</p>
+</li>
+</ol>
+<p>Site where that picture came from: https://www.digitaltrends.com/computing/h-265-hevc-encoding-explained/</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmznny">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmpnwar">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 08 2017 02:01:17</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>I wouldn't reccomend waiting based off the possiblity that a future codec might surpass the one you are using now.</p>
+</blockquote>
+<p>Exactly. That's like if people said "Don't upgrade to DVD/BluRay/4k BluRay because there will just be something better soon".</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpnwar">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmtmpo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Aj-Mega">Aj-Mega</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Sep 06 2017 11:17:38</span>
+    </p>
+    <div class="collapsible">
+        <p>HEVC ALL THE WAY. It's the same with x264 in the beginning. Everyone was upset when scene made the switch from avi to x264 mkv/mp4. Just give it some time for manufacturers to catch up. Also AV1 is now being developed it not even a true competitor of hevc because it is less efficient atm. PEOPLE JUST GOOGLE AND READ and make your own opinions.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmtmpo">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmn8wn9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 06 2017 16:58:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Fuck you talking about? These x265 are not playing without stuttering. A fucking 10 year old laptop can handle x264</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmn8wn9">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmna8y4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rhinofreak">Rhinofreak</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Sep 06 2017 17:22:37</span>
+    </p>
+    <div class="collapsible">
+        <p>we are thinking of future proofing, bringing a 10 year old laptop to the argument defeats the purpose.</p>
+<p>besides, none of the x265 content I have show any form of stuttering so there's that.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmna8y4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmobyiu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 07 2017 07:21:14</span>
+    </p>
+    <div class="collapsible">
+        <p>This is like saying I can eat nuts so that means everyone else can. False equivalence. Who wants a format that does not play for THEM? Glad they work for you!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmobyiu">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmof8x4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rhinofreak">Rhinofreak</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Sep 07 2017 10:01:31</span>
+    </p>
+    <div class="collapsible">
+        <p>Again, currently HEVC hasn't totally replaced AVI. Any product of this year or even from 2 years back easily play HEVC and the support is only getting better as we speak.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmof8x4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmoycb7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dkimmortal">dkimmortal</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 07 2017 17:34:09</span>
+    </p>
+    <div class="collapsible">
+        <p>My iPad Air is going to get left behind when the next ios version will finally support it :/ Air 2, right now, stutters a bit with 1080p hevc that's of good quality, no hardware support given yet, only software decoding</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmoycb7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmpzezy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:00:59</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah because everyone threw away their pc from 2013. As someone who caps fuckloads of content for the internet to share. I will only be uploading mp4/x264. You can still dl Prison Break in avi so fanboys with x265 won't stop my viewing habits. PS: I have a  five year old car. should I also toss that away because there is a new type of petrol? Fuck outta here</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzezy">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmpzk6z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rhinofreak">Rhinofreak</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:07:01</span>
+    </p>
+    <div class="collapsible">
+        <p>Fun fact: my laptop from 2012 (Lenovo ideapad Z570) still works fine and plays x265 smoothly.</p>
+<p>Also, it's generally unheard of that laptops or computers last more than 6-7 years without any upgrade. Deal with it.
+Comparing it with a car is like comparing apples and oranges. Your point is still invalid since we're talking about future scope. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzk6z">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmrnb7v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 09 2017 10:46:24</span>
+    </p>
+    <div class="collapsible">
+        <p>Not to mention that h265 was officially released 4 years ago. h264 is closer to 20 years old.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmrnb7v">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmncevd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/coheedcollapse">coheedcollapse</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Sep 06 2017 18:01:28</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>A fucking 10 year old laptop can handle x264</p>
+</blockquote>
+<p>To be fair, my media center is built with parts that are over a decade old and it can transcode and play x265 just fine, so this might be a case of "get with the times", considering you can buy a $30-$40 self-contained Android/Linux box that could likely handle it just fine.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmncevd">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmoc3lr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 07 2017 07:27:18</span>
+    </p>
+    <div class="collapsible">
+        <p>This. Why not develop a music  format and disregard mp3 by replacing it with a newer format? BTW.........it won't play on your pc! X265 is counterintuitive and the internet's circle jerk is like saying you can't beat off to playboy because the image res is too low. I watched tv on a crt box for years, avi, mp4 x264 will do me fine</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmoc3lr">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmrnd0f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 09 2017 10:49:01</span>
+    </p>
+    <div class="collapsible">
+        <p>you ever heard of flac bud</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmrnd0f">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmnewkz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Aj-Mega">Aj-Mega</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Sep 06 2017 18:46:32</span>
+    </p>
+    <div class="collapsible">
+        <p>I have a 16 year old windows XP pc i use when i wanna test floppy test or play old retro games....</p>
+<p>Using potplayer, and vlc I can play x265 with no issues.
+I won't disagree that vlc had issues before. (I switched to potplayer) But thats the PLAYER not the hardware. Anyway. It's your choice, no one is forcing you to use x265.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnewkz">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmpzgh5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:02:39</span>
+    </p>
+    <div class="collapsible">
+        <p>x265 do not play in kodi. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzgh5">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmqd7xa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Sep 08 2017 14:49:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Bullshit</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmqd7xa">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmnir9s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sirin3">sirin3</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Sep 06 2017 19:55:18</span>
+    </p>
+    <div class="collapsible">
+        <p>I got a new laptop and it could only play x265 out of the box, not x264</p>
+<p>The x264 decoder was disabled, i think due to patent issues</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnir9s">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmms2yp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Axelstrife">Axelstrife</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Sep 06 2017 10:12:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Thanks for the post.</p>
+<p>Looking forward to AV1 from what i just read but as i just read on that plex post HEVC is here NOW and my old Yify axxo 720p dvd rip crap has got to go.</p>
+<p>Everything i have supports x265 right now except my ipad but i don't watch on it much.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmms2yp">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmofebu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elitenls">elitenls</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 07 2017 10:08:38</span>
+    </p>
+    <div class="collapsible">
+        <p>... and your iPad will support it in about a week when iOS 11 comes out (or you could <a href="https://beta.apple.com">get the beta</a> now) and HEVC is standard, built in to the OS. So, you're golden!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmofebu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmpnxxb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Sep 08 2017 02:02:13</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't have space/outlets to continue buying external hard drives all the time. I also don't have the money to get a triple digit terabyte drive either, so I go for x265/HEVC. Have been collecting it for years, not gonna stop now.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpnxxb">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmpzj65">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:05:49</span>
+    </p>
+    <div class="collapsible">
+        <p>Good for you,buy x265 do not play in kodi</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzj65">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmpzjyv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:06:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Yes it does, but your device has to support it. Kodi will play anything. </p>
+<p>EDIT: <a href="http://kodi.wiki/view/HEVC">Source</a></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzjyv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmtcit">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Avid28">Avid28</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 06 2017 11:06:53</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm all for new shit... however 265 isn;t supported by my TV so I'd have to use a chromecast or some other streaming device instead of running the movies straight off the USB :( </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmtcit">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmvwyn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/zductiv">zductiv</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 06 2017 12:31:26</span>
+    </p>
+    <div class="collapsible">
+        <p>I use a Xiaomi Mi Box 3 for hevc stuff on the tv that doesn't support hevc natively. Works great.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmvwyn">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmw752">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Avid28">Avid28</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 06 2017 12:39:15</span>
+    </p>
+    <div class="collapsible">
+        <p>$70.... why not get a amazonfire at this point? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmw752">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmnac5h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/westlife2206">westlife2206</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Sep 06 2017 17:24:13</span>
+    </p>
+    <div class="collapsible">
+        <p>More powerful, full fetch Android TV. it can support 4k HDR. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnac5h">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmoc5s5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 07 2017 07:30:00</span>
+    </p>
+    <div class="collapsible">
+        <p>why not save $70 and stick with X264?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmoc5s5">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmogwa4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Avid28">Avid28</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 07 2017 11:12:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Cause the best x264 I've seen is Yify and more and more better rips of movies and faster rips are coming out here at x265 :\ </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmogwa4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmp0924">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cxu1993">cxu1993</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Sep 07 2017 18:09:26</span>
+    </p>
+    <div class="collapsible">
+        <p>yify's rips are garbage in terms of quality since theyre so compressed. the best quality rips are still in x264 but those bitrates are usually at least 12 mbps</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmp0924">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmp2gqu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Avid28">Avid28</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 07 2017 18:50:40</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm fine with that but they are usually 10GB or some crazy shit. I don't want to deal with that. 4GB is fine but those are 265</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmp2gqu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmpzi04">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:04:26</span>
+    </p>
+    <div class="collapsible">
+        <p>because seeing Dexter in a tweaked format  makes the show better? I would rather just buy a blu ray player than dl x265 that do not play in kodi</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzi04">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmrn9z1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ecchh">ecchh</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Sep 09 2017 10:44:33</span>
+    </p>
+    <div class="collapsible">
+        <p>so buy the bluray and quit bitching about x265</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmrn9z1">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmt5v7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mateking">Mateking</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 06 2017 10:59:35</span>
+    </p>
+    <div class="collapsible">
+        <p>I don't think that Codec will become widely accepted. It will have it's niche just as VP9 had and has. But I don't see it being used more widely than the last. </p>
+<p>Edit: although I am privileged in the sense that my 4k tv I bought in Spring has HEVC support as does my Fire TV so I guess I am not really the right recipient for your appel. For me it wouldn't be to smart to stick with x264 since it costs more bandwidth</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmt5v7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmofg4u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elitenls">elitenls</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Sep 07 2017 10:11:03</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>I don't think that Codec will become widely accepted.</p>
+</blockquote>
+<p>Apple, Roku, Amazon, Plex, and all Android TV devices disagree with you. By the end of the year, it'll be standard.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmofg4u">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dnxp4o6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HeWhoIsTheChosen">HeWhoIsTheChosen</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Oct 05 2017 09:06:46</span>
+    </p>
+    <div class="collapsible">
+        <p>With companies like Amazon, Hulu, Google and Netflix deploying it on a massive scale + being free I disagree.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dnxp4o6">permalink</a>
+        </p>
+        <div class="comment" id="t1_dnxpovf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mateking">Mateking</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Oct 05 2017 09:34:09</span>
+    </p>
+    <div class="collapsible">
+        <p>You missed a major point of my argument. Streaming is a niche in which vp9 which was developed for streaming is already very strong with the companies you named. So that niche probably will see wide range adoption however for a personal stored collection you don't need a specialized streaming codec and x264 has established dominance here with x265 building on a big user base. I don't see any new codec breaking in there anytime soon or in any useful way.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dnxpovf">permalink</a>
+        </p>
+        <div class="comment" id="t1_dnywu08">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HeWhoIsTheChosen">HeWhoIsTheChosen</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Oct 06 2017 00:21:37</span>
+    </p>
+    <div class="collapsible">
+        <p>How is HEVC for people with a big collection? In really high quality areas the only thing HEVC is used for is the UHD Remuxes. Everything else is (good quality) still H264, because HEVC still sucks at many things.</p>
+<p>And when AV1 becomes a standard for the content providers mentioned above remuxes/WEB-DLs will be available having the same (or better) quality as the H264 sources.</p>
+<p>Anyways, I'm pretty sure with the players involved they will just push AV1 with a marketforce (and share) that HEVC has no chance against. We will end up with H264 as good old standard and AV1 as the future. HEVC will slowly die (I predict 3-5 yrs till its rarely used) and that's it.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dnywu08">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmnl4b5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/shorpipo">shorpipo</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 06 2017 20:37:03</span>
+    </p>
+    <div class="collapsible">
+        <p>I've read about the imminent freeze of the AV1 bit-stream a handful of times over the last 18 months already and it's still fluid. I'm sure they'll get there eventually, but who knows if the most recent expected deadline will be hit or not.</p>
+<p>Even after it's finalised it's going to take years for a notable percentage of peoples' TVs and hardware to be able to decode this format natively; I don't see ppl rushing out to drop hundreds of dollars on a new TV for such a feature.</p>
+<p>And IF it delivers its promises with regards to quality vs h265, it's an incremental baby step, not like the great strides from mpeg2 to mpeg4-advanced to h264 to h265.</p>
+<p>If they push Opus for the audio codec, that'll save some space too. But even when this possibly-slightly-better-than-h265 standard is finally rubber stamped, there's still going to be the usual circle of no-one encodes in it because nothing supports it, and no one will support it (in hardware) until there is content for it.</p>
+<p>I expect it will get some traction eventually, but it's really not a panacea for video encoding, and h265's foothold gets stronger every day. it might cost more for the patents, but really, how much does it add to the average $700 TV? Not a great deal.</p>
+<p>x265 (probably the best h265 encoder?) gets better with every release, and more and more devices are compatible with it because there's so much growing content for it. It ain't going anywhere soon.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnl4b5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmnbv5u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Immortallix">Immortallix</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 06 2017 17:51:35</span>
+    </p>
+    <div class="collapsible">
+        <ul>
+<li>H264 for a while I suppose. (Apple user here) if I'm not watching mobile or blu-ray then I'm downloading H264/mp4 from links in this sub to drop on a USB and play on my PS4 (dumb tv from 2010), however I don't make a fuss if there's an abundance of HEVC (especially if its &lt;4GB) as I'll just HDMI my cheap Win10 Laptop to my tv &amp; watch that way. </li>
+<li>This is the first I've heard of AV1 and I highly doubt PS4 or any smart TV I get in the near future might support it. Before I had my PS4 &amp; spare laptop I had could only watch stuff on my PS3 so I had to hunt for quality H264 releases as most folks just shared mkv's (I realize mkv's can contain H264 but even that didn't fly on PS3), so I was pleasantly surprised to find the abundance of H264 on this sub as it's just more convenient, and I don't think I'll be allocating and space to a format less proven than mkv.</li>
+</ul>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnbv5u">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmom3c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dkimmortal">dkimmortal</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 06 2017 07:23:06</span>
+    </p>
+    <div class="collapsible">
+        <p>so hold off on any unneeded hardware purchase till AV1 gets at least hardware decoding? x265 hardware encoding decoding only just arrived on intel with 7th gen cpus, whats your guesstimate to when it'll arrive with intel provided AV1 is officially released this December? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmom3c">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmrr86">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/_darkgamer_">_darkgamer_</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Sep 06 2017 09:57:07</span>
+    </p>
+    <div class="collapsible">
+        <p>I think 6th gen CPUs already had HEVC hardware decode. 7th gen just extended it to 10-bit HEVC and VP9 hardware decode. </p>
+<p>Same with Nvidia. HEVC hardware decode was available in Maxwell(950 and 960) and got strengthened with Pascal. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmrr86">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmrvwk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dkimmortal">dkimmortal</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 06 2017 10:03:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Oh yeah I forgot, 10bit was added, in my mind that's when it was 'complete' and so I totally disregarded 6th gen =_="</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmrvwk">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmpfbq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/rowjack1993">rowjack1993</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 06 2017 08:01:47</span>
+    </p>
+    <div class="collapsible">
+        <p>i did this for my home dvd version of Dinotopia, came out as 1.5gb down from 9, quality is still the same, but it worked</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmpfbq">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmq2df">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mrx_101">mrx_101</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 06 2017 08:32:22</span>
+    </p>
+    <div class="collapsible">
+        <p>What's the best way to to reduce file size without destroying quality of both video and audio? I find 5gb for a 1.5h movie quite large. Sometimes you see the same with about 1.5gb file size </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmq2df">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmqbe7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/dkimmortal">dkimmortal</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 06 2017 08:45:03</span>
+    </p>
+    <div class="collapsible">
+        <p>changing the bitrate basically, and using slower more complex (but more space saving calculations during encoding) a 5gb file will have way more data (literally bits) compared to something thats only 1.5gb. i.e. pixels of colors that are similar in an area may get written of as the same color to save space etc </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmqbe7">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmqf47">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mrx_101">mrx_101</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Sep 06 2017 08:50:10</span>
+    </p>
+    <div class="collapsible">
+        <p>So you will always lose quality then. Did expect that, but was hoping for a more efficient algorithm that keeps quality with lower file size, aka smarter compression. Another point obviously is that you don't always have to see the difference in quality, like playing a 10bit color depth video on an 8bit screen is pointless </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmqf47">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmmqt2f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/gandalftheshai">gandalftheshai</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 06 2017 09:09:44</span>
+    </p>
+    <div class="collapsible">
+        <p>same quality, less size? this aint Silicon Valley 
+:D</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmqt2f">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmmt1ce">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jsdgjkl">jsdgjkl</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 06 2017 10:54:32</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>like playing a 10bit color depth video on an 8bit screen is pointless  </p>
+</blockquote>
+<p>no it isn't. 10 bit is always better than 8 bit due to a more efficient and more accurate encoding. That is less errors in color calculations which leads to a more accurate representation of the source material. You don't have 10 bit of color if your source only has 8 bit but you have less color bending. tldr 10 bit is always better than 8 bit. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmmt1ce">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmnj051">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ss0889">ss0889</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 06 2017 19:59:39</span>
+    </p>
+    <div class="collapsible">
+        <p>i mostly do h264 unless i download in h265 to begin with. and as far as conversion goes, i just convert to physical media when i buy the stuff, or i end up deleting it if it isnt worth buying/owning.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmnj051">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmn8jzv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Sep 06 2017 16:52:01</span>
+    </p>
+    <div class="collapsible">
+        <p>Fuck x265. Does not play in Kodi. Thanks god for mp4 and other simple formats.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmn8jzv">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmncph9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/coheedcollapse">coheedcollapse</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Sep 06 2017 18:06:52</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>Does not play in Kodi.</p>
+</blockquote>
+<p>It does on my nearly 10 year old media PC. I wouldn't make sweeping generalizations like that considering it's almost absolutely caused by an issue on your end, whether it be hardware or software.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmncph9">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmoc84k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Sep 07 2017 07:32:58</span>
+    </p>
+    <div class="collapsible">
+        <p>'an issue on my end'? Thanks Sherlock. ALL OTHER FORMATS play, but x265 is not  problem for kodi?[IN YOUR FACE] (http://www.love-media-player.com/play-h265-on-kodi/)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmoc84k">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmofivq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elitenls">elitenls</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Sep 07 2017 10:14:42</span>
+    </p>
+    <div class="collapsible">
+        <p>It literally says in that article you posted that it's a hardware issue on your end and Kodi's supported HEVC for multiple versions (software wise). So, you should probably learn how to read.</p>
+<blockquote>
+<p><strong>H.265/HEVC Support in Kodi</strong></p>
+<p><strong>Kodi v14 introduced software decoding</strong> support for HEVC. <strong>Kodi v15 introduced limited hardware decoding support for some devices</strong>, such as a few Android-based video decoders, for Linux on Amlogic SoCs and for Windows via DXVA. <strong>Kodi v16 further improved</strong> hardware decoding on Android and Windows and introduced it via VAAPI and VDPAU API on linux. Most HTPCs do not have hardware decoding support for HEVC, so they will need a fairly powerful desktop class CPU in order to playback HEVC videos.</p>
+<p>So, the reasons for Kodi H.265/HEVC playback issues will be various.When you can’t play H.265/HEVC files on Kodi, you can try the mothods below.</p>
+</blockquote>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmofivq">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmpzlud">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/deptford">deptford</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:08:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Why bother with such an awkward format? As for reading, I actually have a learning difficulty so that comment just shows the type of person you are. Muppet</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzlud">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmqduh4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Sep 08 2017 15:01:39</span>
+    </p>
+    <div class="collapsible">
+        <p>People are reacting to you being incredibly abrasive and shooting your mouth off without evidence.  Change the way you speak to people and you will generally get more polite answers.  You have repeatedly posted incorrect information in this thread, I don't think I saw a single statement from you here which is valid, and having a learning disability does not excuse the poor behavior you have exhibited here.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmqduh4">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmpzss3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elitenls">elitenls</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Sep 08 2017 07:17:12</span>
+    </p>
+    <div class="collapsible">
+        <p>The delivery may have been harsh, but the point is still very much valid. Sorry about your disability, not trying to make Internet enemies - this sub's all about the community. My bad.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6ydvts/_/dmpzss3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_7jvvd1">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/RourkeProjects">RourkeProjects</a>
+        <span class="score"> | 16 points</span>
+        <span class="timestamp"> | Dec 15 2017 00:04:19</span>
+    </p>
+    <strong>[TV] Dutch audio files & English subs for Avatar: The Last Airbender Remastered</strong>
+    <p><p><a href="http://links.snahp.it/360ATLA_dut_audio_patch.zip">MEGA</a></p>
+<p>These are the Dutch audio files from the original DVD's, synced by me for <a href="https://www.reddit.com/r/RemasteringATLA/comments/5hr9w2/atla_remastered_in_1080p/">Avatar: The Last Airbender Remastered</a> project. You need to download the torrent files yourself and put the files from the MEGA link in the same folder like <a href="https://i.imgur.com/3Vc4eWN.png">this</a>.</p>
+<p>Run the <code>patch.bat</code> file, and it will guide you through the steps (in Dutch). The original files won't be affected.</p>
+<p>I also improved the English subtitles provided in the orignal project. Hearing Impaired captions have been removed, common fixes have been applied and timing issues have been fixed, all through Subtitle Edit. Optionally you can add these through the above patch. Just put the zips content in the same folder. Download here: <a href="http://links.snahp.it/488eng_subs.zip">MEGA</a></p>
+<p>Let me know if you run into any problems.</p>
+<p>__</p>
+<p><strong>Edit 17-12-2017:</strong> I fixed the audio file for Book 2; Earth, episode 5 (Avatar Day). If you already downloaded and applied the patch you can download the individual file here: <a href="http://links.snahp.it/761205-AvatarDay.zip">MEGA</a> and execute one of the commands below from the command prompt. This will only merge the specific episode. The same path still applies for the audio file: <code>dut_audio\Book 2; Earth\205 - Avatar Day.aac</code></p>
+<p>With English subs:</p>
+<pre><code>mkvmerge.exe --ui-language en --output "output\Book 2; Earth\205 - Avatar Day.mkv" --language 0:eng --language 1:eng "Book 2; Earth\205 - Avatar Day.mp4" --no-track-tags --no-global-tags --language 0:dut --default-track 0:yes "dut_audio\Book 2; Earth\205 - Avatar Day.aac" --language 0:eng --default-track 0:yes "eng_subs\Book 2; Earth\205 - Avatar Day.srt" --track-order 0:0,0:1,1:0,2:0
+</code></pre>
+<p>Without English subs:</p>
+<pre><code>mkvmerge.exe --ui-language en --output "output\Book 2; Earth\205 - Avatar Day.mkv" --language 0:eng --language 1:eng "Book 2; Earth\205 - Avatar Day.mp4" --no-track-tags --no-global-tags --language 0:dut --default-track 0:yes "dut_audio\Book 2; Earth\205 - Avatar Day.aac" --track-order 0:0,0:1,1:0
+</code></pre></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/7jvvd1">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dr9n48j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Roemerdt">Roemerdt</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 15 2017 01:04:03</span>
+    </p>
+    <div class="collapsible">
+        <p>Super!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7jvvd1/_/dr9n48j">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dra39nu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/plette64">plette64</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Dec 15 2017 07:27:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Dankjewel, topper!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/7jvvd1/_/dra39nu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

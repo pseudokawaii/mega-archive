@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_16yyho">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/Reddit_swimmer">Reddit_swimmer</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 21 2013 04:30:43</span>
+    </p>
+    <strong>I keep getting this, everything I try to click on just reloads this loading bar. Suggestions?</strong>
+    <p><a href="http://imgur.com/pL9BntZ">http://imgur.com/pL9BntZ</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/16yyho">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_c80s16u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/wizzahd">wizzahd</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jan 21 2013 10:01:34</span>
+    </p>
+    <div class="collapsible">
+        <p>try in a different browser. Chrome was barfing on me but it worked in FF.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/16yyho/_/c80s16u">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_c80tc14">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/imightlikeyou">imightlikeyou</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 21 2013 13:22:41</span>
+    </p>
+    <div class="collapsible">
+        <p>I have been waiting for the activation mail for more than a day now. Not the most successful launch, but not the worst either.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/16yyho/_/c80tc14">permalink</a>
+        </p>
+        <div class="comment" id="t1_c81gxi9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/avatoin">avatoin</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jan 22 2013 15:26:29</span>
+    </p>
+    <div class="collapsible">
+        <p>Same here. i'm going to probably wait a week (or at least until this weekend) before trying again. So many people signed up so quickly that their servers are overloaded. Also there is a great big 'beta' sign on the website, so many bugs are expected. I just read they had to fix a security bug soon after release.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/16yyho/_/c81gxi9">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,732 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_6xi2ng">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 43 points</span>
+        <span class="timestamp"> | Sep 01 2017 22:45:12</span>
+    </p>
+    <strong>[META] An example of encoding x265 10bit in Handbrake, fast vs slow</strong>
+    <p><p>For newcomers to encoding, the most frustrating things to be told about choosing settings are "it depends" and that "one setting takes longer than another but looks better".  When you have a wide range of settings to choose from every choice seems like a bad one.  So I thought I'd do a quick demonstration to help shed at least a little light.  </p>
+<p>For this demo I used an AMD FX-8320 8-core cpu at 3.5GHz.  Mobo was a Gigabyte 990FXA-UD5.  Not top-of-the-line but far from a piece of junk.  The movie was encoded straight off the bluray disc instead of from an HDD or SSD, which may have extended the time it took somewhat.  I did not use gpu encoding.</p>
+<p>I recoded <em>Into The Blue</em>. 1h50 long, AC3 passthru for the audio and I kept one subtitle track.  RF was set to 22.  The only difference between the jobs was the Encoder Preset under the Video tab.  </p>
+<p>The first job was set to Fast and took 6 hours.  File size 3.27GB.  </p>
+<p>The second job was set to Slow and took 24 hours.  File size is 2.69GB.  </p>
+<p><a href="https://imgur.com/a/Jo3DL">MediaInfo for both files.</a>  Note that the Slow job reports as a Variable framerate.  It was set to Constant and I don't know why it's being reported differently. (u/GoslingIchi has explained this below.)    No biggie.  </p>
+<p>So there it is.  Is maxxing my cpu for 18 hours worth saving 700MB?  I don't believe so.  Your mileage may vary.  Pardon me, I mean "it depends."  ;)  If someone out there would consider doing a similar project for gpu encoding and posting the results I think that would be very helpful.</p>
+<p>[edit] u/dingdaggity messaged me to point out that the file names in the picture were wrong.  They've been corrected with a new image.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_dmg3257">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:07:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Use medium instead, it will give you almost the same file size as slow with half the encode time.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg3257">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh04d1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/paTEoriginal">paTEoriginal</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 16:23:01</span>
+    </p>
+    <div class="collapsible">
+        <p>"it depends"</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmh04d1">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh0cfv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 16:27:49</span>
+    </p>
+    <div class="collapsible">
+        <p>No, it doesn't.  The difference between medium and slow are extremely minimal and you should only use fast, medium, or very slow.  I might be able to find some documents about this but it has to do with the probability space of possible compression paths.  If I do find an article about this, it will be something like a Math PHD thesis</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmh0cfv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg4ei8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GoslingIchi">GoslingIchi</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:37:40</span>
+    </p>
+    <div class="collapsible">
+        <p>Constant versus Variable frame rate is a well known issue with MediaInfo and Handbrake. Handbrake uses a constant clock, but it's not a standard clock since they support many more of a mix in audio and video frame rates than just about anyone else.</p>
+<p>Also, the file name says fast, but you labeled it as slow, and the other file name says slow, but you labeled it as fast.</p>
+<p>Finally, encoding logs are usually more helpful than MediaInfo reports.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg4ei8">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg57dx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:55:55</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you for the Variable explanation.  I've fixed the image labels.  And I figured that for newbs being able to see file sizes and bitrates would be of the most interest.  The rest of the MediaInfo content is meant to confirm (some of) my settings.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg57dx">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmr796g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/GoslingIchi">GoslingIchi</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 09 2017 00:49:53</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm famous!</p>
+<p>Here's a better link to describe what is going on with MediaInfo and Handbrake - https://forum.handbrake.fr/viewtopic.php?p=159947#p159947</p>
+<p>Rodeo has posted a much greater explanation a few years ago, but that post seems to sum it up.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmr796g">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg5f9c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/neckbeardgamers">neckbeardgamers</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 02 2017 00:00:59</span>
+    </p>
+    <div class="collapsible">
+        <p>There is a big time discrepancy 6 hrs versus 24, but if a hundred download the file or even thousands, arguably it saves much more time and disk space for the encoder to waste more cpu cycles and time, rather than the much larger sample size of downloaders.  </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg5f9c">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg5j8c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 02 2017 00:03:33</span>
+    </p>
+    <div class="collapsible">
+        <p>I agree, 700 MB is nothing to scoff at</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg5j8c">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg5sp8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Sep 02 2017 00:09:57</span>
+    </p>
+    <div class="collapsible">
+        <p>If I was King of the Internet and watching every byte of traffic, sure.  If I'm Joe Public on a low income who wants to use his resources to share certain files that he loves, I'd probably be okay with making other people wait the extra few minutes to get their download.  18 hours is a long time and a lot of electricity.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg5sp8">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg5wu4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Sep 02 2017 00:12:39</span>
+    </p>
+    <div class="collapsible">
+        <p>Has more to do with storage than bandwidth</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg5wu4">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgteuw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/FlimtotheFlam">FlimtotheFlam</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 13:39:50</span>
+    </p>
+    <div class="collapsible">
+        <p>I use Staxrip and GTX 960 to do HEVC encodes. It is so much faster than any other way to encode videos. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgteuw">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh1b6w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 02 2017 16:48:07</span>
+    </p>
+    <div class="collapsible">
+        <p>Okay, but what does 'so much faster' mean when it's apples-to-apples?  Would you do a gpu encode with a similar-length movie using the same settings and post the results?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmh1b6w">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh3yy0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/FlimtotheFlam">FlimtotheFlam</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 17:42:29</span>
+    </p>
+    <div class="collapsible">
+        <p>Here is a uncompressed <a href="https://cubeupload.com/im/zcxJCJ.png">Blu-Ray snapshot of the movie 2 Guns</a> and here is the <a href="https://cubeupload.com/im/oww94T.png">HEVC H.265 8 bit Encoded version with VBR 5000 bit rate</a>. </p>
+<p>I encoded the DTS down to AC3 448 bit. Went from 27 GB to 4.15 GB and was finished in 30 mins. </p>
+<p>Here is the media info for the two files. <a href="https://i.imgur.com/6rgHgvX.png">BluRay</a> vs <a href="https://i.imgur.com/yEW0ckW.png">HEVC</a></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmh3yy0">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmhdpsg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 21:03:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Wow.  </p>
+<p>[edit] I was expecting that a beefy card would be needed to get nice, low times with this.  Something like starting with a 1060.  But if a 970 is doing this work in 30 minutes?  Sign me up.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmhdpsg">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmhi1rl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/FlimtotheFlam">FlimtotheFlam</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 22:41:26</span>
+    </p>
+    <div class="collapsible">
+        <p>I think the 1060 and up can do 10 bit but I am not entirely sure. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmhi1rl">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmg4dd4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/endresz">endresz</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:36:56</span>
+    </p>
+    <div class="collapsible">
+        <p>with an 8bit colour source is there a reason one would would encode into 10bit?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg4dd4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmg4nfp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Sep 01 2017 23:43:19</span>
+    </p>
+    <div class="collapsible">
+        <p>https://gist.github.com/l4n9th4n9/4459997  </p>
+<blockquote>
+<p>This brings us to the real advantage of higher bit depths: We can save bandwidth
+even if the source only uses 8 bits per channel.<br>
+That’s right: Not only do we no longer need to hardcode any dithering, but higher
+bit depth also means higher error tolerance. Losing one bit of information in
+an 8-bit color space is equivalent to losing three bits in a 10-bit color space,
+and thus the same quality can be achieved with less bitrate. Want an example?
+One of my first tests was encoding episode 13 of Shakugan no Shana from a DVD
+source, with dithering added to prevent banding. I used the exact same input and
+settings for both encodes.<br>
+The video track of the 8-bit encode has 275 MiB, while the 10-bit encode has no
+more than 152 MiB and doesn’t look worse at all -- in fact, it even looks better
+than the much larger 8-bit encode.<br>
+Now, if I hadn’t hardcoded the dithering for the 10-bit encode and instead
+passed a high-bit-depth picture to x264, it would’ve resulted in even better
+perceived quality and an even smaller file size!  </p>
+</blockquote>
+<p>http://x264.nl/x264/10bit_02-ateme-why_does_10bit_save_bandwidth.pdf  </p>
+<blockquote>
+<p>So why does a AVC/H.264 10-bit encoder perform better than 8-bit?  When  encoding  with  the  10-bit  tool,  the  compression  process  is  performed  with  at  least  10-bit accuracy compared to only 8-bit otherwise. So there is less truncation errors, especially in the motion compensation  stage,  increasing  the  efficiency  of  compression  tools.  As  a  consequence,  there  is  less need to quantize to achieve a given bit-rate.  The net result is a better quality for the same bit-rate or conversely less bit-rate for the same quality: between 5% and 20% on typical sources.</p>
+</blockquote>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmg4nfp">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgn5y4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/douchebanner">douchebanner</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 02 2017 09:05:59</span>
+    </p>
+    <div class="collapsible">
+        <p>wow, really? i thought 10bit was just another buzzword.</p>
+<p>honestly sounds too good to be true...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgn5y4">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmhelud">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 21:23:19</span>
+    </p>
+    <div class="collapsible">
+        <p>Well, it's a generational advance.  It's going to seem magical until we get used to it.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmhelud">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgp19y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/balla786">balla786</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 10:48:45</span>
+    </p>
+    <div class="collapsible">
+        <p>You can also setup a render farm essentially to breakup the encoding work amongst many systems, get it done faster instead of having PC maxed out.  Only really works if you have access to multiple PC's on the same network.</p>
+<p>I wonder how newer CPUs like Ryzen and Threadripper perform. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgp19y">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgpmt7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/wadhah">wadhah</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 11:19:27</span>
+    </p>
+    <div class="collapsible">
+        <p>I found this </p>
+<p>http://www.anandtech.com/show/11170/the-amd-zen-and-ryzen-7-review-a-deep-dive-on-1800x-1700x-and-1700/20</p>
+<p>It's really interesting, for HVEC the 1700X was 2 frames slower per second than the 6900K (mind you there's a 690$ difference between the two cpus!)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgpmt7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgps0e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elitenls">elitenls</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 11:26:36</span>
+    </p>
+    <div class="collapsible">
+        <p>Like this: http://images.anandtech.com/graphs/graph11170/85887.png</p>
+<p>OP has an 8320 (like me) which is on par with an i5 or low i7. So, say his first encode took 8 hours (should have used 15-18 instead of 22, and ultrafast, but hey... whatever). </p>
+<p>Example math, not actual:</p>
+<p>8 = 970fps = 27,936,000 frames
+Ryzen: 1345 fps = 4,842,000 fph | 5.77 hours or 28% faster</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgps0e">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgpufo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/balla786">balla786</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 11:29:53</span>
+    </p>
+    <div class="collapsible">
+        <p>Neat. Wonder how much better Threadripper would be.  Also does handbrake scale with the cores/threads.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgpufo">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgpxne">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elitenls">elitenls</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 11:34:09</span>
+    </p>
+    <div class="collapsible">
+        <p>I was just about to post the threadripper (http://images.anandtech.com/graphs/graph11697/90034.png) results; but they did it in 4K so I had to do more math. Basically, @ 4K OP and I are looking at roughly 5FPS (from personal experience); so:</p>
+<p>27,936,000 / 5 = 5,587,200s = 1,552 hours</p>
+<p>Ryzen 7: 24 FPS = 323 hours
+Ryzen TR: 41.3 FPS = 187 hours</p>
+<p>So, Ryzen is 80% more efficient than mine and OPs, and Threadripper is ~44% more efficient than Ryzen 7.</p>
+<p>Edit: you do realize that "Ryzen" and "Threadripper" are the same thing, right? Just models. Intel's new stuff are i9 Skylake; and they outperform all the new AMD stuff.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgpxne">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgqhyb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/balla786">balla786</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 02 2017 11:58:25</span>
+    </p>
+    <div class="collapsible">
+        <p>That's pretty decent.  Yes I know the difference.  AMD did a great job with Threadripper.  More cores/threads for your $, ecc support, more pci lanes. It's more of a productivity CPU but still no slouch in gaming.  All that will get better with more optimization and software taking advantage of those cores/threads.  Also frankly, I'm sick of Intel not having competition to light a fire under their ass. They're finally responding with i7-8700k, which will lead to those software optimizations taking advantage of more cores. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgqhyb">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmgqinp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elitenls">elitenls</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Sep 02 2017 11:59:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Agreed. It's a great time to be a computer nerd. 🙂 </p>
+<p>I can't wait to build a new rig!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgqinp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dmgxm9m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sudoes">sudoes</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 15:28:30</span>
+    </p>
+    <div class="collapsible">
+        <p>Is there any difference between using CPU vs GPU for encoding? </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmgxm9m">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh0xf5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Sep 02 2017 16:40:07</span>
+    </p>
+    <div class="collapsible">
+        <p>From another post, CPU=software encoding GPU=hardware encoding ( https://redd.it/6xee7f ):</p>
+<p>That's the difference between hardware and software based encoding. Without getting too technical, the newer hardware has actual instruction blocks written on it which is special made to handle the operations required for x265 encoding/decoding. This makes the newer hardware significantly more efficient and the primary reason for why hardware encoding is faster and why new CPUs with the same frequency (ie how fast/how many ghz) as old CPUs can decode x265 properly and others cannot.</p>
+<p>The downside is that while the GPUs have a ton of resources available to throw at encoding and therefore create files fast, the hardware architecture of a GPU is fundamentally different than a CPU and it's really bad a performing the type of math a CPU does. The algorithm that encodes x265 on hardware is actually a bit different than what you see in software based encoding (like Handbrake or FFMPEG) because of this and GPUs just can't process the same probability space as a CPU which is required to find the optimal compression.</p>
+<p>Because of this x265 hardware encodes tend to be the size of an equivalent quality software x264 encode but with lightning fast encoding time.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmh0xf5">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh7v7a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sudoes">sudoes</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 19:02:59</span>
+    </p>
+    <div class="collapsible">
+        <p>Nice explanation. But what about the playback of the output? Is there any significant difference? Say GPU encoded file, Does it makes the output require more processing power to play? </p>
+<p>I've tested encoding a movie or two, the time taken using CPU are way too long to justify the size reduction. But with GPU I'd say I'm pretty impressed. </p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmh7v7a">permalink</a>
+        </p>
+        <div class="comment" id="t1_dmh9m1c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/tiiiiimmmm">tiiiiimmmm</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 19:38:46</span>
+    </p>
+    <div class="collapsible">
+        <p>You won't see a difference in playback performance, it's just your quality to size ratio will be about the same as an x264 CPU encode, where as an x265 CPU encode of the same file will be ~40%-60% smaller at the same quality, with a theoretical limit of 75% compression over x264.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmh9m1c">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dmhdmpr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Himechi">Himechi</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Sep 02 2017 21:02:13</span>
+    </p>
+    <div class="collapsible">
+        <blockquote>
+<p>I've tested encoding a movie or two, the time taken using CPU are way too long to justify the size reduction.  </p>
+</blockquote>
+<p>Meanwhile, in another thread here some feel that encoders are obliged to do lengthy encodes in order to shave file sizes by 15% (going by the results in my OP).  It seems that no matter what choices we make about our work we're disappointing somebody.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dmhdmpr">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_dp8fcqi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Nov 02 2017 11:09:31</span>
+    </p>
+    <div class="collapsible">
+        <p>I made my first 4K rip as test. 17 hours of encoding at slow. RF 21. Constant framerate. Intel Xeon E3-1271V3 and 64GB DDR3 ECC. SSD.. Input is 70GB Remux. insane ...Outuput is 1080p ~6 GB mkv (final version with ATMOS, Lossless TrueHD 7.1 Passthru) . I'm staring at the 42" TV (4" distance) to see the defect. And I do not see it. looks the same like 4K and it is not at all 4K. But x265 10bit in Handbrake, creates the illusion of a much higher precision and color accuracy from 4K than from HDTV source.The best option is to use as the first MKVToolNix. To break the remux source to video and audio separately - .mkv with MPEG and .mka (with Atmos, Subtitles and Metadata). And then encode only video in Handbrake. And finally, only return x265 10bit video into remux (.mkv +.mka) with MKVToolNix. As a.k.a. Tigole does.  😏</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dp8fcqi">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_dn63pfo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Sep 18 2017 14:26:23</span>
+    </p>
+    <div class="collapsible">
+        <p>A LOT has changed in the last year on the HEVC bandwagon. You need to make sure that you've downloaded and installed HandBrake after December, 2016. Up to the latest version 1.0.7 of HandBrake (HandBrake 1.0.7 uses x265 version 2.1. Must be this version.)</p>
+<p>https://github.com/HandBrake/HandBrake/releases</p>
+<p>However compatibility is going to be a problem for many. Still not many H.265 hardware decoders and CPU decoding (software) is too intensive for most mobile devices.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/megalinks/comments/6xi2ng/_/dn63pfo">permalink</a>
+        </p>
+        
+    </div>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>
